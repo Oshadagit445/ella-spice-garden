@@ -1,0 +1,1133 @@
+{
+    "manifest_version": "1.0.18",
+    "title": "Djaen - Restaurant Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/kit.pndrnt.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/home-2\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Contact",
+            "screenshot": "screenshots\/metform-contact.jpg",
+            "source": "templates\/metform-contact.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/metform-contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Reservation 2",
+            "screenshot": "screenshots\/metform-reservation-2.jpg",
+            "source": "templates\/metform-reservation-2.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/metform-reservation-2\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Reservation",
+            "screenshot": "screenshots\/metform-reservation.jpg",
+            "source": "templates\/metform-reservation.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/metform-reservation\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gallery",
+            "screenshot": "screenshots\/gallery.jpg",
+            "source": "templates\/gallery.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/gallery\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404 Page",
+            "screenshot": "screenshots\/404-page.jpg",
+            "source": "templates\/404-page.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/404-page\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Our Chefs",
+            "screenshot": "screenshots\/our-chefs.jpg",
+            "source": "templates\/our-chefs.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/our-chefs\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Our Chefs 2",
+            "screenshot": "screenshots\/our-chefs-2.jpg",
+            "source": "templates\/our-chefs-2.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/our-chefs-2\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Coming Soon",
+            "screenshot": "screenshots\/coming-soon.jpg",
+            "source": "templates\/coming-soon.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/coming-soon\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Reservation",
+            "screenshot": "screenshots\/reservation.jpg",
+            "source": "templates\/reservation.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/reservation\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Reservation 2",
+            "screenshot": "screenshots\/reservation-2.jpg",
+            "source": "templates\/reservation-2.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/reservation-2\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Menu",
+            "screenshot": "screenshots\/menu.jpg",
+            "source": "templates\/menu.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/menu\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Events",
+            "screenshot": "screenshots\/events.jpg",
+            "source": "templates\/events.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/events\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/kit.pndrnt.com\/djaen\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "ElementsKit Lite",
+            "version": "2.1.4",
+            "file": "elementskit-lite\/elementskit-lite.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Happy Elementor Addons",
+            "version": "2.19.0",
+            "file": "happy-elementor-addons\/plugin.php",
+            "author": "weDevs"
+        },
+        {
+            "name": "Elementor - Header, Footer & Blocks",
+            "version": "1.5.6",
+            "file": "header-footer-elementor\/header-footer-elementor.php",
+            "author": "Brainstorm Force, Nikhil Chavan"
+        },
+        {
+            "name": "Sticky Header Effects for Elementor",
+            "version": "1.4.3",
+            "file": "sticky-header-effects-for-elementor\/sticky-header-effects-for-elementor.php",
+            "author": "Rwattner"
+        },
+        {
+            "name": "MetForm",
+            "version": "1.4.4",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        }
+    ],
+    "images": [
+        {
+            "filename": "djaen-1.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/djaen-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 2969,
+            "dimensions": [
+                274,
+                100
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/djaen-1.png"
+        },
+        {
+            "filename": "beautiful-woman-with-wavy-hair-holding-glass-of-wi-F3Q6E3D.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/beautiful-woman-with-wavy-hair-holding-glass-of-wi-F3Q6E3D-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 115976,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-F3Q6E3D"
+        },
+        {
+            "filename": "the-main-hall-entrance-to-the-terrace-restaurant-D7H96SS.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/the-main-hall-entrance-to-the-terrace-restaurant-D7H96SS-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/our-chefs.json",
+                    "name": "Our Chefs"
+                },
+                {
+                    "source": "templates\/our-chefs-2.json",
+                    "name": "Our Chefs 2"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                },
+                {
+                    "source": "templates\/events.json",
+                    "name": "Events"
+                }
+            ],
+            "filesize": 218881,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-D7H96SS"
+        },
+        {
+            "filename": "close-up-of-couple-at-table-in-traditional-english-U9Z8YSJ.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/close-up-of-couple-at-table-in-traditional-english-U9Z8YSJ-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 134188,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-U9Z8YSJ"
+        },
+        {
+            "filename": "restaurant-LXPTKJ2.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/restaurant-LXPTKJ2-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 120540,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-LXPTKJ2"
+        },
+        {
+            "filename": "food-KR6QAY2.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/food-KR6QAY2-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 124179,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-KR6QAY2"
+        },
+        {
+            "filename": "starter-food-37UAXV4.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/starter-food-37UAXV4-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 69927,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-37UAXV4"
+        },
+        {
+            "filename": "chicken-wings-traditional-asian-recipe-dark-backgr-TU3ZAJ9.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/chicken-wings-traditional-asian-recipe-dark-backgr-TU3ZAJ9-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 97096,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-TU3ZAJ9"
+        },
+        {
+            "filename": "dessert-LEA6Y4A.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/dessert-LEA6Y4A-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 84964,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-LEA6Y4A"
+        },
+        {
+            "filename": "sparkling-colorful-drinks-NUA6DQZ.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/sparkling-colorful-drinks-NUA6DQZ-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 57321,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-NUA6DQZ"
+        },
+        {
+            "filename": "t-bone-steak-PYMHZ63.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/t-bone-steak-PYMHZ63-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/our-chefs.json",
+                    "name": "Our Chefs"
+                },
+                {
+                    "source": "templates\/our-chefs-2.json",
+                    "name": "Our Chefs 2"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                },
+                {
+                    "source": "templates\/reservation-2.json",
+                    "name": "Reservation 2"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                },
+                {
+                    "source": "templates\/events.json",
+                    "name": "Events"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 236676,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PYMHZ63"
+        },
+        {
+            "filename": "french-omelette-savoyarde-with-bacon-cheese-and-le-PAEMZXB.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/french-omelette-savoyarde-with-bacon-cheese-and-le-PAEMZXB-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 256173,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PAEMZXB"
+        },
+        {
+            "filename": "roasted-potato-with-bacon-VQ6YHGM.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/roasted-potato-with-bacon-VQ6YHGM-800x618.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 277053,
+            "dimensions": [
+                1920,
+                1484
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-VQ6YHGM"
+        },
+        {
+            "filename": "grilled-meat-with-vegetables-P84SUMX.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/grilled-meat-with-vegetables-P84SUMX-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 249890,
+            "dimensions": [
+                1920,
+                1282
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-P84SUMX"
+        },
+        {
+            "filename": "cooked-mushrooms-in-cast-iron-pan-KRV2KA7.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/cooked-mushrooms-in-cast-iron-pan-KRV2KA7-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 338522,
+            "dimensions": [
+                1920,
+                1282
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-KRV2KA7"
+        },
+        {
+            "filename": "chicken-shish-kebab-shashlik-grilled-meat-and-fres-PCFN78L.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/chicken-shish-kebab-shashlik-grilled-meat-and-fres-PCFN78L-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 182850,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PCFN78L"
+        },
+        {
+            "filename": "bbq-chicken-wings-spicy-grilled-meat-PEBLV2D.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/bbq-chicken-wings-spicy-grilled-meat-PEBLV2D-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 218268,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PEBLV2D"
+        },
+        {
+            "filename": "iced-tea-with-lemon-LFTSC5P.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/iced-tea-with-lemon-LFTSC5P-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 94939,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-LFTSC5P"
+        },
+        {
+            "filename": "milk-being-poured-into-iced-coffee-on-a-dark-table-TH2MABV.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/milk-being-poured-into-iced-coffee-on-a-dark-table-TH2MABV-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 68076,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-TH2MABV"
+        },
+        {
+            "filename": "hot-dark-chocolate-with-whipped-cream-QPNFBE4.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/hot-dark-chocolate-with-whipped-cream-QPNFBE4-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 75954,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-QPNFBE4"
+        },
+        {
+            "filename": "waiting-for-guests-7K3XYSP.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/waiting-for-guests-7K3XYSP-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 180656,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-7K3XYSP"
+        },
+        {
+            "filename": "sushi-set-on-dark-background-minimalism-58DFKC7.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/sushi-set-on-dark-background-minimalism-58DFKC7-600x386.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/coming-soon.json",
+                    "name": "Coming Soon"
+                }
+            ],
+            "filesize": 125104,
+            "dimensions": [
+                1500,
+                965
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-58DFKC7"
+        },
+        {
+            "filename": "signature_djaen-copy.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/signature_djaen-copy-800x120.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 46017,
+            "dimensions": [
+                2007,
+                300
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/hamira-signature-font-logotype-brush-DPUQKUQ"
+        },
+        {
+            "filename": "t-bone-steak-P4D5KX4.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/t-bone-steak-P4D5KX4-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 381712,
+            "dimensions": [
+                1280,
+                1920
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-P4D5KX4"
+        },
+        {
+            "filename": "interior-view-of-a-city-restaurant-HFQGVVY.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/interior-view-of-a-city-restaurant-HFQGVVY-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 164689,
+            "dimensions": [
+                1280,
+                1920
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-HFQGVVY"
+        },
+        {
+            "filename": "fried-meat-8EHMQVZ.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/fried-meat-8EHMQVZ-800x1224.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 231118,
+            "dimensions": [
+                980,
+                1500
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-8EHMQVZ"
+        },
+        {
+            "filename": "logo-1b.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/logo-1b.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 4142,
+            "dimensions": [
+                500,
+                281
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-2b.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/logo-2b.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 4355,
+            "dimensions": [
+                500,
+                281
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-3c.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/logo-3c.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 4208,
+            "dimensions": [
+                500,
+                281
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-4c.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/logo-4c.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 4087,
+            "dimensions": [
+                500,
+                281
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "setting-empty-plate-and-wooden-cutlery-PLWA77H.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/setting-empty-plate-and-wooden-cutlery-PLWA77H-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404-page.json",
+                    "name": "404 Page"
+                }
+            ],
+            "filesize": 306697,
+            "dimensions": [
+                1920,
+                1920
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PLWA77H"
+        },
+        {
+            "filename": "two-smiling-bearded-cooks-dressed-in-uniforms-prep-APMXBQW.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/two-smiling-bearded-cooks-dressed-in-uniforms-prep-APMXBQW-800x1088.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-chefs.json",
+                    "name": "Our Chefs"
+                },
+                {
+                    "source": "templates\/our-chefs-2.json",
+                    "name": "Our Chefs 2"
+                }
+            ],
+            "filesize": 96972,
+            "dimensions": [
+                1000,
+                1360
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-APMXBQW"
+        },
+        {
+            "filename": "two-brutal-cooks-dressed-in-uniforms-preparing-sus-T6PKQ9V.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/two-brutal-cooks-dressed-in-uniforms-preparing-sus-T6PKQ9V-800x1062.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-chefs.json",
+                    "name": "Our Chefs"
+                },
+                {
+                    "source": "templates\/our-chefs-2.json",
+                    "name": "Our Chefs 2"
+                }
+            ],
+            "filesize": 93918,
+            "dimensions": [
+                1000,
+                1327
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-T6PKQ9V"
+        },
+        {
+            "filename": "bearded-cook-in-black-uniform-and-hat-holds-knife-BMEASJV.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/bearded-cook-in-black-uniform-and-hat-holds-knife-BMEASJV-800x994.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-chefs.json",
+                    "name": "Our Chefs"
+                },
+                {
+                    "source": "templates\/our-chefs-2.json",
+                    "name": "Our Chefs 2"
+                },
+                {
+                    "source": "templates\/events.json",
+                    "name": "Events"
+                }
+            ],
+            "filesize": 89920,
+            "dimensions": [
+                1000,
+                1242
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-BMEASJV"
+        },
+        {
+            "filename": "djaen-2.png",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/djaen-2.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 3935,
+            "dimensions": [
+                274,
+                100
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/djaen-2.png"
+        },
+        {
+            "filename": "baked-chicken-tabaka-with-spices-5DU7A3P.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/baked-chicken-tabaka-with-spices-5DU7A3P-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 376527,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-5DU7A3P"
+        },
+        {
+            "filename": "grilled-beef-steak-with-spices-on-cutting-board-PBRZYAX.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2021\/01\/grilled-beef-steak-with-spices-on-cutting-board-PBRZYAX-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 275460,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-PBRZYAX"
+        },
+        {
+            "filename": "diverse-people-joining-cooking-class-YRP7C9U.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/diverse-people-joining-cooking-class-YRP7C9U-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/events.json",
+                    "name": "Events"
+                }
+            ],
+            "filesize": 81506,
+            "dimensions": [
+                1000,
+                667
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-YRP7C9U"
+        },
+        {
+            "filename": "soba-noodles-with-sauce-and-garnishes-japanese-foo-T2Q35X6.jpg",
+            "thumbnail_url": "https:\/\/kit.pndrnt.com\/djaen\/wp-content\/uploads\/sites\/7\/2020\/12\/soba-noodles-with-sauce-and-garnishes-japanese-foo-T2Q35X6-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/events.json",
+                    "name": "Events"
+                }
+            ],
+            "filesize": 186460,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-T2Q35X6"
+        }
+    ]
+}

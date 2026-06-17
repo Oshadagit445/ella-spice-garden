@@ -1,0 +1,342 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TF Testimonial Addon For Elementor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-03 07:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: tf-addon-for-elementer"
+
+#: addon-elementor.php:85
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: addon-elementor.php:96 addon-elementor.php:110
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:352
+#: widgets/widget-testimonial-carousel.php:369
+#: widgets/widget-testimonial-carousel.php:386
+msgid "1"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:353
+#: widgets/widget-testimonial-carousel.php:370
+#: widgets/widget-testimonial-carousel.php:387
+msgid "2"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:354
+#: widgets/widget-testimonial-carousel.php:371
+#: widgets/widget-testimonial-carousel.php:388
+msgid "3"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:355
+#: widgets/widget-testimonial-carousel.php:372
+#: widgets/widget-testimonial-carousel.php:389
+msgid "4"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:356
+#: widgets/widget-testimonial-carousel.php:373
+#: widgets/widget-testimonial-carousel.php:390
+msgid "5"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:357
+#: widgets/widget-testimonial-carousel.php:374
+#: widgets/widget-testimonial-carousel.php:391
+msgid "6"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:1002
+msgid "Active"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:402
+#: widgets/widget-testimonial-carousel.php:409
+msgid "Arrow"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:324
+msgid "Auto Play"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:655
+#: widgets/widget-testimonial-carousel.php:736
+#: widgets/widget-testimonial-carousel.php:958
+#: widgets/widget-testimonial-carousel.php:1084
+msgid "Background Color"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:671
+#: widgets/widget-testimonial-carousel.php:752
+#: widgets/widget-testimonial-carousel.php:974
+#: widgets/widget-testimonial-carousel.php:1100
+msgid "Border"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:985
+#: widgets/widget-testimonial-carousel.php:1111
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:697
+msgid "Border Radius Next"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:682
+#: widgets/widget-testimonial-carousel.php:763
+msgid "Border Radius Previous"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:786
+#: widgets/widget-testimonial-carousel.php:793
+msgid "Bullets"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:55
+msgid "Choose Avatar"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:97
+msgid "Choose Image Quote"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:186
+#: widgets/widget-testimonial-carousel.php:213
+#: widgets/widget-testimonial-carousel.php:240
+#: widgets/widget-testimonial-carousel.php:640
+#: widgets/widget-testimonial-carousel.php:721
+msgid "Color"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:348
+msgid "Columns Desktop"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:382
+msgid "Columns Mobile"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:365
+msgid "Columns Tablet"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:89
+msgid "Default description"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:68
+#: widgets/widget-testimonial-carousel.php:78
+msgid "Default title"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:86
+#: widgets/widget-testimonial-carousel.php:224
+msgid "Description"
+msgstr ""
+
+#: addon-elementor.php:87 addon-elementor.php:98
+msgid "Elementor"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:457
+msgid "Font Size"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:144
+msgid "General"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:509
+#: widgets/widget-testimonial-carousel.php:932
+#: widgets/widget-testimonial-carousel.php:1035
+msgid "Height"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:412
+#: widgets/widget-testimonial-carousel.php:796
+msgid "Hide"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:806
+msgid "Horizonta Offset"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:565
+msgid "Horizontal Position Next"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:535
+msgid "Horizontal Position Previous"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:714
+msgid "Hover"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://codecanyon.net/user/themesflat"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:270
+msgid "Line"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:278
+msgid "Line 1 Color"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:289
+msgid "Line 2 Color"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:312
+msgid "Loop"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:250
+msgid "Margin"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:171
+msgid "Name"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:439
+msgid "Next Icon"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:633
+#: widgets/widget-testimonial-carousel.php:899
+msgid "Normal"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:315
+#: widgets/widget-testimonial-carousel.php:327
+msgid "Off"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:314
+#: widgets/widget-testimonial-carousel.php:326
+msgid "On"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:151
+msgid "Padding"
+msgstr ""
+
+#: addon-elementor.php:112
+msgid "PHP"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:197
+msgid "Position"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:422
+msgid "Prev Icon"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:1061
+msgid "Scale"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:305
+msgid "Setting"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:411
+#: widgets/widget-testimonial-carousel.php:795
+msgid "Show"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:336
+msgid "Spacer"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:866
+msgid "Spacing"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:40
+#: widgets/widget-testimonial-carousel.php:137
+msgid "Style"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:44
+msgid "Style 1"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:45
+msgid "Style 2"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:33
+msgid "Testimonial Carousel"
+msgstr ""
+
+#. Name of the plugin
+#: addon-elementor.php:86 addon-elementor.php:97 addon-elementor.php:111
+msgid "TF Testimonial Addon For Elementor"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:9
+msgid "TF Testimonial Carousel"
+msgstr ""
+
+#. Description of the plugin
+msgid "The theme's components"
+msgstr ""
+
+#. Author of the plugin
+msgid "Themesflat"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:66
+#: widgets/widget-testimonial-carousel.php:76
+msgid "Title"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:90
+msgid "Type your description here"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:69
+#: widgets/widget-testimonial-carousel.php:79
+msgid "Type your title here"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:179
+#: widgets/widget-testimonial-carousel.php:206
+#: widgets/widget-testimonial-carousel.php:233
+msgid "Typography"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:836
+msgid "Vertical Offset"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:595
+msgid "Vertical Position"
+msgstr ""
+
+#: widgets/widget-testimonial-carousel.php:483
+#: widgets/widget-testimonial-carousel.php:906
+#: widgets/widget-testimonial-carousel.php:1009
+msgid "Width"
+msgstr ""

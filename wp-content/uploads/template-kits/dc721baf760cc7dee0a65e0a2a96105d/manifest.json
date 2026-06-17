@@ -1,0 +1,1187 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Dishszo \u2013 Restaurant & Cafe Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/kit.baliniz.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "MetForm Reservation",
+            "screenshot": "screenshots\/metform-reservation.jpg",
+            "source": "templates\/metform-reservation.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/metform-reservation\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Menu",
+            "screenshot": "screenshots\/menu.jpg",
+            "source": "templates\/menu.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/menu\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Reservation",
+            "screenshot": "screenshots\/reservation.jpg",
+            "source": "templates\/reservation.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/reservation\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Chef",
+            "screenshot": "screenshots\/chef.jpg",
+            "source": "templates\/chef.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/chef\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Blog",
+            "screenshot": "screenshots\/single-blog.jpg",
+            "source": "templates\/single-blog.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/single-blog\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "MetForm Contact",
+            "screenshot": "screenshots\/metform-contact.jpg",
+            "source": "templates\/metform-contact.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/metform-contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Off-canvas",
+            "screenshot": "screenshots\/off-canvas.jpg",
+            "source": "templates\/off-canvas.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/off-canvas\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404 Page",
+            "screenshot": "screenshots\/404-page.jpg",
+            "source": "templates\/404-page.json",
+            "preview_url": "https:\/\/kit.baliniz.com\/dishszo\/template-kit\/404-page\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "DethemeKit for Elementor",
+            "version": "2.0.2",
+            "file": "dethemekit-for-elementor\/detheme-kit.php",
+            "author": "deTheme"
+        },
+        {
+            "name": "ElementsKit Lite",
+            "version": "2.6.1",
+            "file": "elementskit-lite\/elementskit-lite.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Elementor Header & Footer Builder",
+            "version": "1.6.10",
+            "file": "header-footer-elementor\/header-footer-elementor.php",
+            "author": "Brainstorm Force, Nikhil Chavan"
+        },
+        {
+            "name": "MetForm",
+            "version": "2.1.6",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.6.6",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "navy.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/navy-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 15530,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/kit.baliniz.com\/dishzo\/"
+        },
+        {
+            "filename": "grilled-beef-steak-with-herbs-35SDE3S.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-beef-steak-with-herbs-35SDE3S-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 233411,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-35SDE3S"
+        },
+        {
+            "filename": "grill-restaurant-beef-menu-flank-steak-on-a-black-stone-board-black-background-top-view-e1664473742389.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grill-restaurant-beef-menu-flank-steak-on-a-black-stone-board-black-background-top-view-800x1202.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 269704,
+            "dimensions": [
+                820,
+                1232
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-JB7P7BW"
+        },
+        {
+            "filename": "bbq-grilled-chuck-eye-roll-beef-steaks-on-grill-black-wooden-background-top-view-e1664473809411.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/bbq-grilled-chuck-eye-roll-beef-steaks-on-grill-black-wooden-background-top-view-800x532.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 253022,
+            "dimensions": [
+                1200,
+                799
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-U34EB9L"
+        },
+        {
+            "filename": "grilled-tri-tip-steak-sirloin-bottom-beef-in-a-tray-with-herbs-wooden-background-top-view-e1664473835302.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-tri-tip-steak-sirloin-bottom-beef-in-a-tray-with-herbs-wooden-background-top-view-800x1202.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 286905,
+            "dimensions": [
+                860,
+                1292
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-R5G5KQ6"
+        },
+        {
+            "filename": "year.png",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/year.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 8120,
+            "dimensions": [
+                490,
+                297
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-9KDEVL"
+        },
+        {
+            "filename": "baked-chicken-e1664474102782.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/baked-chicken-e1664089546229-800x706.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 269762,
+            "dimensions": [
+                1000,
+                883
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-52TH7ZT"
+        },
+        {
+            "filename": "top-view-of-plate-with-beef-steaks-chicken-wings-and-wine-on-table-e1664474126255.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/top-view-of-plate-with-beef-steaks-chicken-wings-and-wine-on-table-e1664110794933-800x797.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 228256,
+            "dimensions": [
+                1000,
+                996
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZEQF3VR"
+        },
+        {
+            "filename": "bbq-grilled-medium-rare-top-sirloin-beef-steak-rump-steak-in-a-wooden-plate--e1664474134797.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/bbq-grilled-medium-rare-top-sirloin-beef-steak-rump-steak-in-a-wooden-plate--e1664111691605-800x744.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 302510,
+            "dimensions": [
+                1000,
+                930
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-K9XYSKW"
+        },
+        {
+            "filename": "craft-beef-burger-and-french-fries-on-a-black-background-e1664111539632.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/craft-beef-burger-and-french-fries-on-a-black-background-e1664111539632-800x709.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 223800,
+            "dimensions": [
+                1060,
+                940
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-4P6XLDV"
+        },
+        {
+            "filename": "grilled-beef-steak-with-red-wine-RSPMY3S.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-beef-steak-with-red-wine-RSPMY3S-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 249226,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-RSPMY3S"
+        },
+        {
+            "filename": "frying-pan-is-on-fire-chef-in-white-uniform-cooking-food-at-kitchen-busy-day-at-work-e1664474169141.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/frying-pan-is-on-fire-chef-in-white-uniform-cooking-food-at-kitchen-busy-day-at-work-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                }
+            ],
+            "filesize": 273388,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-WNX3Q42"
+        },
+        {
+            "filename": "bg-48HRFYW.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/bg-48HRFYW-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 222575,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-48HRFYW"
+        },
+        {
+            "filename": "thick-soup-with-beef-pearl-barley-pumpkin-and-celery-dietary-menu-top-view-e1664473950303.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/thick-soup-with-beef-pearl-barley-pumpkin-and-celery-dietary-menu-top-view-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-blog.json",
+                    "name": "Single Blog"
+                }
+            ],
+            "filesize": 314570,
+            "dimensions": [
+                1400,
+                933
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PWRFWMW"
+        },
+        {
+            "filename": "grilled-beef-steak-with-herbs-1-1-e1664474720546.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-beef-steak-with-herbs-1-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 280508,
+            "dimensions": [
+                1300,
+                866
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-TWCYEFQ"
+        },
+        {
+            "filename": "delicious-asian-dessert-in-long-white-plate-with-teapot-orange-berries-and-spices--e1664474012679.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/delicious-asian-dessert-in-long-white-plate-with-teapot-orange-berries-and-spices--800x642.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 249836,
+            "dimensions": [
+                1200,
+                963
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-CAYTJRL"
+        },
+        {
+            "filename": "couples-relaxing-over-lunch-in-a-restaurant-elevated-view-e1664474062350.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/couples-relaxing-over-lunch-in-a-restaurant-elevated-view-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 300206,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PEMQEYG"
+        },
+        {
+            "filename": "testimonial-MKLVKTE.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/testimonial-MKLVKTE.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 59237,
+            "dimensions": [
+                320,
+                320
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-MKLVKTE"
+        },
+        {
+            "filename": "testimonial-UUFGSJH.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/testimonial-UUFGSJH.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 57515,
+            "dimensions": [
+                320,
+                320
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-UUFGSJH"
+        },
+        {
+            "filename": "testimonial-CASCKD8.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/testimonial-CASCKD8.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 52477,
+            "dimensions": [
+                320,
+                320
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-CASCKD8"
+        },
+        {
+            "filename": "multi-cultural-group-of-friends-enjoying-night-out-eating-meal-and-drinking-in-restaurant-together-e1664473916848.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/multi-cultural-group-of-friends-enjoying-night-out-eating-meal-and-drinking-in-restaurant-together-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-blog.json",
+                    "name": "Single Blog"
+                },
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 289842,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-DFEAUYV"
+        },
+        {
+            "filename": "fried-mushrooms-and-sausage-in-cas-iron-skillet-VB8L5VD.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/fried-mushrooms-and-sausage-in-cas-iron-skillet-VB8L5VD-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 246852,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-VB8L5VD"
+        },
+        {
+            "filename": "tasty-french-fries-with-sauce-e1664474253133.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/tasty-french-fries-with-sauce-e1664470757111-800x696.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 178671,
+            "dimensions": [
+                1000,
+                870
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-7DZ7KYY"
+        },
+        {
+            "filename": "grilled-chicken-and-rice-e1664474260117.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-chicken-and-rice-e1664470790338-800x707.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 191835,
+            "dimensions": [
+                1000,
+                884
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-TU9BL46"
+        },
+        {
+            "filename": "greek-yogurt-granola-with-fresh-berries-e1664470850475.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/greek-yogurt-granola-with-fresh-berries-e1664470850475-800x808.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 206872,
+            "dimensions": [
+                985,
+                995
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-YWRJKLD"
+        },
+        {
+            "filename": "traditional-onion-soup-e1664470945105.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/traditional-onion-soup-e1664470945105-800x677.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 223775,
+            "dimensions": [
+                1010,
+                855
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PQVQVNW"
+        },
+        {
+            "filename": "traditional-russian-dishes-sweets-and-vodka-58PJ3MA.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/traditional-russian-dishes-sweets-and-vodka-58PJ3MA-800x522.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 235646,
+            "dimensions": [
+                1920,
+                1252
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-58PJ3MA"
+        },
+        {
+            "filename": "grilled-sliced-top-blade-or-denver-beef-meat-steak-in-a-wooden-plate-with-herbs--e1664474149822.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-sliced-top-blade-or-denver-beef-meat-steak-in-a-wooden-plate-with-herbs--800x532.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 230722,
+            "dimensions": [
+                1000,
+                666
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-2Y82JWB"
+        },
+        {
+            "filename": "healthy-breakfast-set-with-coffee-and-granola-e1664474595767.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/healthy-breakfast-set-with-coffee-and-granola-800x386.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 306313,
+            "dimensions": [
+                1900,
+                917
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-6LT7B9E"
+        },
+        {
+            "filename": "dinner-in-restaurant-e1664473988961.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/dinner-in-restaurant-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 282404,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-YAUEB49"
+        },
+        {
+            "filename": "focused-on-work-chef-is-on-the-kitchen-preparing-food-e1664474178306.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/focused-on-work-chef-is-on-the-kitchen-preparing-food-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 327068,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-7HYLZJE"
+        },
+        {
+            "filename": "flaming-the-meal-on-frying-pan-kitchen-workers-is-together-preparing-the-food-e1664474312692.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/flaming-the-meal-on-frying-pan-kitchen-workers-is-together-preparing-the-food-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 292755,
+            "dimensions": [
+                1800,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-9YFSGGG"
+        },
+        {
+            "filename": "a-view-looking-down-on-a-crew-of-chefs-working-in-a-commercial-kitchen--e1664474298227.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/a-view-looking-down-on-a-crew-of-chefs-working-in-a-commercial-kitchen--800x627.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 283696,
+            "dimensions": [
+                1400,
+                1097
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-4R4DT3P"
+        },
+        {
+            "filename": "cheerful-young-chef-in-apron-keeping-tattooed-arms-USFGBDY.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/cheerful-young-chef-in-apron-keeping-tattooed-arms-USFGBDY-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 233434,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-USFGBDY"
+        },
+        {
+            "filename": "chef-cook-portrait-7CU4CF3.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/chef-cook-portrait-7CU4CF3-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 161216,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-7CU4CF3"
+        },
+        {
+            "filename": "chef-posing-XLHWRMS.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/chef-posing-XLHWRMS-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 221738,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-XLHWRMS"
+        },
+        {
+            "filename": "a-blurred-view-of-a-crew-of-chefs-working-around-a-commercial-kitchen--e1664474190893.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/a-blurred-view-of-a-crew-of-chefs-working-around-a-commercial-kitchen--800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 232790,
+            "dimensions": [
+                1920,
+                1281
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-2T8YH9P"
+        },
+        {
+            "filename": "gourmet-cuisine-expert-standing-in-restaurant-prof-W8QH72U.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/gourmet-cuisine-expert-standing-in-restaurant-prof-W8QH72U-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 146600,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-W8QH72U"
+        },
+        {
+            "filename": "gastronomy-expert-standing-in-restaurant-professional-628D7JX.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/gastronomy-expert-standing-in-restaurant-professional-628D7JX-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 161635,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-628D7JX"
+        },
+        {
+            "filename": "portrait-of-male-chef-looking-at-camera-in-profess-W8QH72U.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/portrait-of-male-chef-looking-at-camera-in-profess-W8QH72U-800x999.jpg",
+            "templates": [
+                {
+                    "source": "templates\/chef.json",
+                    "name": "Chef"
+                }
+            ],
+            "filesize": 171229,
+            "dimensions": [
+                820,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-W8QH72U"
+        },
+        {
+            "filename": "man-photographing-food-in-a-restaurant-e1664473003272.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/man-photographing-food-in-a-restaurant-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 245808,
+            "dimensions": [
+                1920,
+                1282
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-QWLVD5K"
+        },
+        {
+            "filename": "logo-dishszo.png",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/logo-dishszo-800x281.png",
+            "templates": [
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 11945,
+            "dimensions": [
+                1003,
+                352
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/kit.baliniz.com\/dishzo\/"
+        },
+        {
+            "filename": "vegaterian-dinner-e1664474560495.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/vegaterian-dinner-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 221500,
+            "dimensions": [
+                1400,
+                933
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PKDP62G"
+        },
+        {
+            "filename": "grilled-porterhouse-beef-steak-sliced-t-bone-e1664474515611.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/grilled-porterhouse-beef-steak-sliced-t-bone-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/off-canvas.json",
+                    "name": "Off-canvas"
+                }
+            ],
+            "filesize": 253917,
+            "dimensions": [
+                1200,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-MQA626B"
+        },
+        {
+            "filename": "baked-chicken-sausages-with-vegetables-H62EPX8.jpg",
+            "thumbnail_url": "https:\/\/kit.baliniz.com\/dishszo\/wp-content\/uploads\/sites\/40\/2022\/09\/baked-chicken-sausages-with-vegetables-H62EPX8-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404-page.json",
+                    "name": "404 Page"
+                }
+            ],
+            "filesize": 222832,
+            "dimensions": [
+                1920,
+                1282
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-H62EPX8"
+        }
+    ]
+}

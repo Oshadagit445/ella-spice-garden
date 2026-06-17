@@ -1,0 +1,3640 @@
+# Copyright (C) 2024 Restan Core
+# This file is distributed under the same license as the Restan Core package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Restan Core 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/restan-core\n"
+"POT-Creation-Date: 2024-10-17 12:21:52+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. translators: 1: Plugin name 2: Elementor
+
+#: addons/addons.php:155
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: addons/addons.php:156 addons/addons.php:180 addons/addons.php:205
+msgid "restan Core"
+msgstr ""
+
+#: addons/addons.php:157 addons/addons.php:181
+msgid "Elementor"
+msgstr ""
+
+#. translators: 1: Plugin name 2: Elementor 3: Required Elementor version
+#. translators: 1: Plugin name 2: PHP 3: Required PHP version
+
+#: addons/addons.php:179 addons/addons.php:204
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: addons/addons.php:206
+msgid "PHP"
+msgstr ""
+
+#: addons/addons.php:331 inc/widgets/recent-post-widget.php:98
+msgid "restan"
+msgstr ""
+
+#: addons/addons.php:338
+msgid "restan Footer Elements"
+msgstr ""
+
+#: addons/addons.php:346
+msgid "restan Header Elements"
+msgstr ""
+
+#: addons/addons.php:354
+msgid "restan Service Elements"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:40
+msgid "Footer About"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:79
+#: addons/footer-widgets/restan-footer-contact.php:79
+#: addons/footer-widgets/restan-footer-copyright.php:79
+#: addons/footer-widgets/restan-footer-navmenu.php:79
+#: addons/footer-widgets/restan-newsletter.php:80
+#: addons/widgets/restan-big-deal.php:79 addons/widgets/restan-choose-us.php:79
+#: addons/widgets/restan-copyright.php:79
+#: addons/widgets/restan-deliverya-process.php:79
+#: addons/widgets/restan-download-app.php:79 addons/widgets/restan-offer.php:79
+#: addons/widgets/restan-shop.php:79
+#: addons/widgets/widgets-style/big-deal-style.php:6
+#: addons/widgets/widgets-style/blog-style.php:80
+#: addons/widgets/widgets-style/choose-style.php:6
+#: addons/widgets/widgets-style/choose-us-style.php:6
+#: addons/widgets/widgets-style/contact-style.php:6
+#: addons/widgets/widgets-style/copyright-style.php:6
+#: addons/widgets/widgets-style/deliverya-process-style.php:6
+#: addons/widgets/widgets-style/download-app-style.php:6
+#: addons/widgets/widgets-style/faq-style.php:6
+#: addons/widgets/widgets-style/mission-style.php:6
+#: addons/widgets/widgets-style/open-hours-style.php:6
+#: addons/widgets/widgets-style/overview-style.php:81
+#: addons/widgets/widgets-style/pricing-style.php:80
+#: addons/widgets/widgets-style/process-style.php:81
+#: addons/widgets/widgets-style/project-style.php:81
+#: addons/widgets/widgets-style/service-brochure-style.php:6
+#: addons/widgets/widgets-style/service-cta-style.php:6
+#: addons/widgets/widgets-style/service-style.php:6
+#: addons/widgets/widgets-style/team-style.php:77
+#: addons/widgets/widgets-style/testimonial-style.php:6
+msgid "Content Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:87
+#: addons/footer-widgets/restan-footer-contact.php:87
+#: addons/footer-widgets/restan-footer-navmenu.php:90
+#: addons/footer-widgets/restan-newsletter.php:103
+#: addons/widgets/restan-choose-us.php:100
+#: addons/widgets/restan-food-menu-tab.php:124
+#: addons/widgets/restan-food-menu.php:1031
+#: addons/widgets/restan-food-menu.php:1034
+#: addons/widgets/restan-food-menu.php:1202
+#: addons/widgets/restan-food-menu.php:1205
+#: addons/widgets/restan-service.php:101 addons/widgets/restan-team.php:101
+#: addons/widgets/restan-testimonial.php:101
+msgid "Section Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:89
+#: addons/footer-widgets/restan-footer-contact.php:89
+msgid "section Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:90
+#: addons/footer-widgets/restan-footer-contact.php:90
+#: addons/widgets/restan-blog.php:105 addons/widgets/restan-choose-us.php:105
+#: addons/widgets/restan-food-menu-tab.php:127
+#: addons/widgets/restan-service.php:104
+#: addons/widgets/restan-testimonial.php:104
+msgid "Default Section Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:99
+msgid "Section Sub-Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:101
+msgid "section sub title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:102
+#: addons/widgets/restan-testimonial.php:117
+msgid "Default Section Sub Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:113
+#: addons/footer-widgets/restan-footer-contact.php:101
+#: addons/footer-widgets/restan-newsletter.php:144
+#: addons/widgets/restan-about.php:472 addons/widgets/restan-category.php:248
+#: addons/widgets/restan-choose-us.php:141
+#: addons/widgets/restan-contact-form.php:136
+#: addons/widgets/restan-food-menu-tab.php:256
+#: addons/widgets/restan-header.php:164 addons/widgets/restan-header.php:283
+#: addons/widgets/restan-header.php:528
+#: addons/widgets/restan-team-details.php:146
+#: addons/widgets/restan-team-details.php:246
+msgid "Icon Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:117
+#: addons/footer-widgets/restan-footer-contact.php:105
+#: addons/footer-widgets/restan-newsletter.php:148
+#: addons/widgets/restan-about.php:476 addons/widgets/restan-category.php:252
+#: addons/widgets/restan-choose-us.php:145
+#: addons/widgets/restan-contact-form.php:140
+#: addons/widgets/restan-feature.php:126
+#: addons/widgets/restan-food-menu-tab.php:260
+#: addons/widgets/restan-header.php:168 addons/widgets/restan-header.php:287
+#: addons/widgets/restan-header.php:532
+#: addons/widgets/restan-team-details.php:150
+#: addons/widgets/restan-team-details.php:250
+msgid "Flaticon"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:118
+#: addons/footer-widgets/restan-footer-contact.php:106
+#: addons/footer-widgets/restan-newsletter.php:149
+#: addons/widgets/restan-about.php:477 addons/widgets/restan-category.php:253
+#: addons/widgets/restan-choose-us.php:146
+#: addons/widgets/restan-contact-form.php:141
+#: addons/widgets/restan-feature.php:127
+#: addons/widgets/restan-food-menu-tab.php:261
+#: addons/widgets/restan-header.php:169 addons/widgets/restan-header.php:288
+#: addons/widgets/restan-header.php:533
+#: addons/widgets/restan-team-details.php:151
+#: addons/widgets/restan-team-details.php:251
+msgid "Icon Image"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:119
+#: addons/footer-widgets/restan-footer-about.php:141
+#: addons/footer-widgets/restan-footer-contact.php:107
+#: addons/footer-widgets/restan-footer-contact.php:129
+#: addons/footer-widgets/restan-newsletter.php:150
+#: addons/footer-widgets/restan-newsletter.php:172
+#: addons/widgets/restan-about.php:478 addons/widgets/restan-about.php:500
+#: addons/widgets/restan-category.php:254
+#: addons/widgets/restan-category.php:276
+#: addons/widgets/restan-choose-us.php:147
+#: addons/widgets/restan-choose-us.php:168
+#: addons/widgets/restan-contact-form.php:142
+#: addons/widgets/restan-contact-form.php:164
+#: addons/widgets/restan-feature.php:128 addons/widgets/restan-feature.php:149
+#: addons/widgets/restan-food-menu-tab.php:262
+#: addons/widgets/restan-food-menu-tab.php:284
+#: addons/widgets/restan-header.php:170 addons/widgets/restan-header.php:191
+#: addons/widgets/restan-header.php:289 addons/widgets/restan-header.php:311
+#: addons/widgets/restan-header.php:534 addons/widgets/restan-header.php:556
+#: addons/widgets/restan-team-details.php:152
+#: addons/widgets/restan-team-details.php:174
+#: addons/widgets/restan-team-details.php:252
+#: addons/widgets/restan-team-details.php:274
+msgid "Custom Icon"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:127
+#: addons/footer-widgets/restan-footer-contact.php:115
+#: addons/footer-widgets/restan-newsletter.php:158
+#: addons/widgets/restan-about.php:486 addons/widgets/restan-category.php:262
+#: addons/widgets/restan-choose-us.php:155
+#: addons/widgets/restan-contact-form.php:150
+#: addons/widgets/restan-feature.php:136
+#: addons/widgets/restan-food-menu-tab.php:270
+#: addons/widgets/restan-header.php:178 addons/widgets/restan-header.php:297
+#: addons/widgets/restan-header.php:542
+#: addons/widgets/restan-team-details.php:160
+#: addons/widgets/restan-team-details.php:260
+msgid "Icon One"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:154
+#: addons/footer-widgets/restan-footer-contact.php:142
+#: addons/footer-widgets/restan-newsletter.php:185
+#: addons/widgets/restan-about.php:513 addons/widgets/restan-category.php:290
+#: addons/widgets/restan-choose-us.php:182
+#: addons/widgets/restan-contact-form.php:177
+#: addons/widgets/restan-feature.php:163 addons/widgets/restan-feature.php:264
+#: addons/widgets/restan-food-menu-tab.php:297
+#: addons/widgets/restan-header.php:205 addons/widgets/restan-header.php:324
+#: addons/widgets/restan-header.php:569
+#: addons/widgets/restan-team-details.php:187
+#: addons/widgets/restan-team-details.php:287
+msgid "Add Image Icon"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:165
+#: addons/footer-widgets/restan-footer-contact.php:153
+#: addons/footer-widgets/restan-newsletter.php:196
+#: addons/widgets/restan-header.php:335 addons/widgets/restan-header.php:580
+#: addons/widgets/restan-team-details.php:298
+msgid "Add Url"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:167
+#: addons/footer-widgets/restan-footer-contact.php:155
+#: addons/footer-widgets/restan-newsletter.php:198
+#: addons/widgets/restan-header.php:337 addons/widgets/restan-header.php:582
+#: addons/widgets/restan-team-details.php:300
+msgid "#"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:181
+#: addons/footer-widgets/restan-newsletter.php:212
+#: addons/widgets/restan-header.php:351 addons/widgets/restan-header.php:596
+#: addons/widgets/restan-team-details.php:314
+msgid "Social List"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:203
+#: addons/footer-widgets/restan-footer-contact.php:194
+msgid "Footer About Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:211
+#: addons/footer-widgets/restan-footer-contact.php:202
+msgid "Open Hours Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:220
+#: addons/footer-widgets/restan-footer-contact.php:211
+#: addons/footer-widgets/restan-footer-copyright.php:142
+#: addons/footer-widgets/restan-footer-copyright.php:171
+#: addons/footer-widgets/restan-footer-navmenu.php:142
+#: addons/footer-widgets/restan-footer-navmenu.php:171
+#: addons/footer-widgets/restan-newsletter.php:251
+#: addons/widgets/widgets-style/about-style.php:25
+#: addons/widgets/widgets-style/big-deal-style.php:26
+#: addons/widgets/widgets-style/blog-style.php:22
+#: addons/widgets/widgets-style/blog-style.php:96
+#: addons/widgets/widgets-style/category-style.php:25
+#: addons/widgets/widgets-style/category-style.php:100
+#: addons/widgets/widgets-style/choose-style.php:50
+#: addons/widgets/widgets-style/choose-us-style.php:22
+#: addons/widgets/widgets-style/choose-us-style.php:53
+#: addons/widgets/widgets-style/choose-us-style.php:110
+#: addons/widgets/widgets-style/choose-us-style.php:147
+#: addons/widgets/widgets-style/contact-style.php:23
+#: addons/widgets/widgets-style/contact-style.php:81
+#: addons/widgets/widgets-style/contact-style.php:154
+#: addons/widgets/widgets-style/copyright-style.php:23
+#: addons/widgets/widgets-style/deliverya-process-style.php:22
+#: addons/widgets/widgets-style/download-app-style.php:26
+#: addons/widgets/widgets-style/faq-style.php:22
+#: addons/widgets/widgets-style/faq-style.php:85
+#: addons/widgets/widgets-style/feature-style.php:231
+#: addons/widgets/widgets-style/food-menu-style.php:26
+#: addons/widgets/widgets-style/food-menu-style.php:64
+#: addons/widgets/widgets-style/food-menu-style.php:100
+#: addons/widgets/widgets-style/food-menu-tab-style.php:23
+#: addons/widgets/widgets-style/funfact-style.php:23
+#: addons/widgets/widgets-style/marketing-style.php:23
+#: addons/widgets/widgets-style/marketing-style.php:53
+#: addons/widgets/widgets-style/mission-style.php:49
+#: addons/widgets/widgets-style/mission-style.php:130
+#: addons/widgets/widgets-style/offer-style.php:25
+#: addons/widgets/widgets-style/open-hours-style.php:22
+#: addons/widgets/widgets-style/open-hours-style.php:130
+#: addons/widgets/widgets-style/overview-style.php:23
+#: addons/widgets/widgets-style/overview-style.php:97
+#: addons/widgets/widgets-style/overview-style.php:124
+#: addons/widgets/widgets-style/partner-style.php:22
+#: addons/widgets/widgets-style/pricing-style.php:22
+#: addons/widgets/widgets-style/pricing-style.php:96
+#: addons/widgets/widgets-style/process-style.php:23
+#: addons/widgets/widgets-style/process-style.php:97
+#: addons/widgets/widgets-style/project-info-style.php:23
+#: addons/widgets/widgets-style/project-info-style.php:52
+#: addons/widgets/widgets-style/project-style.php:23
+#: addons/widgets/widgets-style/project-style.php:97
+#: addons/widgets/widgets-style/request-callback-style.php:91
+#: addons/widgets/widgets-style/reservation-style.php:136
+#: addons/widgets/widgets-style/service-brochure-style.php:22
+#: addons/widgets/widgets-style/service-cta-style.php:22
+#: addons/widgets/widgets-style/service-style.php:22
+#: addons/widgets/widgets-style/service-style.php:77
+#: addons/widgets/widgets-style/slider-style.php:25
+#: addons/widgets/widgets-style/team-details-style.php:241
+#: addons/widgets/widgets-style/team-style.php:25
+#: addons/widgets/widgets-style/team-style.php:54
+#: addons/widgets/widgets-style/team-style.php:93
+#: addons/widgets/widgets-style/testimonial-style.php:23
+msgid "Title Color"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:232
+#: addons/footer-widgets/restan-footer-contact.php:223
+#: addons/footer-widgets/restan-footer-copyright.php:154
+#: addons/footer-widgets/restan-footer-copyright.php:183
+#: addons/footer-widgets/restan-footer-navmenu.php:154
+#: addons/footer-widgets/restan-footer-navmenu.php:183
+#: addons/footer-widgets/restan-newsletter.php:263
+#: addons/widgets/widgets-style/about-style.php:40
+#: addons/widgets/widgets-style/big-deal-style.php:41
+#: addons/widgets/widgets-style/blog-style.php:34
+#: addons/widgets/widgets-style/blog-style.php:108
+#: addons/widgets/widgets-style/category-style.php:40
+#: addons/widgets/widgets-style/category-style.php:115
+#: addons/widgets/widgets-style/category-style.php:152
+#: addons/widgets/widgets-style/choose-style.php:62
+#: addons/widgets/widgets-style/choose-us-style.php:36
+#: addons/widgets/widgets-style/choose-us-style.php:64
+#: addons/widgets/widgets-style/choose-us-style.php:124
+#: addons/widgets/widgets-style/choose-us-style.php:161
+#: addons/widgets/widgets-style/contact-style.php:35
+#: addons/widgets/widgets-style/contact-style.php:95
+#: addons/widgets/widgets-style/contact-style.php:169
+#: addons/widgets/widgets-style/copyright-style.php:35
+#: addons/widgets/widgets-style/deliverya-process-style.php:34
+#: addons/widgets/widgets-style/download-app-style.php:41
+#: addons/widgets/widgets-style/faq-style.php:33
+#: addons/widgets/widgets-style/faq-style.php:96
+#: addons/widgets/widgets-style/feature-style.php:37
+#: addons/widgets/widgets-style/feature-style.php:244
+#: addons/widgets/widgets-style/food-menu-style.php:41
+#: addons/widgets/widgets-style/food-menu-style.php:79
+#: addons/widgets/widgets-style/food-menu-style.php:112
+#: addons/widgets/widgets-style/food-menu-tab-style.php:35
+#: addons/widgets/widgets-style/funfact-style.php:35
+#: addons/widgets/widgets-style/marketing-style.php:35
+#: addons/widgets/widgets-style/marketing-style.php:65
+#: addons/widgets/widgets-style/mission-style.php:60
+#: addons/widgets/widgets-style/mission-style.php:141
+#: addons/widgets/widgets-style/offer-style.php:40
+#: addons/widgets/widgets-style/open-hours-style.php:33
+#: addons/widgets/widgets-style/open-hours-style.php:141
+#: addons/widgets/widgets-style/overview-style.php:35
+#: addons/widgets/widgets-style/overview-style.php:108
+#: addons/widgets/widgets-style/overview-style.php:135
+#: addons/widgets/widgets-style/partner-style.php:34
+#: addons/widgets/widgets-style/pricing-style.php:34
+#: addons/widgets/widgets-style/pricing-style.php:107
+#: addons/widgets/widgets-style/process-style.php:35
+#: addons/widgets/widgets-style/process-style.php:108
+#: addons/widgets/widgets-style/project-info-style.php:35
+#: addons/widgets/widgets-style/project-info-style.php:63
+#: addons/widgets/widgets-style/project-style.php:35
+#: addons/widgets/widgets-style/project-style.php:108
+#: addons/widgets/widgets-style/request-callback-style.php:34
+#: addons/widgets/widgets-style/request-callback-style.php:103
+#: addons/widgets/widgets-style/service-brochure-style.php:33
+#: addons/widgets/widgets-style/service-cta-style.php:33
+#: addons/widgets/widgets-style/service-style.php:34
+#: addons/widgets/widgets-style/service-style.php:88
+#: addons/widgets/widgets-style/slider-style.php:40
+#: addons/widgets/widgets-style/team-style.php:37
+#: addons/widgets/widgets-style/team-style.php:104
+#: addons/widgets/widgets-style/testimonial-style.php:36
+msgid "Title Typography"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:240
+#: addons/footer-widgets/restan-footer-contact.php:231
+#: addons/footer-widgets/restan-newsletter.php:271
+#: addons/widgets/widgets-style/about-style.php:51
+#: addons/widgets/widgets-style/big-deal-style.php:52
+#: addons/widgets/widgets-style/blog-style.php:42
+#: addons/widgets/widgets-style/category-style.php:51
+#: addons/widgets/widgets-style/deliverya-process-style.php:42
+#: addons/widgets/widgets-style/download-app-style.php:52
+#: addons/widgets/widgets-style/faq-style.php:41
+#: addons/widgets/widgets-style/offer-style.php:51
+#: addons/widgets/widgets-style/open-hours-style.php:41
+#: addons/widgets/widgets-style/overview-style.php:43
+#: addons/widgets/widgets-style/overview-style.php:143
+#: addons/widgets/widgets-style/pricing-style.php:42
+#: addons/widgets/widgets-style/pricing-style.php:115
+#: addons/widgets/widgets-style/process-style.php:43
+#: addons/widgets/widgets-style/process-style.php:116
+#: addons/widgets/widgets-style/project-style.php:43
+#: addons/widgets/widgets-style/service-cta-style.php:41
+#: addons/widgets/widgets-style/slider-style.php:88
+#: addons/widgets/widgets-style/team-style.php:45
+#: addons/widgets/widgets-style/team-style.php:112
+msgid "Sub-Title Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:249
+#: addons/footer-widgets/restan-footer-contact.php:240
+#: addons/footer-widgets/restan-newsletter.php:280
+#: addons/widgets/widgets-style/category-style.php:137
+#: addons/widgets/widgets-style/food-menu-style.php:130
+#: addons/widgets/widgets-style/food-menu-tab-style.php:53
+#: addons/widgets/widgets-style/project-style.php:124
+#: addons/widgets/widgets-style/service-style.php:104
+msgid "Sub Title Color"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:261
+#: addons/footer-widgets/restan-footer-contact.php:252
+#: addons/footer-widgets/restan-newsletter.php:292
+#: addons/widgets/widgets-style/about-style.php:77
+#: addons/widgets/widgets-style/big-deal-style.php:79
+#: addons/widgets/widgets-style/blog-style.php:70
+#: addons/widgets/widgets-style/category-style.php:77
+#: addons/widgets/widgets-style/contact-style.php:62
+#: addons/widgets/widgets-style/contact-style.php:205
+#: addons/widgets/widgets-style/deliverya-process-style.php:62
+#: addons/widgets/widgets-style/download-app-style.php:79
+#: addons/widgets/widgets-style/faq-style.php:69
+#: addons/widgets/widgets-style/offer-style.php:77
+#: addons/widgets/widgets-style/open-hours-style.php:60
+#: addons/widgets/widgets-style/overview-style.php:71
+#: addons/widgets/widgets-style/overview-style.php:162
+#: addons/widgets/widgets-style/pricing-style.php:70
+#: addons/widgets/widgets-style/pricing-style.php:134
+#: addons/widgets/widgets-style/process-style.php:71
+#: addons/widgets/widgets-style/process-style.php:135
+#: addons/widgets/widgets-style/project-info-style.php:90
+#: addons/widgets/widgets-style/project-style.php:71
+#: addons/widgets/widgets-style/reservation-style.php:188
+#: addons/widgets/widgets-style/service-cta-style.php:60
+#: addons/widgets/widgets-style/slider-style.php:115
+#: addons/widgets/widgets-style/team-details-style.php:252
+#: addons/widgets/widgets-style/team-style.php:66
+#: addons/widgets/widgets-style/team-style.php:131
+#: addons/widgets/widgets-style/testimonial-style.php:67
+msgid "Subtitle Typography"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:269
+#: addons/footer-widgets/restan-footer-contact.php:260
+msgid "Day Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:278
+#: addons/footer-widgets/restan-footer-contact.php:269
+msgid "Day Color"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:290
+#: addons/footer-widgets/restan-footer-contact.php:281
+msgid "Day Typography"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:298
+#: addons/footer-widgets/restan-footer-contact.php:289
+#: addons/widgets/widgets-style/feature-style.php:110
+#: addons/widgets/widgets-style/open-hours-style.php:95
+msgid "Time Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:307
+#: addons/footer-widgets/restan-footer-contact.php:298
+#: addons/widgets/widgets-style/feature-style.php:120
+#: addons/widgets/widgets-style/open-hours-style.php:103
+msgid "Time Color"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-about.php:319
+#: addons/footer-widgets/restan-footer-contact.php:310
+#: addons/widgets/widgets-style/feature-style.php:133
+#: addons/widgets/widgets-style/open-hours-style.php:114
+msgid "Time Typography"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-contact.php:40
+msgid "Footer Contact"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-contact.php:170
+#: addons/footer-widgets/restan-footer-contact.php:172
+msgid "Contact Info"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-contact.php:173
+msgid "Default Contact Info"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-contact.php:182
+#: addons/widgets/restan-contact-form.php:188
+#: addons/widgets/restan-header.php:216
+#: addons/widgets/restan-team-details.php:198
+msgid "Contact Info List"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:40
+msgid "Footer Copyright"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:87
+#: addons/footer-widgets/restan-footer-copyright.php:90
+msgid "Copyright Text"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:89
+msgid "copyright text"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:101
+#: addons/footer-widgets/restan-footer-navmenu.php:101
+#: addons/widgets/restan-copyright.php:145 addons/widgets/restan-header.php:132
+msgid "Select Nav Menu"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:112
+#: addons/footer-widgets/restan-footer-navmenu.php:112
+#: addons/widgets/restan-copyright.php:155
+msgid "Nav Menus"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:125
+msgid "Footer Copyright Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:133
+#: addons/footer-widgets/restan-footer-navmenu.php:133
+#: addons/footer-widgets/restan-newsletter.php:242
+#: addons/widgets/widgets-style/about-style.php:14
+#: addons/widgets/widgets-style/big-deal-style.php:14
+#: addons/widgets/widgets-style/blog-style.php:14
+#: addons/widgets/widgets-style/blog-style.php:88
+#: addons/widgets/widgets-style/category-style.php:14
+#: addons/widgets/widgets-style/choose-style.php:42
+#: addons/widgets/widgets-style/choose-us-style.php:45
+#: addons/widgets/widgets-style/contact-style.php:70
+#: addons/widgets/widgets-style/deliverya-process-style.php:14
+#: addons/widgets/widgets-style/download-app-style.php:14
+#: addons/widgets/widgets-style/faq-style.php:14
+#: addons/widgets/widgets-style/food-menu-style.php:91
+#: addons/widgets/widgets-style/funfact-style.php:14
+#: addons/widgets/widgets-style/marketing-style.php:14
+#: addons/widgets/widgets-style/mission-style.php:41
+#: addons/widgets/widgets-style/offer-style.php:14
+#: addons/widgets/widgets-style/open-hours-style.php:14
+#: addons/widgets/widgets-style/overview-style.php:14
+#: addons/widgets/widgets-style/overview-style.php:116
+#: addons/widgets/widgets-style/partner-style.php:14
+#: addons/widgets/widgets-style/pricing-style.php:14
+#: addons/widgets/widgets-style/pricing-style.php:88
+#: addons/widgets/widgets-style/process-style.php:14
+#: addons/widgets/widgets-style/process-style.php:89
+#: addons/widgets/widgets-style/project-info-style.php:14
+#: addons/widgets/widgets-style/project-style.php:14
+#: addons/widgets/widgets-style/project-style.php:89
+#: addons/widgets/widgets-style/request-callback-style.php:83
+#: addons/widgets/widgets-style/service-brochure-style.php:14
+#: addons/widgets/widgets-style/service-cta-style.php:14
+#: addons/widgets/widgets-style/slider-style.php:14
+#: addons/widgets/widgets-style/team-details-style.php:233
+#: addons/widgets/widgets-style/team-style.php:17
+#: addons/widgets/widgets-style/team-style.php:85
+#: addons/widgets/widgets-style/testimonial-style.php:76
+msgid "Title Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-copyright.php:162
+#: addons/footer-widgets/restan-footer-navmenu.php:162
+#: addons/widgets/widgets-style/reservation-style.php:125
+msgid "Menu Title Options"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-navmenu.php:40
+msgid "Footer Navmenu"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-navmenu.php:87
+#: addons/footer-widgets/restan-newsletter.php:100
+#: addons/widgets/restan-about.php:104 addons/widgets/restan-about.php:365
+#: addons/widgets/restan-about.php:368 addons/widgets/restan-about.php:408
+#: addons/widgets/restan-about.php:450 addons/widgets/restan-about.php:453
+#: addons/widgets/restan-big-deal.php:100
+#: addons/widgets/restan-big-deal.php:262 addons/widgets/restan-blog.php:102
+#: addons/widgets/restan-blog.php:202 addons/widgets/restan-category.php:107
+#: addons/widgets/restan-category.php:110
+#: addons/widgets/restan-category.php:171
+#: addons/widgets/restan-category.php:174
+#: addons/widgets/restan-category.php:185
+#: addons/widgets/restan-choose-us.php:117
+#: addons/widgets/restan-choose-us.php:215
+#: addons/widgets/restan-contact-form.php:119
+#: addons/widgets/restan-copyright.php:100
+#: addons/widgets/restan-deliverya-process.php:99
+#: addons/widgets/restan-download-app.php:99
+#: addons/widgets/restan-feature.php:277
+#: addons/widgets/restan-food-menu.php:106
+#: addons/widgets/restan-food-menu.php:181
+#: addons/widgets/restan-food-menu.php:273
+#: addons/widgets/restan-food-menu.php:363
+#: addons/widgets/restan-food-menu.php:454
+#: addons/widgets/restan-food-menu.php:552
+#: addons/widgets/restan-food-menu.php:644
+#: addons/widgets/restan-food-menu.php:785
+#: addons/widgets/restan-food-menu.php:927
+#: addons/widgets/restan-food-menu.php:1098
+#: addons/widgets/restan-food-menu.php:1240
+#: addons/widgets/restan-funfact.php:108 addons/widgets/restan-gallery.php:101
+#: addons/widgets/restan-header.php:468 addons/widgets/restan-header.php:510
+#: addons/widgets/restan-offer.php:100 addons/widgets/restan-openhours.php:100
+#: addons/widgets/restan-reservation.php:106
+#: addons/widgets/restan-reservation.php:176
+#: addons/widgets/restan-service.php:149 addons/widgets/restan-shop.php:101
+#: addons/widgets/restan-slider.php:62 addons/widgets/restan-slider.php:162
+#: addons/widgets/restan-slider.php:307 addons/widgets/restan-slider.php:348
+#: addons/widgets/restan-slider.php:408
+#: addons/widgets/restan-team-details.php:358
+#: addons/widgets/restan-team-details.php:426
+#: addons/widgets/restan-team-details.php:494
+#: addons/widgets/restan-testimonial.php:188
+msgid "Title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-navmenu.php:89
+#: addons/footer-widgets/restan-newsletter.php:102
+#: addons/widgets/restan-about.php:108 addons/widgets/restan-choose-us.php:104
+#: addons/widgets/restan-choose-us.php:121
+#: addons/widgets/restan-choose-us.php:219
+#: addons/widgets/restan-contact-form.php:209
+#: addons/widgets/restan-copyright.php:104
+#: addons/widgets/restan-food-menu.php:109
+#: addons/widgets/restan-food-menu.php:184
+#: addons/widgets/restan-food-menu.php:276
+#: addons/widgets/restan-food-menu.php:366
+#: addons/widgets/restan-food-menu.php:457
+#: addons/widgets/restan-food-menu.php:555
+#: addons/widgets/restan-food-menu.php:647
+#: addons/widgets/restan-food-menu.php:788
+#: addons/widgets/restan-food-menu.php:930
+#: addons/widgets/restan-food-menu.php:1101
+#: addons/widgets/restan-food-menu.php:1243
+#: addons/widgets/restan-gallery.php:104 addons/widgets/restan-offer.php:104
+#: addons/widgets/restan-openhours.php:104
+#: addons/widgets/restan-partner.php:103
+#: addons/widgets/restan-reservation.php:109
+#: addons/widgets/restan-service.php:151 addons/widgets/restan-shop.php:105
+#: addons/widgets/restan-team-details.php:361
+#: addons/widgets/restan-team-details.php:429
+#: addons/widgets/restan-team-details.php:497
+#: addons/widgets/restan-team.php:104 addons/widgets/restan-testimonial.php:190
+msgid "title"
+msgstr ""
+
+#: addons/footer-widgets/restan-footer-navmenu.php:125
+msgid "Footer Navmenu Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:40
+msgid "Footer Newsletter"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:88
+#: addons/widgets/restan-about.php:88 addons/widgets/restan-big-deal.php:87
+#: addons/widgets/restan-blog.php:89 addons/widgets/restan-category.php:94
+#: addons/widgets/restan-choose-us.php:87
+#: addons/widgets/restan-contact-form.php:94
+#: addons/widgets/restan-copyright.php:87
+#: addons/widgets/restan-deliverya-process.php:87
+#: addons/widgets/restan-download-app.php:87
+#: addons/widgets/restan-feature.php:94
+#: addons/widgets/restan-food-menu-tab.php:108
+#: addons/widgets/restan-food-menu.php:88
+#: addons/widgets/restan-footer-top.php:94 addons/widgets/restan-funfact.php:94
+#: addons/widgets/restan-gallery.php:88 addons/widgets/restan-header.php:88
+#: addons/widgets/restan-offer.php:87 addons/widgets/restan-openhours.php:88
+#: addons/widgets/restan-partner.php:88
+#: addons/widgets/restan-reservation.php:93 addons/widgets/restan-shop.php:87
+#: addons/widgets/restan-team.php:88
+#: addons/widgets/widgets-style/feature-style.php:6
+#: addons/widgets/widgets-style/food-menu-style.php:6
+#: addons/widgets/widgets-style/food-menu-tab-style.php:6
+#: addons/widgets/widgets-style/funfact-style.php:6
+#: addons/widgets/widgets-style/project-info-style.php:6
+msgid "Style"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:92 addons/header/header.php:55
+#: addons/widgets/restan-about.php:92 addons/widgets/restan-big-deal.php:91
+#: addons/widgets/restan-blog.php:93 addons/widgets/restan-category.php:98
+#: addons/widgets/restan-choose-us.php:91
+#: addons/widgets/restan-contact-form.php:98
+#: addons/widgets/restan-copyright.php:91
+#: addons/widgets/restan-deliverya-process.php:91
+#: addons/widgets/restan-download-app.php:91
+#: addons/widgets/restan-feature.php:98
+#: addons/widgets/restan-food-menu-tab.php:112
+#: addons/widgets/restan-food-menu.php:92
+#: addons/widgets/restan-footer-top.php:98 addons/widgets/restan-funfact.php:98
+#: addons/widgets/restan-gallery.php:92 addons/widgets/restan-header.php:92
+#: addons/widgets/restan-offer.php:91 addons/widgets/restan-openhours.php:92
+#: addons/widgets/restan-partner.php:92
+#: addons/widgets/restan-reservation.php:97
+#: addons/widgets/restan-service.php:92 addons/widgets/restan-shop.php:91
+#: addons/widgets/restan-slider.php:47 addons/widgets/restan-team.php:92
+#: addons/widgets/restan-testimonial.php:92
+msgid "Style One"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:112
+#: addons/widgets/restan-category.php:124
+msgid "SubTitle"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:114
+#: addons/widgets/restan-about.php:123
+#: addons/widgets/restan-contact-form.php:108
+#: addons/widgets/restan-contact-form.php:223
+#: addons/widgets/restan-food-menu.php:121
+#: addons/widgets/restan-food-menu.php:196
+#: addons/widgets/restan-food-menu.php:288
+#: addons/widgets/restan-food-menu.php:378
+#: addons/widgets/restan-food-menu.php:800
+#: addons/widgets/restan-food-menu.php:942
+#: addons/widgets/restan-food-menu.php:1113
+#: addons/widgets/restan-food-menu.php:1255
+#: addons/widgets/restan-gallery.php:115 addons/widgets/restan-gallery.php:173
+#: addons/widgets/restan-offer.php:119 addons/widgets/restan-openhours.php:119
+#: addons/widgets/restan-reservation.php:134
+#: addons/widgets/restan-reservation.php:189 addons/widgets/restan-shop.php:120
+#: addons/widgets/restan-team-details.php:372
+#: addons/widgets/restan-team-details.php:440
+#: addons/widgets/restan-team.php:116
+msgid "subtitle"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:115
+msgid "Section SubTitle"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:124
+#: addons/footer-widgets/restan-newsletter.php:126
+#: addons/widgets/restan-header.php:517 addons/widgets/restan-header.php:519
+msgid "Newsletter Placeholder Text"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:133
+#: addons/footer-widgets/restan-newsletter.php:135
+msgid "Privacy Text"
+msgstr ""
+
+#: addons/footer-widgets/restan-newsletter.php:234
+msgid "Footer Newsletter Style"
+msgstr ""
+
+#: addons/header/header.php:25 addons/header/header.php:44
+#: inc/builder/builder.php:174 inc/builder/builder.php:175
+#: inc/builder/builder.php:177 restan-core/inc/builder/builder.php:174
+#: restan-core/inc/builder/builder.php:175
+#: restan-core/inc/builder/builder.php:177
+msgid "Header"
+msgstr ""
+
+#: addons/header/header.php:51 addons/widgets/restan-header.php:80
+#: addons/widgets/restan-header.php:618
+msgid "Header Style"
+msgstr ""
+
+#: addons/header/header.php:56 addons/widgets/restan-about.php:93
+#: addons/widgets/restan-big-deal.php:92 addons/widgets/restan-blog.php:94
+#: addons/widgets/restan-category.php:99 addons/widgets/restan-choose-us.php:92
+#: addons/widgets/restan-copyright.php:92 addons/widgets/restan-feature.php:99
+#: addons/widgets/restan-food-menu-tab.php:113
+#: addons/widgets/restan-food-menu.php:93 addons/widgets/restan-gallery.php:93
+#: addons/widgets/restan-header.php:93 addons/widgets/restan-offer.php:92
+#: addons/widgets/restan-reservation.php:98 addons/widgets/restan-shop.php:92
+#: addons/widgets/restan-slider.php:48 addons/widgets/restan-team.php:93
+msgid "Style Two"
+msgstr ""
+
+#: addons/header/header.php:63
+msgid "Upload Logo Light Image"
+msgstr ""
+
+#: addons/header/header.php:73
+msgid "Upload Logo Dark Image"
+msgstr ""
+
+#: addons/header/header.php:84
+msgid "Upload Logo For Mobile Device"
+msgstr ""
+
+#: addons/header/header.php:95
+msgid "Logo Link"
+msgstr ""
+
+#: addons/header/header.php:97 addons/header/header.php:122
+#: addons/widgets/restan-about.php:241 addons/widgets/restan-big-deal.php:188
+#: addons/widgets/restan-big-deal.php:319
+#: addons/widgets/restan-category.php:313
+#: addons/widgets/restan-deliverya-process.php:136
+#: addons/widgets/restan-download-app.php:136
+#: addons/widgets/restan-download-app.php:167
+#: addons/widgets/restan-feature.php:306
+#: addons/widgets/restan-food-menu.php:239
+#: addons/widgets/restan-food-menu.php:331
+#: addons/widgets/restan-food-menu.php:421
+#: addons/widgets/restan-food-menu.php:490
+#: addons/widgets/restan-food-menu.php:610
+#: addons/widgets/restan-food-menu.php:702
+#: addons/widgets/restan-food-menu.php:835
+#: addons/widgets/restan-food-menu.php:977
+#: addons/widgets/restan-food-menu.php:1148
+#: addons/widgets/restan-food-menu.php:1290
+#: addons/widgets/restan-gallery.php:193 addons/widgets/restan-header.php:389
+#: addons/widgets/restan-offer.php:177 addons/widgets/restan-offer.php:208
+#: addons/widgets/restan-service.php:195 addons/widgets/restan-slider.php:108
+#: addons/widgets/restan-slider.php:133 addons/widgets/restan-slider.php:250
+#: addons/widgets/restan-slider.php:391
+#: addons/widgets/restan-team-details.php:231
+#: addons/widgets/restan-team.php:195
+msgid "https://your-link.com"
+msgstr ""
+
+#: addons/header/header.php:110 addons/header/header.php:112
+msgid "Button Text"
+msgstr ""
+
+#: addons/header/header.php:120 addons/widgets/restan-header.php:387
+msgid "Link"
+msgstr ""
+
+#: addons/header/header.php:139
+msgid "Select restan Menu"
+msgstr ""
+
+#: addons/header/header.php:142
+msgid "Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to manage your menus."
+msgstr ""
+
+#: addons/header/header.php:151
+msgid "There are no menus in your site."
+msgstr ""
+
+#: addons/header/header.php:151
+msgid "Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to create one."
+msgstr ""
+
+#: addons/header/header.php:166
+msgid "MenuBar Style"
+msgstr ""
+
+#: addons/header/header.php:173
+msgid "Menubar Background Color"
+msgstr ""
+
+#: addons/header/header.php:183
+msgid "Sticky Menubar Background Color"
+msgstr ""
+
+#: addons/header/header.php:198
+msgid "Menu Control"
+msgstr ""
+
+#: addons/header/header.php:210
+msgid "Menu"
+msgstr ""
+
+#: addons/header/header.php:216 addons/header/header.php:256
+#: addons/widgets/widgets-style/about-style.php:137
+#: addons/widgets/widgets-style/about-style.php:174
+#: addons/widgets/widgets-style/blog-style.php:153
+#: addons/widgets/widgets-style/testimonial-style.php:85
+#: addons/widgets/widgets-style/testimonial-style.php:115
+#: addons/widgets/widgets-style/testimonial-style.php:146
+#: addons/widgets/widgets-style/testimonial-style.php:175
+msgid "Color"
+msgstr ""
+
+#: addons/header/header.php:226 addons/header/header.php:266
+msgid "Hover Color"
+msgstr ""
+
+#: addons/header/header.php:237 addons/header/header.php:277
+#: addons/widgets/widgets-style/about-style.php:152
+#: addons/widgets/widgets-style/about-style.php:189
+#: addons/widgets/widgets-style/blog-style.php:165
+#: addons/widgets/widgets-style/testimonial-style.php:97
+#: addons/widgets/widgets-style/testimonial-style.php:128
+#: addons/widgets/widgets-style/testimonial-style.php:158
+#: addons/widgets/widgets-style/testimonial-style.php:186
+msgid "Typography"
+msgstr ""
+
+#: addons/header/header.php:250
+msgid "Submenu"
+msgstr ""
+
+#: addons/header/header.php:293
+msgid "Button Style"
+msgstr ""
+
+#: addons/header/header.php:302 addons/widgets/restan-header.php:700
+#: addons/widgets/widgets-style/about-style.php:211
+#: addons/widgets/widgets-style/big-deal-style.php:140
+#: addons/widgets/widgets-style/category-style.php:175
+#: addons/widgets/widgets-style/contact-style.php:224
+#: addons/widgets/widgets-style/deliverya-process-style.php:78
+#: addons/widgets/widgets-style/download-app-style.php:103
+#: addons/widgets/widgets-style/download-app-style.php:183
+#: addons/widgets/widgets-style/feature-style.php:153
+#: addons/widgets/widgets-style/offer-style.php:138
+#: addons/widgets/widgets-style/pricing-style.php:178
+#: addons/widgets/widgets-style/service-style.php:134
+#: addons/widgets/widgets-style/slider-style.php:211
+#: addons/widgets/widgets-style/team-details-style.php:154
+msgid "Button Color"
+msgstr ""
+
+#: addons/header/header.php:314 addons/widgets/restan-header.php:714
+#: addons/widgets/widgets-style/about-style.php:225
+#: addons/widgets/widgets-style/big-deal-style.php:154
+#: addons/widgets/widgets-style/contact-style.php:235
+#: addons/widgets/widgets-style/deliverya-process-style.php:89
+#: addons/widgets/widgets-style/download-app-style.php:117
+#: addons/widgets/widgets-style/download-app-style.php:197
+#: addons/widgets/widgets-style/feature-style.php:167
+#: addons/widgets/widgets-style/offer-style.php:152
+#: addons/widgets/widgets-style/pricing-style.php:189
+#: addons/widgets/widgets-style/service-style.php:148
+#: addons/widgets/widgets-style/slider-style.php:225
+#: addons/widgets/widgets-style/slider-style.php:253
+#: addons/widgets/widgets-style/team-details-style.php:174
+msgid "Button Background Color"
+msgstr ""
+
+#: addons/header/header.php:326
+msgid "Border"
+msgstr ""
+
+#: addons/header/header.php:335
+#: addons/widgets/widgets-style/about-style.php:268
+#: addons/widgets/widgets-style/big-deal-style.php:197
+#: addons/widgets/widgets-style/category-style.php:190
+#: addons/widgets/widgets-style/contact-style.php:259
+#: addons/widgets/widgets-style/deliverya-process-style.php:123
+#: addons/widgets/widgets-style/download-app-style.php:160
+#: addons/widgets/widgets-style/download-app-style.php:240
+#: addons/widgets/widgets-style/feature-style.php:210
+#: addons/widgets/widgets-style/offer-style.php:195
+#: addons/widgets/widgets-style/pricing-style.php:201
+#: addons/widgets/widgets-style/service-style.php:191
+#: addons/widgets/widgets-style/slider-style.php:268
+#: addons/widgets/widgets-style/team-details-style.php:166
+msgid "Button Typography"
+msgstr ""
+
+#: addons/header/header.php:343
+msgid "Button Margin"
+msgstr ""
+
+#: addons/header/header.php:355
+msgid "Button Padding"
+msgstr ""
+
+#: addons/header/header.php:366
+msgid "Button Border Radius"
+msgstr ""
+
+#: addons/header/header.php:378
+msgid "Button Shadow"
+msgstr ""
+
+#: addons/header/header.php:389
+msgid "Select A Menu"
+msgstr ""
+
+#: addons/widgets/restan-about.php:40
+msgid "About"
+msgstr ""
+
+#: addons/widgets/restan-about.php:80
+msgid "About Style"
+msgstr ""
+
+#: addons/widgets/restan-about.php:94
+#: addons/widgets/restan-food-menu-tab.php:114
+#: addons/widgets/restan-food-menu.php:94 addons/widgets/restan-header.php:94
+#: addons/widgets/restan-shop.php:93 addons/widgets/restan-slider.php:49
+msgid "Style Three"
+msgstr ""
+
+#: addons/widgets/restan-about.php:95
+#: addons/widgets/restan-food-menu-tab.php:115
+#: addons/widgets/restan-food-menu.php:95 addons/widgets/restan-header.php:95
+#: addons/widgets/restan-slider.php:50
+msgid "Style Four"
+msgstr ""
+
+#: addons/widgets/restan-about.php:96
+msgid "Style FIve"
+msgstr ""
+
+#: addons/widgets/restan-about.php:109 addons/widgets/restan-big-deal.php:103
+#: addons/widgets/restan-category.php:111
+#: addons/widgets/restan-category.php:175
+#: addons/widgets/restan-category.php:186
+#: addons/widgets/restan-choose-us.php:122
+#: addons/widgets/restan-contact-form.php:210
+#: addons/widgets/restan-copyright.php:105
+#: addons/widgets/restan-deliverya-process.php:102
+#: addons/widgets/restan-download-app.php:102
+#: addons/widgets/restan-food-menu.php:110
+#: addons/widgets/restan-food-menu.php:185
+#: addons/widgets/restan-food-menu.php:277
+#: addons/widgets/restan-food-menu.php:367
+#: addons/widgets/restan-food-menu.php:458
+#: addons/widgets/restan-food-menu.php:556
+#: addons/widgets/restan-food-menu.php:648
+#: addons/widgets/restan-food-menu.php:789
+#: addons/widgets/restan-food-menu.php:931
+#: addons/widgets/restan-food-menu.php:1035
+#: addons/widgets/restan-food-menu.php:1102
+#: addons/widgets/restan-food-menu.php:1206
+#: addons/widgets/restan-food-menu.php:1244
+#: addons/widgets/restan-gallery.php:105 addons/widgets/restan-offer.php:105
+#: addons/widgets/restan-openhours.php:105
+#: addons/widgets/restan-partner.php:104
+#: addons/widgets/restan-reservation.php:110
+#: addons/widgets/restan-reservation.php:180
+#: addons/widgets/restan-service.php:152 addons/widgets/restan-shop.php:106
+#: addons/widgets/restan-slider.php:66 addons/widgets/restan-slider.php:166
+#: addons/widgets/restan-slider.php:311 addons/widgets/restan-slider.php:352
+#: addons/widgets/restan-slider.php:412
+#: addons/widgets/restan-team-details.php:362
+#: addons/widgets/restan-team-details.php:430
+#: addons/widgets/restan-team-details.php:498
+#: addons/widgets/restan-team.php:105 addons/widgets/restan-testimonial.php:191
+msgid "Default Title"
+msgstr ""
+
+#: addons/widgets/restan-about.php:119 addons/widgets/restan-blog.php:114
+#: addons/widgets/restan-category.php:121
+#: addons/widgets/restan-contact-form.php:106
+#: addons/widgets/restan-offer.php:115 addons/widgets/restan-openhours.php:115
+#: addons/widgets/restan-shop.php:116
+msgid "Sub-Title"
+msgstr ""
+
+#: addons/widgets/restan-about.php:124 addons/widgets/restan-offer.php:120
+#: addons/widgets/restan-openhours.php:120 addons/widgets/restan-shop.php:121
+msgid "Default Sub-Title"
+msgstr ""
+
+#: addons/widgets/restan-about.php:134 addons/widgets/restan-blog.php:127
+#: addons/widgets/restan-category.php:152
+#: addons/widgets/restan-food-menu-tab.php:168
+#: addons/widgets/restan-food-menu.php:148
+#: addons/widgets/restan-food-menu.php:1081
+#: addons/widgets/restan-gallery.php:141 addons/widgets/restan-shop.php:131
+#: addons/widgets/restan-slider.php:263 addons/widgets/restan-team.php:143
+#: addons/widgets/restan-testimonial.php:144
+msgid "Subtitle After Shape"
+msgstr ""
+
+#: addons/widgets/restan-about.php:152 addons/widgets/restan-offer.php:130
+msgid "SubTitle Before Shape"
+msgstr ""
+
+#: addons/widgets/restan-about.php:169 addons/widgets/restan-big-deal.php:145
+#: addons/widgets/restan-choose-us.php:129 addons/widgets/restan-offer.php:147
+#: addons/widgets/restan-reservation.php:144 addons/widgets/restan-shop.php:182
+#: addons/widgets/restan-slider.php:86 addons/widgets/restan-slider.php:186
+#: addons/widgets/restan-team-details.php:120
+msgid "Summary"
+msgstr ""
+
+#: addons/widgets/restan-about.php:173 addons/widgets/restan-about.php:188
+#: addons/widgets/restan-choose-us.php:133 addons/widgets/restan-offer.php:151
+#: addons/widgets/restan-reservation.php:147 addons/widgets/restan-shop.php:186
+#: addons/widgets/restan-team-details.php:123
+msgid "summary"
+msgstr ""
+
+#: addons/widgets/restan-about.php:174 addons/widgets/restan-about.php:189
+#: addons/widgets/restan-big-deal.php:148
+#: addons/widgets/restan-choose-us.php:134 addons/widgets/restan-offer.php:152
+#: addons/widgets/restan-reservation.php:148 addons/widgets/restan-shop.php:187
+#: addons/widgets/restan-slider.php:91 addons/widgets/restan-slider.php:191
+#: addons/widgets/restan-team-details.php:124
+msgid "Default Summary"
+msgstr ""
+
+#: addons/widgets/restan-about.php:184
+msgid "Summary Two"
+msgstr ""
+
+#: addons/widgets/restan-about.php:199 addons/widgets/restan-about.php:202
+#: addons/widgets/restan-slider.php:363
+msgid "Rounded Text"
+msgstr ""
+
+#: addons/widgets/restan-about.php:212 addons/widgets/restan-about.php:215
+msgid "Signature Text"
+msgstr ""
+
+#: addons/widgets/restan-about.php:226 addons/widgets/restan-about.php:229
+#: addons/widgets/restan-big-deal.php:173
+#: addons/widgets/restan-big-deal.php:176
+#: addons/widgets/restan-big-deal.php:307
+#: addons/widgets/restan-big-deal.php:310
+#: addons/widgets/restan-category.php:301
+#: addons/widgets/restan-category.php:304
+#: addons/widgets/restan-food-menu.php:478
+#: addons/widgets/restan-food-menu.php:481 addons/widgets/restan-header.php:374
+#: addons/widgets/restan-header.php:377 addons/widgets/restan-offer.php:162
+#: addons/widgets/restan-offer.php:165 addons/widgets/restan-service.php:182
+#: addons/widgets/restan-service.php:185 addons/widgets/restan-slider.php:121
+#: addons/widgets/restan-slider.php:124 addons/widgets/restan-slider.php:238
+#: addons/widgets/restan-slider.php:241
+#: addons/widgets/restan-team-details.php:218
+#: addons/widgets/restan-team-details.php:221
+msgid "Button Label"
+msgstr ""
+
+#: addons/widgets/restan-about.php:239 addons/widgets/restan-big-deal.php:186
+#: addons/widgets/restan-big-deal.php:317
+#: addons/widgets/restan-category.php:311 addons/widgets/restan-feature.php:304
+#: addons/widgets/restan-food-menu.php:237
+#: addons/widgets/restan-food-menu.php:329
+#: addons/widgets/restan-food-menu.php:419
+#: addons/widgets/restan-food-menu.php:488
+#: addons/widgets/restan-food-menu.php:608
+#: addons/widgets/restan-food-menu.php:700
+#: addons/widgets/restan-food-menu.php:833
+#: addons/widgets/restan-food-menu.php:975
+#: addons/widgets/restan-food-menu.php:1146
+#: addons/widgets/restan-food-menu.php:1288
+#: addons/widgets/restan-gallery.php:191 addons/widgets/restan-offer.php:175
+#: addons/widgets/restan-service.php:193 addons/widgets/restan-slider.php:131
+#: addons/widgets/restan-slider.php:248
+#: addons/widgets/restan-team-details.php:229
+#: addons/widgets/restan-team.php:193
+msgid "URL"
+msgstr ""
+
+#: addons/widgets/restan-about.php:257 addons/widgets/restan-about.php:260
+#: addons/widgets/restan-blog.php:203 addons/widgets/restan-gallery.php:160
+#: addons/widgets/restan-team-details.php:88 addons/widgets/restan-team.php:162
+#: addons/widgets/restan-testimonial.php:164
+msgid "Name"
+msgstr ""
+
+#: addons/widgets/restan-about.php:270 addons/widgets/restan-about.php:273
+#: addons/widgets/restan-team-details.php:100
+#: addons/widgets/restan-team.php:173 addons/widgets/restan-testimonial.php:176
+msgid "Designation"
+msgstr ""
+
+#: addons/widgets/restan-about.php:283 addons/widgets/restan-category.php:194
+msgid "Add Image One"
+msgstr ""
+
+#: addons/widgets/restan-about.php:297 addons/widgets/restan-category.php:205
+msgid "Add Image Two"
+msgstr ""
+
+#: addons/widgets/restan-about.php:308
+msgid "Add Shape One"
+msgstr ""
+
+#: addons/widgets/restan-about.php:319
+msgid "Add Shape Two"
+msgstr ""
+
+#: addons/widgets/restan-about.php:330
+msgid "Add Signature Image"
+msgstr ""
+
+#: addons/widgets/restan-about.php:341
+msgid "Add Rounded Image"
+msgstr ""
+
+#: addons/widgets/restan-about.php:352
+msgid "Add Author Image"
+msgstr ""
+
+#: addons/widgets/restan-about.php:375 addons/widgets/restan-about.php:461
+#: addons/widgets/restan-category.php:183
+#: addons/widgets/restan-food-menu.php:118
+#: addons/widgets/restan-food-menu.php:193
+#: addons/widgets/restan-food-menu.php:285
+#: addons/widgets/restan-food-menu.php:375
+#: addons/widgets/restan-food-menu.php:797
+#: addons/widgets/restan-food-menu.php:939
+#: addons/widgets/restan-food-menu.php:1110
+#: addons/widgets/restan-food-menu.php:1252
+#: addons/widgets/restan-gallery.php:112 addons/widgets/restan-gallery.php:171
+#: addons/widgets/restan-reservation.php:131
+#: addons/widgets/restan-reservation.php:187
+#: addons/widgets/restan-slider.php:74 addons/widgets/restan-slider.php:174
+#: addons/widgets/restan-slider.php:322 addons/widgets/restan-slider.php:423
+#: addons/widgets/restan-team-details.php:370
+#: addons/widgets/restan-team-details.php:438
+msgid "Subtitle"
+msgstr ""
+
+#: addons/widgets/restan-about.php:378 addons/widgets/restan-about.php:464
+#: addons/widgets/restan-big-deal.php:114
+#: addons/widgets/restan-big-deal.php:272
+#: addons/widgets/restan-deliverya-process.php:110
+#: addons/widgets/restan-download-app.php:110
+#: addons/widgets/restan-feature.php:287 addons/widgets/restan-service.php:160
+msgid "Sub Title"
+msgstr ""
+
+#: addons/widgets/restan-about.php:386 addons/widgets/restan-feature.php:231
+msgid "Schedule List"
+msgstr ""
+
+#: addons/widgets/restan-about.php:391
+msgid "Add Meal Time List"
+msgstr ""
+
+#: addons/widgets/restan-about.php:405
+msgid "Counter Title"
+msgstr ""
+
+#: addons/widgets/restan-about.php:419 addons/widgets/restan-about.php:422
+#: addons/widgets/restan-choose-us.php:227
+#: addons/widgets/restan-choose-us.php:231
+#: addons/widgets/restan-funfact.php:116 addons/widgets/restan-header.php:154
+#: addons/widgets/restan-team-details.php:506
+msgid "Number"
+msgstr ""
+
+#: addons/widgets/restan-about.php:433 addons/widgets/restan-about.php:436
+#: addons/widgets/restan-choose-us.php:239
+#: addons/widgets/restan-funfact.php:124
+#: addons/widgets/restan-team-details.php:517
+msgid "Operator"
+msgstr ""
+
+#: addons/widgets/restan-about.php:524
+msgid "Service List"
+msgstr ""
+
+#: addons/widgets/restan-about.php:529
+msgid "Add Service List"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:40
+msgid "Big Deal"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:117
+#: addons/widgets/restan-contact-form.php:109
+#: addons/widgets/restan-contact-form.php:224
+#: addons/widgets/restan-deliverya-process.php:113
+#: addons/widgets/restan-download-app.php:113
+#: addons/widgets/restan-food-menu.php:1047
+#: addons/widgets/restan-food-menu.php:1218
+#: addons/widgets/restan-service.php:163
+msgid "Default Sub Title"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:128 addons/widgets/restan-service.php:130
+msgid "Subtitle Shape"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:159
+msgid "Badge Text"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:162
+msgid "Default Badge Text"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:204 addons/widgets/restan-offer.php:273
+#: addons/widgets/restan-slider.php:479
+#: addons/widgets/restan-testimonial.php:261
+msgid "Image One"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:218 addons/widgets/restan-slider.php:490
+#: addons/widgets/restan-testimonial.php:270
+msgid "Image Two"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:232 addons/widgets/restan-slider.php:502
+#: addons/widgets/restan-testimonial.php:279
+msgid "Image Three"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:246
+#: addons/widgets/restan-choose-us.php:270
+#: addons/widgets/restan-contact-form.php:246
+#: addons/widgets/restan-deliverya-process.php:152
+#: addons/widgets/restan-download-app.php:194
+#: addons/widgets/restan-food-menu.php:528
+#: addons/widgets/restan-reservation.php:221
+#: addons/widgets/restan-slider.php:526
+msgid "Background Image"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:281
+#: addons/widgets/restan-food-menu.php:217
+#: addons/widgets/restan-food-menu.php:309
+#: addons/widgets/restan-food-menu.php:399
+#: addons/widgets/restan-food-menu.php:588
+#: addons/widgets/restan-food-menu.php:680
+#: addons/widgets/restan-food-menu.php:821
+#: addons/widgets/restan-food-menu.php:963
+#: addons/widgets/restan-food-menu.php:1134
+#: addons/widgets/restan-food-menu.php:1276
+msgid "Price"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:291 addons/widgets/restan-feature.php:296
+#: addons/widgets/restan-gallery.php:183 addons/widgets/restan-partner.php:148
+#: addons/widgets/restan-service.php:209 addons/widgets/restan-team.php:185
+msgid "Add Image"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:299
+msgid "Add Shape"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:332
+msgid "Big Deal List"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:337
+msgid "Add Big Deal"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:437
+msgid "light"
+msgstr ""
+
+#: addons/widgets/restan-big-deal.php:437
+msgid "theme"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:40
+msgid "Blog"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:81 addons/widgets/restan-contact-form.php:86
+#: addons/widgets/restan-funfact.php:86
+#: addons/widgets/restan-reservation.php:85
+msgid "Set Content"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:104
+#: addons/widgets/restan-food-menu-tab.php:126
+#: addons/widgets/restan-service.php:103
+#: addons/widgets/restan-testimonial.php:103
+msgid "section title"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:116
+#: addons/widgets/restan-food-menu-tab.php:140
+#: addons/widgets/restan-service.php:117
+#: addons/widgets/restan-testimonial.php:116
+msgid "section subtitle"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:117
+#: addons/widgets/restan-food-menu-tab.php:141
+#: addons/widgets/restan-service.php:118
+msgid "Default Section SubTitle"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:144 addons/widgets/restan-category.php:135
+#: addons/widgets/restan-food-menu-tab.php:151
+#: addons/widgets/restan-food-menu.php:131
+#: addons/widgets/restan-food-menu.php:1067
+#: addons/widgets/restan-gallery.php:124
+#: addons/widgets/restan-reservation.php:157 addons/widgets/restan-shop.php:148
+#: addons/widgets/restan-slider.php:277 addons/widgets/restan-team.php:126
+#: addons/widgets/restan-testimonial.php:127
+msgid "Subtitle Before Shape"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:161
+msgid "Post From"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:165
+msgid "All"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:166
+msgid "Categories"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:174
+msgid "Post Limit"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:176
+msgid "Only Number Work. Like 4 or 6"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:183
+msgid "Order"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:187
+msgid "Ascending"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:188
+msgid "Descending"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:196
+msgid "Order By"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:200
+msgid "None"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:201
+msgid "Type"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:204 addons/widgets/restan-feature.php:201
+#: addons/widgets/restan-openhours.php:148
+#: addons/widgets/restan-openhours.php:151
+msgid "Date"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:212 addons/widgets/restan-shop.php:274
+msgid "Content Length"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:215 addons/widgets/restan-shop.php:277
+msgid "Type Content Length"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:222
+msgid "Read More Text"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:224
+msgid "read more text"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:225
+msgid "Read More"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:290
+msgid "View all posts in %s"
+msgstr ""
+
+#: addons/widgets/restan-blog.php:346
+msgid " thumbless"
+msgstr ""
+
+#: addons/widgets/restan-category.php:40
+msgid "Food Category"
+msgstr ""
+
+#: addons/widgets/restan-category.php:86
+msgid "Set Category Content"
+msgstr ""
+
+#: addons/widgets/restan-category.php:125
+#: addons/widgets/restan-choose-us.php:220
+#: addons/widgets/restan-food-menu.php:122
+#: addons/widgets/restan-gallery.php:116
+#: addons/widgets/restan-reservation.php:135 addons/widgets/restan-team.php:117
+msgid "Default SubTitle"
+msgstr ""
+
+#: addons/widgets/restan-category.php:216
+msgid "Add Image Three"
+msgstr ""
+
+#: addons/widgets/restan-category.php:227
+msgid "Add Image Four"
+msgstr ""
+
+#: addons/widgets/restan-category.php:238
+#: addons/widgets/restan-category.php:241
+#: addons/widgets/restan-testimonial.php:233
+msgid "Rating Text"
+msgstr ""
+
+#: addons/widgets/restan-category.php:326 addons/widgets/restan-feature.php:319
+msgid "Category List"
+msgstr ""
+
+#: addons/widgets/restan-category.php:331 addons/widgets/restan-feature.php:324
+msgid "Add Category"
+msgstr ""
+
+#: addons/widgets/restan-category.php:344
+#: addons/widgets/restan-openhours.php:214
+#: addons/widgets/restan-partner.php:166
+msgid "Add Background Image"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:40
+msgid "Choose Us"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:193
+msgid "Choose Us List"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:199
+msgid "Add Choose Us"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:232
+#: addons/widgets/restan-team-details.php:509
+msgid "88"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:243
+#: addons/widgets/restan-team-details.php:519
+msgid "operator"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:244
+msgid "k"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:251
+#: addons/widgets/restan-funfact.php:133
+msgid "Funfact List"
+msgstr ""
+
+#: addons/widgets/restan-choose-us.php:257
+msgid "Add Fun Fact"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:40
+msgid "Contact Form"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:127
+msgid "Information"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:193
+#: addons/widgets/restan-header.php:222
+msgid "Add Contact Info"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:207
+#: addons/widgets/restan-feature.php:108 addons/widgets/restan-feature.php:111
+msgid "Form Title"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:221
+msgid "Form Sub-Title"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:235
+#: addons/widgets/restan-feature.php:174
+#: addons/widgets/restan-reservation.php:211
+msgid "Contact Form Shortcode"
+msgstr ""
+
+#: addons/widgets/restan-contact-form.php:238
+#: addons/widgets/restan-feature.php:177
+#: addons/widgets/restan-reservation.php:214
+msgid "Put your shortcode Here"
+msgstr ""
+
+#: addons/widgets/restan-copyright.php:40
+msgid "Copyright"
+msgstr ""
+
+#: addons/widgets/restan-copyright.php:115
+msgid "Logo Image"
+msgstr ""
+
+#: addons/widgets/restan-copyright.php:129
+#: addons/widgets/restan-food-menu-tab.php:337
+msgid "Shape"
+msgstr ""
+
+#: addons/widgets/restan-deliverya-process.php:40
+msgid "Delivery Process"
+msgstr ""
+
+#: addons/widgets/restan-deliverya-process.php:121
+#: addons/widgets/restan-deliverya-process.php:124
+#: addons/widgets/restan-download-app.php:121
+#: addons/widgets/restan-download-app.php:124
+msgid "Button One Label"
+msgstr ""
+
+#: addons/widgets/restan-deliverya-process.php:134
+#: addons/widgets/restan-download-app.php:134
+msgid "Button One URL"
+msgstr ""
+
+#: addons/widgets/restan-deliverya-process.php:163
+#: addons/widgets/restan-reservation.php:229
+msgid "Shape Image"
+msgstr ""
+
+#: addons/widgets/restan-download-app.php:40
+msgid "Download App"
+msgstr ""
+
+#: addons/widgets/restan-download-app.php:152
+#: addons/widgets/restan-download-app.php:155
+msgid "Button Two Label"
+msgstr ""
+
+#: addons/widgets/restan-download-app.php:165
+msgid "Button Two URL"
+msgstr ""
+
+#: addons/widgets/restan-download-app.php:183
+msgid "Front Image"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:40
+msgid "Feature Content"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:86 addons/widgets/restan-footer-top.php:86
+msgid "Set Feature Content"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:112
+msgid "Default Form Title"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:122
+msgid "Form Icon Style"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:185
+msgid "Schedule Title"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:188
+msgid "Schedule SubTitle"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:189
+msgid "Default Schedule SubTitle"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:210
+#: addons/widgets/restan-openhours.php:160
+#: addons/widgets/restan-openhours.php:163
+msgid "Time"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:219
+msgid "Is Closed?"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:221 addons/widgets/restan-header.php:237
+#: addons/widgets/restan-header.php:252 addons/widgets/restan-header.php:267
+#: inc/builder/builder.php:80 restan-core/inc/builder/builder.php:80
+msgid "Yes"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:222 addons/widgets/restan-header.php:238
+#: addons/widgets/restan-header.php:253 addons/widgets/restan-header.php:268
+#: inc/builder/builder.php:81 restan-core/inc/builder/builder.php:81
+msgid "No"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:236
+msgid "Add Schedule"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:250 addons/widgets/restan-feature.php:253
+msgid "Category Title"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:254
+msgid "Default Category Title"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:337
+msgid "Background Image One"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:348 addons/widgets/restan-service.php:236
+msgid "Background Shape One"
+msgstr ""
+
+#: addons/widgets/restan-feature.php:359
+msgid "Background Shape Two"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:40
+msgid "Food Menu Tab"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:82
+msgid "Select a Service"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:100
+msgid "Food Menu Tab Style"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:138
+#: addons/widgets/restan-service.php:115 addons/widgets/restan-team.php:113
+#: addons/widgets/restan-testimonial.php:114
+msgid "Section Subtitle"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:185
+#: addons/widgets/restan-food-menu-tab.php:348
+#: addons/widgets/restan-shop.php:165
+msgid "Background Shape"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:204
+#: addons/widgets/restan-food-menu-tab.php:245
+msgid "Dish Title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:206
+#: addons/widgets/restan-food-menu-tab.php:247
+msgid "dish title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:207
+#: addons/widgets/restan-food-menu-tab.php:248
+msgid "Default Dish Title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:215
+#: addons/widgets/restan-food-menu-tab.php:309
+msgid "Tab Name"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:225
+#: addons/widgets/restan-food-menu-tab.php:319
+#: addons/widgets/restan-food-menu.php:253
+#: addons/widgets/restan-food-menu.php:859
+#: addons/widgets/restan-food-menu.php:1001
+#: addons/widgets/restan-food-menu.php:1172
+#: addons/widgets/restan-food-menu.php:1314
+msgid "Food Menu List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu-tab.php:230
+#: addons/widgets/restan-food-menu-tab.php:324
+#: addons/widgets/restan-food-menu.php:258
+#: addons/widgets/restan-food-menu.php:349
+#: addons/widgets/restan-food-menu.php:439
+#: addons/widgets/restan-food-menu.php:516
+#: addons/widgets/restan-food-menu.php:629
+#: addons/widgets/restan-food-menu.php:721
+#: addons/widgets/restan-food-menu.php:864
+#: addons/widgets/restan-food-menu.php:1006
+#: addons/widgets/restan-food-menu.php:1177
+#: addons/widgets/restan-food-menu.php:1319
+msgid "Add Food Menu"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:40
+msgid "Food Menu"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:80
+msgid "Food Menu Style"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:96 addons/widgets/restan-header.php:96
+#: addons/widgets/restan-slider.php:51
+msgid "Style Five"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:97 addons/widgets/restan-header.php:97
+#: addons/widgets/restan-slider.php:52
+msgid "Style Six"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:98
+msgid "Style Seven"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:166
+#: addons/widgets/restan-food-menu.php:169
+#: addons/widgets/restan-food-menu.php:770
+#: addons/widgets/restan-food-menu.php:773
+#: addons/widgets/restan-food-menu.php:912
+#: addons/widgets/restan-food-menu.php:915
+#: addons/widgets/restan-food-menu.php:1055
+#: addons/widgets/restan-food-menu.php:1058
+#: addons/widgets/restan-food-menu.php:1226
+#: addons/widgets/restan-food-menu.php:1229
+msgid "Meal Type"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:170
+#: addons/widgets/restan-food-menu.php:774
+#: addons/widgets/restan-food-menu.php:916
+#: addons/widgets/restan-food-menu.php:1059
+#: addons/widgets/restan-food-menu.php:1230
+msgid "Default Meal Type"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:197
+#: addons/widgets/restan-food-menu.php:289
+#: addons/widgets/restan-food-menu.php:379
+#: addons/widgets/restan-food-menu.php:801
+#: addons/widgets/restan-food-menu.php:943
+#: addons/widgets/restan-food-menu.php:1114
+#: addons/widgets/restan-food-menu.php:1256
+msgid "Default subitle"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:205
+#: addons/widgets/restan-food-menu.php:297
+#: addons/widgets/restan-food-menu.php:387
+#: addons/widgets/restan-food-menu.php:809
+#: addons/widgets/restan-food-menu.php:951
+#: addons/widgets/restan-food-menu.php:1122
+#: addons/widgets/restan-food-menu.php:1264
+msgid "Subtitle Two"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:208
+#: addons/widgets/restan-food-menu.php:300
+#: addons/widgets/restan-food-menu.php:390
+#: addons/widgets/restan-food-menu.php:812
+#: addons/widgets/restan-food-menu.php:954
+#: addons/widgets/restan-food-menu.php:1125
+#: addons/widgets/restan-food-menu.php:1267
+msgid "subtitle two"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:209
+#: addons/widgets/restan-food-menu.php:301
+#: addons/widgets/restan-food-menu.php:391
+#: addons/widgets/restan-food-menu.php:813
+#: addons/widgets/restan-food-menu.php:955
+#: addons/widgets/restan-food-menu.php:1126
+#: addons/widgets/restan-food-menu.php:1268
+msgid "Default subitle two"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:220
+#: addons/widgets/restan-food-menu.php:312
+#: addons/widgets/restan-food-menu.php:402
+#: addons/widgets/restan-food-menu.php:591
+#: addons/widgets/restan-food-menu.php:683
+#: addons/widgets/restan-food-menu.php:824
+#: addons/widgets/restan-food-menu.php:966
+#: addons/widgets/restan-food-menu.php:1137
+#: addons/widgets/restan-food-menu.php:1279
+msgid "price"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:221
+#: addons/widgets/restan-food-menu.php:313
+#: addons/widgets/restan-food-menu.php:403
+#: addons/widgets/restan-food-menu.php:592
+#: addons/widgets/restan-food-menu.php:684
+#: addons/widgets/restan-food-menu.php:825
+#: addons/widgets/restan-food-menu.php:967
+#: addons/widgets/restan-food-menu.php:1138
+#: addons/widgets/restan-food-menu.php:1280
+msgid "Default Price"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:229
+#: addons/widgets/restan-food-menu.php:321
+#: addons/widgets/restan-food-menu.php:411
+#: addons/widgets/restan-food-menu.php:503
+#: addons/widgets/restan-food-menu.php:600
+#: addons/widgets/restan-food-menu.php:692
+#: addons/widgets/restan-food-menu.php:747
+#: addons/widgets/restan-food-menu.php:848
+#: addons/widgets/restan-food-menu.php:889
+#: addons/widgets/restan-food-menu.php:990
+#: addons/widgets/restan-food-menu.php:1161
+#: addons/widgets/restan-food-menu.php:1303
+#: addons/widgets/restan-team-details.php:112
+msgid "Image"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:344
+msgid "Food Menu Left List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:434
+msgid "Food Menu Right List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:466
+msgid "Menu Item"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:469
+msgid "menu item"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:470
+msgid "Default Menu Item"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:511
+msgid "Food Menu List Three"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:537
+msgid "Discount"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:540
+msgid "discount"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:541
+msgid "Default Discount Price"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:564
+#: addons/widgets/restan-food-menu.php:567
+#: addons/widgets/restan-food-menu.php:568
+#: addons/widgets/restan-food-menu.php:656
+#: addons/widgets/restan-food-menu.php:659
+#: addons/widgets/restan-food-menu.php:660
+msgid "Badge"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:576
+#: addons/widgets/restan-food-menu.php:579
+#: addons/widgets/restan-food-menu.php:668
+#: addons/widgets/restan-food-menu.php:671
+#: addons/widgets/restan-reservation.php:199
+msgid "Menu List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:580
+#: addons/widgets/restan-food-menu.php:672
+msgid "Default Menu List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:624
+msgid "Left Food Menu List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:716
+msgid "Right Food Menu List"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:736
+msgid "Food Menu List Top"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:758
+#: addons/widgets/restan-food-menu.php:761
+#: addons/widgets/restan-food-menu.php:900
+#: addons/widgets/restan-food-menu.php:903
+msgid "Image Title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:762
+#: addons/widgets/restan-food-menu.php:904
+msgid "Default Image Title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:878
+msgid "Food Menu List Bottom"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:1020
+msgid "Food Menu List Left"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:1043
+#: addons/widgets/restan-food-menu.php:1046
+#: addons/widgets/restan-food-menu.php:1214
+#: addons/widgets/restan-food-menu.php:1217
+msgid "Section Sub Title"
+msgstr ""
+
+#: addons/widgets/restan-food-menu.php:1191
+msgid "Food Menu List Right"
+msgstr ""
+
+#: addons/widgets/restan-footer-top.php:40
+msgid "Footer Top"
+msgstr ""
+
+#: addons/widgets/restan-footer-top.php:106
+msgid "Logo"
+msgstr ""
+
+#: addons/widgets/restan-footer-top.php:114
+msgid "Logo Dimension"
+msgstr ""
+
+#: addons/widgets/restan-footer-top.php:116
+msgid "Set Custom Logo Size."
+msgstr ""
+
+#: addons/widgets/restan-funfact.php:40
+msgid "Funfactor"
+msgstr ""
+
+#: addons/widgets/restan-funfact.php:138
+msgid "Add Funfact"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:40
+msgid "Gallery"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:80
+msgid "Gallery Style"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:163
+#: addons/widgets/restan-reservation.php:179
+#: addons/widgets/restan-team-details.php:91 addons/widgets/restan-team.php:165
+#: addons/widgets/restan-testimonial.php:166
+msgid "name"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:164
+#: addons/widgets/restan-team-details.php:92 addons/widgets/restan-team.php:166
+#: addons/widgets/restan-testimonial.php:167
+msgid "Default Name"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:174
+#: addons/widgets/restan-reservation.php:190
+#: addons/widgets/restan-slider.php:79 addons/widgets/restan-slider.php:179
+#: addons/widgets/restan-slider.php:327 addons/widgets/restan-slider.php:428
+#: addons/widgets/restan-slider.php:443
+#: addons/widgets/restan-team-details.php:373
+#: addons/widgets/restan-team-details.php:441
+msgid "Default Subtitle"
+msgstr ""
+
+#: addons/widgets/restan-gallery.php:206
+msgid "Gallery List"
+msgstr ""
+
+#: addons/widgets/restan-header.php:40
+msgid "Restan Header"
+msgstr ""
+
+#: addons/widgets/restan-header.php:105
+msgid "Header Logo Desktop"
+msgstr ""
+
+#: addons/widgets/restan-header.php:113
+msgid "Header Logo Scroll"
+msgstr ""
+
+#: addons/widgets/restan-header.php:124
+msgid "Header Logo Mobile"
+msgstr ""
+
+#: addons/widgets/restan-header.php:144 addons/widgets/restan-service.php:171
+msgid "Info"
+msgstr ""
+
+#: addons/widgets/restan-header.php:235
+msgid "Enable Wishlist?"
+msgstr ""
+
+#: addons/widgets/restan-header.php:250
+msgid "Enable Cart?"
+msgstr ""
+
+#: addons/widgets/restan-header.php:265
+msgid "Enable Search?"
+msgstr ""
+
+#: addons/widgets/restan-header.php:405
+msgid "Translate Shortcode"
+msgstr ""
+
+#: addons/widgets/restan-header.php:408
+msgid "[gtranslate]"
+msgstr ""
+
+#: addons/widgets/restan-header.php:421
+msgid "Sidemenu Style"
+msgstr ""
+
+#: addons/widgets/restan-header.php:432
+msgid "Sidemenu Show/Hide"
+msgstr ""
+
+#: addons/widgets/restan-header.php:434 addons/widgets/restan-slider.php:543
+msgid "Show"
+msgstr ""
+
+#: addons/widgets/restan-header.php:435 addons/widgets/restan-slider.php:544
+msgid "Hide"
+msgstr ""
+
+#: addons/widgets/restan-header.php:444
+msgid "Sidemenu Logo"
+msgstr ""
+
+#: addons/widgets/restan-header.php:454 addons/widgets/restan-header.php:478
+#: addons/widgets/restan-team-details.php:134
+#: addons/widgets/restan-testimonial.php:200
+msgid "Content"
+msgstr ""
+
+#: addons/widgets/restan-header.php:489
+msgid "Sidemanu Info List"
+msgstr ""
+
+#: addons/widgets/restan-header.php:494
+msgid "Add Sidemanu Info"
+msgstr ""
+
+#: addons/widgets/restan-header.php:508
+msgid "Newsletter Title"
+msgstr ""
+
+#: addons/widgets/restan-header.php:625
+msgid "Header Menu Icon Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:636
+msgid "Header Menu Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:647
+msgid "Contact Info Title Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:662
+msgid "Contact Info Title Typography"
+msgstr ""
+
+#: addons/widgets/restan-header.php:673
+msgid "Contact Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:689
+msgid "Contact Typography"
+msgstr ""
+
+#: addons/widgets/restan-header.php:728
+#: addons/widgets/widgets-style/about-style.php:253
+#: addons/widgets/widgets-style/big-deal-style.php:182
+#: addons/widgets/widgets-style/contact-style.php:246
+#: addons/widgets/widgets-style/deliverya-process-style.php:111
+#: addons/widgets/widgets-style/download-app-style.php:145
+#: addons/widgets/widgets-style/download-app-style.php:225
+#: addons/widgets/widgets-style/feature-style.php:195
+#: addons/widgets/widgets-style/offer-style.php:180
+#: addons/widgets/widgets-style/service-style.php:176
+msgid "Button Hover Background Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:742
+msgid "Button Hover Text Color"
+msgstr ""
+
+#: addons/widgets/restan-header.php:1399
+msgid "Search Here..."
+msgstr ""
+
+#: addons/widgets/restan-offer.php:40
+msgid "Offer"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:193
+msgid "Offer Title"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:196
+msgid "Offer Titl"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:206
+msgid "Offer URL"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:224 addons/widgets/restan-offer.php:227
+msgid "Offer Item"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:237 addons/widgets/restan-offer.php:240
+msgid "Offer Price"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:250
+msgid "Average Rating"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:281 addons/widgets/restan-slider.php:206
+#: addons/widgets/restan-testimonial.php:297
+msgid "Shape One"
+msgstr ""
+
+#: addons/widgets/restan-offer.php:289
+#: addons/widgets/restan-testimonial.php:306
+msgid "Shape Two"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:40
+msgid "Open Hours"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:80
+msgid "Open Hours Style"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:130
+#: addons/widgets/restan-openhours.php:134
+#: addons/widgets/restan-openhours.php:135
+msgid "Heading Text"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:152
+msgid "Default Date"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:164
+msgid "Default Time"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:172
+msgid "Open Hours List"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:177
+msgid "Add Open Hours List"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:190
+#: addons/widgets/restan-openhours.php:193
+msgid "Info Title"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:194
+msgid "Default Info Title"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:202
+#: addons/widgets/restan-openhours.php:204
+msgid "Info Number"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:206
+msgid "Default Info Number"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:228
+msgid "Add Shape Image"
+msgstr ""
+
+#: addons/widgets/restan-openhours.php:239
+msgid "Add Icon Image"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:40
+msgid "Partner"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:80
+msgid "Set Partner Content"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:100
+msgid "Partner Title"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:112
+msgid "Title Before Shape"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:129
+msgid "Title After Shape"
+msgstr ""
+
+#: addons/widgets/restan-partner.php:156
+msgid "Partner List"
+msgstr ""
+
+#: addons/widgets/restan-reservation.php:40
+msgid "Reservation"
+msgstr ""
+
+#: addons/widgets/restan-reservation.php:118
+#: addons/widgets/restan-reservation.php:121
+msgid "Background Title"
+msgstr ""
+
+#: addons/widgets/restan-reservation.php:122
+msgid "Default Background Title"
+msgstr ""
+
+#: addons/widgets/restan-service.php:40 addons/widgets/restan-service.php:217
+msgid "Service"
+msgstr ""
+
+#: addons/widgets/restan-service.php:80 addons/widgets/restan-service.php:88
+#: addons/widgets/restan-testimonial.php:88
+msgid "Service Style"
+msgstr ""
+
+#: addons/widgets/restan-service.php:162
+msgid "sub-title"
+msgstr ""
+
+#: addons/widgets/restan-service.php:173
+#: addons/widgets/restan-team-details.php:137
+#: addons/widgets/restan-testimonial.php:202
+msgid "content"
+msgstr ""
+
+#: addons/widgets/restan-service.php:174
+#: addons/widgets/restan-team-details.php:138
+#: addons/widgets/restan-testimonial.php:204
+msgid "Default Content"
+msgstr ""
+
+#: addons/widgets/restan-service.php:184
+#: addons/widgets/restan-team-details.php:220
+msgid "button label"
+msgstr ""
+
+#: addons/widgets/restan-service.php:222
+msgid "Add Service"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:40
+msgid "Shop"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:199 addons/widgets/restan-shop.php:245
+msgid "Product Category"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:209
+msgid "Product Category List"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:222
+msgid "Number Of Posts"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:258
+msgid "Select Order"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:262
+msgid "DESC"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:263
+msgid "ASC"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:317 addons/widgets/restan-shop.php:615
+msgid "active"
+msgstr ""
+
+#: addons/widgets/restan-shop.php:352
+msgid "show active"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:19 addons/widgets/restan-slider.php:35
+msgid "Slider"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:43
+msgid "Slider Style"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:65 addons/widgets/restan-slider.php:165
+#: addons/widgets/restan-slider.php:310 addons/widgets/restan-slider.php:351
+#: addons/widgets/restan-slider.php:411
+msgid "Awesome Title"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:78 addons/widgets/restan-slider.php:178
+#: addons/widgets/restan-slider.php:326 addons/widgets/restan-slider.php:427
+#: addons/widgets/restan-slider.php:442
+msgid "Awesome Subtitle"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:90 addons/widgets/restan-slider.php:190
+msgid "Awesome Summary"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:98 addons/widgets/restan-slider.php:198
+#: addons/widgets/restan-slider.php:455
+msgid "Slider Image"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:106 addons/widgets/restan-slider.php:389
+msgid "Video URL"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:146 addons/widgets/restan-slider.php:293
+msgid "Sliders"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:214
+msgid "Slider Two"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:222
+msgid "Shape Three"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:230
+msgid "Shape Four"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:337 addons/widgets/restan-slider.php:378
+msgid "Banner Image"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:367
+msgid "Awesome Rounded Text"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:368
+msgid "Default Rounded Text"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:438
+msgid "Bottom Text"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:463
+msgid "Slider Five"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:513
+msgid "Slider Six"
+msgstr ""
+
+#: addons/widgets/restan-slider.php:541
+msgid "Show/Hide Nav Icon"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:40
+msgid "Team Details"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:80
+msgid "Team Top Content"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:103
+#: addons/widgets/restan-team.php:175 addons/widgets/restan-testimonial.php:178
+msgid "designation"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:104
+msgid "Default Sesignation"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:335
+msgid "Team Bottom Content"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:344
+msgid "Education Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:347
+msgid "education heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:348
+msgid "Default Education Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:382
+#: addons/widgets/restan-team-details.php:450
+msgid "Year"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:384
+#: addons/widgets/restan-team-details.php:452
+msgid "year"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:385
+#: addons/widgets/restan-team-details.php:453
+msgid "Default Year"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:394
+msgid "Education List"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:412
+msgid "Experiance Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:415
+msgid "experiance heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:416
+msgid "Default Experiance Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:462
+msgid "Experiance List"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:480
+msgid "Progress Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:483
+msgid "progress heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:484
+msgid "Default Progress Heading"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:508
+msgid "number"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:520
+msgid "%"
+msgstr ""
+
+#: addons/widgets/restan-team-details.php:528
+msgid "Progress List"
+msgstr ""
+
+#: addons/widgets/restan-team.php:40
+msgid "Team Member"
+msgstr ""
+
+#: addons/widgets/restan-team.php:80
+msgid "Team Style"
+msgstr ""
+
+#: addons/widgets/restan-team.php:176
+msgid "Default Designation"
+msgstr ""
+
+#: addons/widgets/restan-team.php:208
+msgid "Social NetWork"
+msgstr ""
+
+#: addons/widgets/restan-team.php:218
+msgid "Team List"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:40
+msgid "Testimoanial"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:80
+msgid "Testimonial Content Style"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:179
+msgid "Default designation"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:212
+msgid "Rating"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:235
+msgid "rating text"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:237
+msgid "Default Rating Text"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:245
+msgid "Testimonial"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:250
+msgid "Add Testimonial"
+msgstr ""
+
+#: addons/widgets/restan-testimonial.php:288
+msgid "Image Four"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:6
+msgid "About Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:62
+#: addons/widgets/widgets-style/big-deal-style.php:64
+#: addons/widgets/widgets-style/category-style.php:62
+#: addons/widgets/widgets-style/contact-style.php:51
+#: addons/widgets/widgets-style/contact-style.php:191
+#: addons/widgets/widgets-style/deliverya-process-style.php:50
+#: addons/widgets/widgets-style/download-app-style.php:64
+#: addons/widgets/widgets-style/offer-style.php:62
+#: addons/widgets/widgets-style/open-hours-style.php:49
+#: addons/widgets/widgets-style/overview-style.php:151
+#: addons/widgets/widgets-style/pricing-style.php:123
+#: addons/widgets/widgets-style/process-style.php:124
+#: addons/widgets/widgets-style/project-info-style.php:79
+#: addons/widgets/widgets-style/reservation-style.php:173
+#: addons/widgets/widgets-style/service-cta-style.php:49
+#: addons/widgets/widgets-style/slider-style.php:100
+#: addons/widgets/widgets-style/team-style.php:120
+#: addons/widgets/widgets-style/testimonial-style.php:54
+msgid "Subtitle Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:89
+#: addons/widgets/widgets-style/big-deal-style.php:91
+#: addons/widgets/widgets-style/offer-style.php:89
+#: addons/widgets/widgets-style/slider-style.php:126
+#: addons/widgets/widgets-style/team-details-style.php:70
+msgid "Summary Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:100
+#: addons/widgets/widgets-style/big-deal-style.php:102
+#: addons/widgets/widgets-style/offer-style.php:100
+#: addons/widgets/widgets-style/slider-style.php:137
+#: addons/widgets/widgets-style/team-details-style.php:78
+msgid "Summary Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:115
+#: addons/widgets/widgets-style/big-deal-style.php:117
+#: addons/widgets/widgets-style/offer-style.php:115
+#: addons/widgets/widgets-style/slider-style.php:152
+#: addons/widgets/widgets-style/team-details-style.php:90
+msgid "Summary Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:126
+msgid "Meal List Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:163
+msgid "Meal List Sub Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:200
+#: addons/widgets/widgets-style/big-deal-style.php:129
+#: addons/widgets/widgets-style/category-style.php:164
+#: addons/widgets/widgets-style/contact-style.php:216
+#: addons/widgets/widgets-style/deliverya-process-style.php:70
+#: addons/widgets/widgets-style/feature-style.php:142
+#: addons/widgets/widgets-style/offer-style.php:127
+#: addons/widgets/widgets-style/pricing-style.php:170
+#: addons/widgets/widgets-style/service-style.php:123
+#: addons/widgets/widgets-style/slider-style.php:200
+msgid "Button Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:239
+#: addons/widgets/widgets-style/big-deal-style.php:168
+#: addons/widgets/widgets-style/deliverya-process-style.php:100
+#: addons/widgets/widgets-style/download-app-style.php:131
+#: addons/widgets/widgets-style/download-app-style.php:211
+#: addons/widgets/widgets-style/feature-style.php:181
+#: addons/widgets/widgets-style/offer-style.php:166
+#: addons/widgets/widgets-style/service-style.php:162
+#: addons/widgets/widgets-style/slider-style.php:239
+msgid "Button Hover Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:280
+msgid "Author Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:291
+msgid "Author Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/about-style.php:306
+msgid "Author Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:6
+#: addons/widgets/widgets-style/marketing-style.php:6
+#: addons/widgets/widgets-style/overview-style.php:6
+#: addons/widgets/widgets-style/process-style.php:6
+#: addons/widgets/widgets-style/project-style.php:6
+#: addons/widgets/widgets-style/request-callback-style.php:6
+#: addons/widgets/widgets-style/reservation-style.php:6
+#: addons/widgets/widgets-style/team-style.php:6
+msgid "Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:51
+#: addons/widgets/widgets-style/faq-style.php:50
+#: addons/widgets/widgets-style/overview-style.php:52
+#: addons/widgets/widgets-style/pricing-style.php:51
+#: addons/widgets/widgets-style/process-style.php:52
+#: addons/widgets/widgets-style/project-style.php:52
+msgid "Subtitle Color 1 "
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:58
+#: addons/widgets/widgets-style/faq-style.php:57
+#: addons/widgets/widgets-style/overview-style.php:59
+#: addons/widgets/widgets-style/pricing-style.php:58
+#: addons/widgets/widgets-style/process-style.php:59
+#: addons/widgets/widgets-style/project-style.php:59
+msgid "Subtitle Color 2"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:117
+msgid "Meta Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:125
+msgid "Meta Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:137
+msgid "Meta Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:145
+#: addons/widgets/widgets-style/mission-style.php:95
+#: addons/widgets/widgets-style/project-style.php:145
+msgid "Content Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:174
+msgid "Read More Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:182
+msgid "Read More Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/blog-style.php:194
+msgid "Read More Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/category-style.php:6
+msgid "Category Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/category-style.php:89
+#: addons/widgets/widgets-style/gallery-style.php:88
+#: addons/widgets/widgets-style/project-info-style.php:44
+msgid "Content Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/category-style.php:126
+msgid "Content Sub Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:14
+#: addons/widgets/widgets-style/mission-style.php:14
+#: addons/widgets/widgets-style/team-details-style.php:206
+msgid "Heading Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:22
+#: addons/widgets/widgets-style/mission-style.php:22
+#: addons/widgets/widgets-style/request-callback-style.php:22
+#: addons/widgets/widgets-style/team-details-style.php:214
+msgid "Heading Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:34
+#: addons/widgets/widgets-style/mission-style.php:33
+#: addons/widgets/widgets-style/team-details-style.php:225
+msgid "Heading Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:70
+#: addons/widgets/widgets-style/choose-us-style.php:72
+#: addons/widgets/widgets-style/mission-style.php:68
+#: addons/widgets/widgets-style/project-style.php:116
+msgid "SubTitle Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:78
+#: addons/widgets/widgets-style/choose-us-style.php:80
+#: addons/widgets/widgets-style/faq-style.php:112
+#: addons/widgets/widgets-style/mission-style.php:76
+#: addons/widgets/widgets-style/mission-style.php:157
+#: addons/widgets/widgets-style/service-style.php:50
+msgid "SubTitle Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-style.php:89
+#: addons/widgets/widgets-style/choose-us-style.php:91
+#: addons/widgets/widgets-style/faq-style.php:123
+#: addons/widgets/widgets-style/mission-style.php:87
+#: addons/widgets/widgets-style/mission-style.php:168
+#: addons/widgets/widgets-style/service-style.php:61
+msgid "SubTitle Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-us-style.php:14
+#: addons/widgets/widgets-style/contact-style.php:14
+#: addons/widgets/widgets-style/food-menu-style.php:14
+#: addons/widgets/widgets-style/food-menu-tab-style.php:14
+#: addons/widgets/widgets-style/gallery-style.php:14
+#: addons/widgets/widgets-style/reservation-style.php:14
+#: addons/widgets/widgets-style/service-style.php:14
+#: addons/widgets/widgets-style/testimonial-style.php:14
+msgid "Section Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/choose-us-style.php:99
+#: addons/widgets/widgets-style/choose-us-style.php:136
+msgid "Funfact Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:43
+#: addons/widgets/widgets-style/gallery-style.php:51
+#: addons/widgets/widgets-style/reservation-style.php:51
+#: addons/widgets/widgets-style/testimonial-style.php:45
+msgid "Section Sub-Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:106
+#: addons/widgets/widgets-style/team-details-style.php:126
+msgid "Contact Info Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:117
+#: addons/widgets/widgets-style/team-details-style.php:134
+msgid "Contact Info Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:131
+#: addons/widgets/widgets-style/team-details-style.php:146
+msgid "Contact Info Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:142
+#: addons/widgets/widgets-style/feature-style.php:14
+msgid "Form Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/contact-style.php:180
+msgid "Form Sub-Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/copyright-style.php:14
+msgid "Copyright Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/download-app-style.php:91
+msgid "Button One Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/download-app-style.php:171
+msgid "Button Two Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/faq-style.php:77
+#: addons/widgets/widgets-style/mission-style.php:122
+msgid "Accordian Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/faq-style.php:104
+#: addons/widgets/widgets-style/mission-style.php:149
+msgid "Accordian SubTitle Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:24
+msgid "Form Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:46
+msgid "Category Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:56
+msgid "Category Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:69
+msgid "Category Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:78
+#: addons/widgets/widgets-style/open-hours-style.php:68
+msgid "Date Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:88
+#: addons/widgets/widgets-style/open-hours-style.php:76
+msgid "Date Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:101
+#: addons/widgets/widgets-style/open-hours-style.php:87
+msgid "Date Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:221
+msgid "Category List Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:253
+msgid "Category List Sub-Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:263
+msgid "Sub-Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/feature-style.php:276
+msgid "Sub-Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-style.php:52
+#: addons/widgets/widgets-style/food-menu-tab-style.php:44
+msgid "Section Sub Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-style.php:121
+msgid "Sub Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-style.php:142
+#: addons/widgets/widgets-style/food-menu-tab-style.php:65
+#: addons/widgets/widgets-style/project-style.php:135
+#: addons/widgets/widgets-style/service-style.php:115
+msgid "Sub Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-tab-style.php:74
+msgid "Section Menu Tab Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-tab-style.php:83
+msgid "Menu Tab Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/food-menu-tab-style.php:95
+msgid "Menu Tab Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/funfact-style.php:43
+#: addons/widgets/widgets-style/request-callback-style.php:112
+#: addons/widgets/widgets-style/service-cta-style.php:69
+msgid "Number Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/funfact-style.php:52
+#: addons/widgets/widgets-style/open-hours-style.php:158
+#: addons/widgets/widgets-style/request-callback-style.php:120
+#: addons/widgets/widgets-style/service-cta-style.php:77
+msgid "Number Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/funfact-style.php:64
+#: addons/widgets/widgets-style/open-hours-style.php:169
+#: addons/widgets/widgets-style/request-callback-style.php:132
+#: addons/widgets/widgets-style/service-cta-style.php:88
+msgid "Number Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:6
+msgid "Gallery Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:25
+#: addons/widgets/widgets-style/reservation-style.php:25
+msgid "Section Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:40
+#: addons/widgets/widgets-style/reservation-style.php:40
+msgid "Section Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:62
+#: addons/widgets/widgets-style/reservation-style.php:62
+msgid "Section Subtitle Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:77
+#: addons/widgets/widgets-style/reservation-style.php:77
+msgid "Section Subtitle Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:99
+msgid "Content Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:114
+#: addons/widgets/widgets-style/gallery-style.php:151
+#: addons/widgets/widgets-style/reservation-style.php:151
+msgid "Content Subtitle Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:125
+msgid "Content Sub-Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/gallery-style.php:136
+msgid "Content Subtitle Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/marketing-style.php:43
+msgid "Feature Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/mission-style.php:103
+#: addons/widgets/widgets-style/project-style.php:153
+msgid "Content Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/mission-style.php:114
+#: addons/widgets/widgets-style/project-style.php:164
+msgid "Content Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:6
+msgid "Offer Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:207
+msgid "Offer Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:218
+msgid "Offer Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:233
+msgid "Offer Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:245
+msgid "Offer List Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:256
+msgid "Offer List Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/offer-style.php:271
+msgid "Offer List Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/open-hours-style.php:122
+msgid "Info Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/open-hours-style.php:150
+msgid "Info Number Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/overview-style.php:89
+msgid "Tab Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/partner-style.php:6
+msgid "Partner Contnet Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/pricing-style.php:6
+msgid "Pricing Content Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/pricing-style.php:142
+msgid "Feature Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/pricing-style.php:150
+msgid "Feature Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/pricing-style.php:161
+msgid "Feature Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-info-style.php:71
+msgid "Subtitle Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:172
+msgid "Tagline Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:180
+msgid "Tagline Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:191
+msgid "Tagline Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:199
+msgid "Loadmore Text Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:208
+msgid "Loadmore Text Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/project-style.php:220
+msgid "Loadmore Text Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/request-callback-style.php:14
+msgid "Section Heading Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/request-callback-style.php:43
+msgid "Section Button Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/request-callback-style.php:52
+msgid "Button Text Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/request-callback-style.php:64
+msgid "Button Text Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/request-callback-style.php:72
+msgid "Button Bg Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/reservation-style.php:88
+msgid "Section Summary Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/reservation-style.php:99
+msgid "Section Summary Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/reservation-style.php:114
+msgid "Section Summary Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/reservation-style.php:162
+msgid "Menu Sub-Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/service-style.php:42
+msgid "Section SubTitle Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/service-style.php:69
+msgid "Service Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/service-style.php:96
+msgid "Service Sub Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:6
+msgid "Banner Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:51
+msgid "Rounded Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:62
+msgid "Rounded Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:77
+msgid "Rounded Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:163
+msgid "Bottom Text Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:174
+msgid "Bottom Text Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/slider-style.php:189
+msgid "Bottom Text Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:6
+msgid "Top Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:14
+#: addons/widgets/widgets-style/testimonial-style.php:106
+msgid "Name Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:22
+msgid "Name Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:34
+msgid "Name Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:42
+#: addons/widgets/widgets-style/testimonial-style.php:137
+msgid "Designation Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:50
+msgid "Designation Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:62
+msgid "Designation Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:98
+msgid "Contact Title Options"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:106
+msgid "Contact Title Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:118
+msgid "Contact Title Typography"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:185
+msgid "Button Background Hover Color"
+msgstr ""
+
+#: addons/widgets/widgets-style/team-details-style.php:198
+msgid "Bottom Section Style"
+msgstr ""
+
+#: addons/widgets/widgets-style/testimonial-style.php:167
+msgid "Testimonial Options"
+msgstr ""
+
+#: cmb2-ext/cmb2-field-icon.php:81
+msgid "No options->paths to images area set"
+msgstr ""
+
+#: cmb2-ext/cmb2-field-icon.php:169
+msgid "options->paths must be within the WordPress fielsystem somewhere"
+msgstr ""
+
+#: inc/builder/builder.php:36 inc/builder/builder.php:45
+#: restan-core/inc/builder/builder.php:36
+#: restan-core/inc/builder/builder.php:45
+msgid "Header Option"
+msgstr ""
+
+#: inc/builder/builder.php:48 inc/builder/builder.php:92
+#: restan-core/inc/builder/builder.php:48
+#: restan-core/inc/builder/builder.php:92
+msgid "Pre Built"
+msgstr ""
+
+#: inc/builder/builder.php:49 inc/builder/builder.php:126
+#: restan-core/inc/builder/builder.php:49
+#: restan-core/inc/builder/builder.php:126
+msgid "Header Builder"
+msgstr ""
+
+#: inc/builder/builder.php:58 restan-core/inc/builder/builder.php:58
+msgid "Header Name"
+msgstr ""
+
+#: inc/builder/builder.php:71 restan-core/inc/builder/builder.php:71
+msgid "Footer Option"
+msgstr ""
+
+#: inc/builder/builder.php:78 restan-core/inc/builder/builder.php:78
+msgid "Enable Footer?"
+msgstr ""
+
+#: inc/builder/builder.php:89 restan-core/inc/builder/builder.php:89
+msgid "Footer Style"
+msgstr ""
+
+#: inc/builder/builder.php:93 inc/builder/builder.php:125
+#: restan-core/inc/builder/builder.php:93
+#: restan-core/inc/builder/builder.php:125
+msgid "Footer Builder"
+msgstr ""
+
+#: inc/builder/builder.php:102 restan-core/inc/builder/builder.php:102
+msgid "Footer Name"
+msgstr ""
+
+#: inc/builder/builder.php:116 inc/builder/builder.php:117
+#: restan-core/inc/builder/builder.php:116
+#: restan-core/inc/builder/builder.php:117
+msgid "Restan Builder"
+msgstr ""
+
+#: inc/builder/builder.php:127 inc/builder/builder.php:206
+#: inc/builder/builder.php:207 inc/builder/builder.php:209
+#: restan-core/inc/builder/builder.php:127
+#: restan-core/inc/builder/builder.php:206
+#: restan-core/inc/builder/builder.php:207
+#: restan-core/inc/builder/builder.php:209
+msgid "Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:134 restan-core/inc/builder/builder.php:134
+msgid "Welcome To Header And Footer Builder Of This Theme"
+msgstr ""
+
+#: inc/builder/builder.php:142 inc/builder/builder.php:143
+#: inc/builder/builder.php:145 restan-core/inc/builder/builder.php:142
+#: restan-core/inc/builder/builder.php:143
+#: restan-core/inc/builder/builder.php:145
+msgid "Footer"
+msgstr ""
+
+#: inc/builder/builder.php:144 restan-core/inc/builder/builder.php:144
+msgid "restan Footer Builder"
+msgstr ""
+
+#: inc/builder/builder.php:146 inc/builder/builder.php:178
+#: inc/builder/builder.php:210 inc/restancore-functions.php:136
+#: restan-core/inc/builder/builder.php:146
+#: restan-core/inc/builder/builder.php:178
+#: restan-core/inc/builder/builder.php:210
+#: restan-core/inc/builder/builder.php:243
+msgid "Add New"
+msgstr ""
+
+#: inc/builder/builder.php:147 restan-core/inc/builder/builder.php:147
+msgid "Add New Footer"
+msgstr ""
+
+#: inc/builder/builder.php:148 restan-core/inc/builder/builder.php:148
+msgid "New Footer"
+msgstr ""
+
+#: inc/builder/builder.php:149 restan-core/inc/builder/builder.php:149
+msgid "Edit Footer"
+msgstr ""
+
+#: inc/builder/builder.php:150 restan-core/inc/builder/builder.php:150
+msgid "View Footer"
+msgstr ""
+
+#: inc/builder/builder.php:151 restan-core/inc/builder/builder.php:151
+msgid "All Footer"
+msgstr ""
+
+#: inc/builder/builder.php:152 restan-core/inc/builder/builder.php:152
+msgid "Search Footer"
+msgstr ""
+
+#: inc/builder/builder.php:153 restan-core/inc/builder/builder.php:153
+msgid "Parent Footer:"
+msgstr ""
+
+#: inc/builder/builder.php:154 restan-core/inc/builder/builder.php:154
+msgid "No Footer found."
+msgstr ""
+
+#: inc/builder/builder.php:155 restan-core/inc/builder/builder.php:155
+msgid "No Footer found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:176 restan-core/inc/builder/builder.php:176
+msgid "restan Header Builder"
+msgstr ""
+
+#: inc/builder/builder.php:179 restan-core/inc/builder/builder.php:179
+msgid "Add New Header"
+msgstr ""
+
+#: inc/builder/builder.php:180 restan-core/inc/builder/builder.php:180
+msgid "New Header"
+msgstr ""
+
+#: inc/builder/builder.php:181 restan-core/inc/builder/builder.php:181
+msgid "Edit Header"
+msgstr ""
+
+#: inc/builder/builder.php:182 restan-core/inc/builder/builder.php:182
+msgid "View Header"
+msgstr ""
+
+#: inc/builder/builder.php:183 restan-core/inc/builder/builder.php:183
+msgid "All Header"
+msgstr ""
+
+#: inc/builder/builder.php:184 restan-core/inc/builder/builder.php:184
+msgid "Search Header"
+msgstr ""
+
+#: inc/builder/builder.php:185 restan-core/inc/builder/builder.php:185
+msgid "Parent Header:"
+msgstr ""
+
+#: inc/builder/builder.php:186 restan-core/inc/builder/builder.php:186
+msgid "No Header found."
+msgstr ""
+
+#: inc/builder/builder.php:187 restan-core/inc/builder/builder.php:187
+msgid "No Header found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:208 restan-core/inc/builder/builder.php:208
+msgid "restan Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:211 restan-core/inc/builder/builder.php:211
+msgid "Add New Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:212 restan-core/inc/builder/builder.php:212
+msgid "New Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:213 restan-core/inc/builder/builder.php:213
+msgid "Edit Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:214 restan-core/inc/builder/builder.php:214
+msgid "View Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:215 restan-core/inc/builder/builder.php:215
+msgid "All Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:216 restan-core/inc/builder/builder.php:216
+msgid "Search Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:217 restan-core/inc/builder/builder.php:217
+msgid "Parent Tab Builder:"
+msgstr ""
+
+#: inc/builder/builder.php:218 restan-core/inc/builder/builder.php:218
+msgid "No Tab Builder found."
+msgstr ""
+
+#: inc/builder/builder.php:219 restan-core/inc/builder/builder.php:219
+msgid "No Tab Builder found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:266 restan-core/inc/builder/builder.php:299
+msgid "Select a Footer"
+msgstr ""
+
+#: inc/builder/builder.php:286 restan-core/inc/builder/builder.php:319
+msgid "Select a Header"
+msgstr ""
+
+#: inc/restan-ajax.php:42
+msgid "You are not allowed."
+msgstr ""
+
+#: inc/restan-ajax.php:53
+msgid "Thank you, you have been added to our mailing list."
+msgstr ""
+
+#: inc/restan-ajax.php:56
+msgid "This Email address is already exists."
+msgstr ""
+
+#: inc/restan-ajax.php:58
+msgid "Sorry something went wrong."
+msgstr ""
+
+#: inc/restan-ajax.php:61
+msgid "Apikey Or Listid Missing."
+msgstr ""
+
+#: inc/restancore-functions.php:132 inc/restancore-functions.php:134
+msgid "Tabs"
+msgstr ""
+
+#: inc/restancore-functions.php:133 inc/restancore-functions.php:135
+msgid "Tab"
+msgstr ""
+
+#: inc/restancore-functions.php:137
+msgid "Add New Tab"
+msgstr ""
+
+#: inc/restancore-functions.php:138
+msgid "New Tab"
+msgstr ""
+
+#: inc/restancore-functions.php:139
+msgid "Edit Tab"
+msgstr ""
+
+#: inc/restancore-functions.php:140
+msgid "View Tab"
+msgstr ""
+
+#: inc/restancore-functions.php:141
+msgid "All Tabs"
+msgstr ""
+
+#: inc/restancore-functions.php:142
+msgid "Search Tabs"
+msgstr ""
+
+#: inc/restancore-functions.php:143
+msgid "Parent Tabs:"
+msgstr ""
+
+#: inc/restancore-functions.php:144
+msgid "No Tabs found."
+msgstr ""
+
+#: inc/restancore-functions.php:145
+msgid "No Tabs found in Trash."
+msgstr ""
+
+#: inc/restancore-functions.php:153
+msgid "Description."
+msgstr ""
+
+#: inc/widgets/recent-post-widget.php:24
+msgid "The most recent posts on your site"
+msgstr ""
+
+#: inc/widgets/recent-post-widget.php:27
+msgid "restan Recent Posts"
+msgstr ""
+
+#: inc/widgets/recent-post-widget.php:90
+msgid "no title"
+msgstr ""
+
+#: inc/widgets/recent-post-widget.php:148
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/recent-post-widget.php:152
+msgid "Number of posts to show:"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:239
+#: restan-core/inc/builder/builder.php:240
+#: restan-core/inc/builder/builder.php:242
+msgid "Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:241
+msgid "restan Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:244
+msgid "Add New Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:245
+msgid "New Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:246
+msgid "Edit Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:247
+msgid "View Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:248
+msgid "All Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:249
+msgid "Search Megamenu"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:250
+msgid "Parent Megamenu:"
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:251
+msgid "No Megamenu found."
+msgstr ""
+
+#: restan-core/inc/builder/builder.php:252
+msgid "No Megamenu found in Trash."
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Restan Core"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This is a helper plugin of restan theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Validthemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/validthemes/portfolio"
+msgstr ""
