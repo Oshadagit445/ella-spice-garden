@@ -1,8 +1,21 @@
-node_modules/
+# WordPress uploads
+wp-content/uploads/
+
+# Cache
+wp-content/cache/
+
+# Backups
+*.wpress
+*.zip
+*.tar
+*.gz
+
+# Database dumps
+*.sql
+
+# Logs
 *.log
 
-wp-content/cache/
-wp-content/uploads/cache/
-
-.DS_Store
+# OS files
 Thumbs.db
+.DS_Store
