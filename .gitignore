@@ -4,6 +4,10 @@ wp-content/uploads/
 # Cache
 wp-content/cache/
 
+#Plugins
+wp-content/plugins/better-search-replace/
+wp-content/plugins/string-locator/
+
 # Backups
 *.wpress
 *.zip
