@@ -4,6 +4,9 @@ wp-content/uploads/
 # Cache
 wp-content/cache/
 
+#Upgrades
+wp-content/upgrade/
+
 #Plugins
 wp-content/plugins/better-search-replace/
 wp-content/plugins/string-locator/
@@ -11,6 +14,7 @@ wp-content/plugins/string-locator/
 # Backups
 *.wpress
 *.zip
+*.rar
 *.tar
 *.gz
 
@@ -23,3 +27,7 @@ wp-content/plugins/string-locator/
 # OS files
 Thumbs.db
 .DS_Store
+
+xampp/
+vendor/
+node_modules/
