@@ -1,5 +1,205 @@
 # Changelog
 
+## [3.9.6] (2026-04-28)
+
+### Changed
+* tweak: improve snippets rest api
+
+### Removed
+* remove redundant comments
+
+### Fixed
+* site admin cannot toggle shared network snippets status
+
+## [3.9.5] (2026-02-05)
+
+### Added
+* Confirmed WordPress 6.9 compatability
+
+### Fixed
+* Improved nonce handling for cloud snippet download and update actions to for enhanced security
+
+## [3.9.4] (2026-01-14)
+
+### Added
+* New import functionality to migrate snippets from file uploads with drag-and-drop interface
+* Support for importing snippets from other popular plugins (Header Footer Code Manager, Insert Headers and Footers, Insert PHP Code Snippet)
+* Enhanced file based execution support with improved multisite mode compatibility
+
+### Changed
+* Updated links to more recent documentation pages 
+
+### Fixed
+* Fixed multisite capability checks in Plugin class
+* Fixed snippet execution logic for multisite support by centralizing trashed snippet handling
+* Fixed multisite snippet handling to ensure local snippets use correct table and filter out trashed snippets
+
+## [3.9.3] (2025-12-03)
+
+### Added
+* end-to-end tests to verify the toggle visual state in the snippets list page, improving UI verification and test reliability
+
+### Fixed
+* Fix missing import of common/direction in src/css/manage.scss to restore correct styling and direction-aware layout
+* Fix toggle activation check to ensure the correct transformation value is used when detecting active/inactive state
+
+## [3.9.2] (2025-11-17)
+
+### Changed
+* Introduced a custom scissors icon and updated button title for the TinyMCE extension.
+* Improved back-navigation styling on the edit page.
+* Refined layout for column names and action buttons in the Cloud Snippets list.
+* Enhanced overall styling of cloud-related UI components.
+* Optimized cloud search with more efficient pagination and snippet retrieval.
+* Introduced groundwork to prevent Composer dependency collisions with other plugins.
+
+### Fixed
+* Improved sanitization and normalization across Cloud API and pagination outputs.
+* Resolved various TinyMCE issues reported in the WordPress support forum.
+
+## [3.9.1] (2025-11-14)
+
+### Changed
+* Migrated to native CSS direction handling (RTL/LTR) for improved compatibility and simpler styling
+* Updated dependencies to the latest compatible versions
+
+### Fixed
+* Fixed TinyMCE menu button registration to prevent initialization failure
+* Fixed the position of the 'code direction' control in the editor
+
+## [3.9.0] (2025-11-13)
+
+### Added
+* Added contextual notices in the Snippets list table to surface action results and warnings in the UI
+* Expanded Multisite Sharing settings for clearer control over network-wide snippet sharing
+
+### Changed
+* Modernized browser support targets and polished admin UI (clearer row-action badges, improved Pro badge hover, refined active snippet name styling)
+
+### Fixed
+* Fixed REST API pagination to return correct results and page counts
+* Resolved styling selector so the active snippet name highlights reliably
+
+## [3.9.0-beta.2] (2025-11-10)
+
+### Added
+* Added 'Snippets' row action to the Network Sites table
+* Improved snippet name visibility for network users
+
+### Changed
+* Refined badge styling and hover effects for row actions and badges
+* Impoved icon style and color usage for network snippets for clearer differentiation
+
+### Fixed
+* Improved network snippets management with better subsite menu permission checks
+* Fixed status labels for shared network snippets
+* Corrected network condition checks and improved snippet fetching logic
+* Handled fatal errors in file-based snippets to prevent crashes
+
+## [3.9.0-beta.1] (2025-11-03)
+
+### Added
+* Soft delete (Trash) functionality for snippets with ability to undo, restore or permanently delete.
+* Bulk actions for trashing, restoring, and permanently deleting multiple snippets.
+* Separate filtered view to manage trashed snippets.
+
+## [3.8.2] (2025-10-31)
+
+### Fixed
+* Improved namespaced PHP snippet handling with file based execution.
+
+## [3.8.1] (2025-10-28)
+
+### Added
+* Code line explanation widget with apply and remove actions for AI-generated comments. (PRO)
+
+### Changed
+* Improved pagination handling and display structure for cloud search results. (PRO)
+* Enhanced styling for codevault rows and inactive tabs in cloud interface. (PRO)
+
+### Removed
+* Removed `guzzlehttp/guzzle` dependency to reduce package conflicts. (PRO)
+
+### Fixed
+* Improved file-based snippet handling for multisite installations.
+
+## [3.8.0] (2025-10-24)
+
+### Added
+* @CarolinaOP and @louiswol94 join the team as plugin contributors.
+* File-based execution mode for snippets (optional in plugin settings).
+* Version switch option for easily rolling back the plugin to an earlier release.
+
+### Changed
+* Prefixed Composer packages to reduce collisions with other plugins.
+* Snippets REST API now supports pagination via page and per_page query parameters.
+* Improved editor preview behavior.
+* Minor UI improvements to the editor and sidebar.
+
+### Fixed
+* Issues with snippet evaluation and front-end initialization in edge cases.
+* Improved reliability of snippet evaluation.
+* JavaScript and CSS snippets loading twice due to a conditions bug. (PRO)
+* Issue where some conditions didn’t work due to loading before the loop. (PRO)
+
+## [3.7.1-beta.3] (2025-10-22)
+
+### Added
+* Snippets REST API now supports pagination via page and per_page query parameters.
+
+## [3.7.1-beta.2] (2025-10-22)
+
+### Added
+* Implemented version switching with a new 'Version Switch' section in Settings
+
+## [3.7.1-beta.1] (2025-10-16)
+
+### Added
+* Added @CarolinaOP and @louiswol94 as plugin contributors
+* File-based execution mode for snippets (Optional in Plugin Settings)
+
+### Changed
+* Minor UI/UX tweaks to the editor form and sidebar
+* Improved editor preview behavior.
+
+### Fixed
+* Improved reliability of snippet evaluation and front-end integration.
+* Prefixed Composer packages to reduce collisions with other plugins, especially those using Guzzle.
+* Functions conditions were loading before loop setup, resulting in some conditions not working. (PRO)
+* JavaScript and CSS snippets loading twice due to a conditions bug. (PRO)
+
+### Removed
+* Removed CSS linting within the editor until a modern replacement can be implemented.
+
+## [3.7.0] (2025-08-29)
+
+### Added
+* New 'conditions' feature: control where and when snippets execute with a powerful logic builder. (PRO)
+
+### Changed
+* Redesigned edit menu with refreshed look and functionality.
+* Updated snippet type badges to be more visually distinct.
+* Redesigned tooltips used throughout the plugin.
+* Moved content snippet shortcode options into separate modal window.
+* Updated snippet tag editor to use built-in WordPress tag editor.
+* Created proper form for sharing beta feedback.
+* Improved UX of snippet activation toggle.
+
+### Fixed
+* Fetching active snippets on a multisite network now respects the 'priority' field above all else when ordering snippets.
+* Cloud search appears correctly and allows downloading snippets in the free version of Code Snippets.
+* Improved performance of loading admin menu icon.
+
+## [3.6.9] (2025-02-17)
+
+### Changed
+* Updated `Cloud_API::get_bundles()` to properly check bundle data and return an empty array if no valid bundles are present.
+* Refactored `Cloud_List_Table::fetch_snippets()` to always return a valid `Cloud_Snippets` instance.
+* Cleaned up bundle iteration code and improved translation handling in the bundles view.
+
+### Fixed
+* Fixed errors in bundle iteration by adding a check for the bundles array before iterating.
+
 ## [3.6.8] (2025-02-14)
 
 ### Added
@@ -211,7 +411,7 @@
 
 ### Added
 * Added additional editor shortcuts to list in tooltip.
-* Filter for changing Snippets admin menu position. [See this help article for more information.](https://help.codesnippets.pro/article/61-how-can-i-change-the-location-of-the-snippets-admin-menu)
+* Filter for changing Snippets admin menu position. [See this help article for more information.](https://codesnippets.pro/doc/snippets-menu-location/)
 * Ability to filter shortcode output. Thanks to contributions from [Jack Szwergold](https://github.com/JackSzwergold).
 
 ### Fixed
@@ -1181,6 +1381,7 @@
 [brandonjp]: https://github.com/brandonjp
 
 [unreleased]: https://github.com/codesnippetspro/code-snippets/tree/core
+[3.7.0]: https://github.com/codesnippetspro/code-snippets/releases/tag/v3.7.0
 [3.6.7]: https://github.com/codesnippetspro/code-snippets/releases/tag/v3.6.7
 [3.6.6.1]: https://github.com/codesnippetspro/code-snippets/releases/tag/v3.6.6.1
 [3.6.6]: https://github.com/codesnippetspro/code-snippets/releases/tag/v3.6.6

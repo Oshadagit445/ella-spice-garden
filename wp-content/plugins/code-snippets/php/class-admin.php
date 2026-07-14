@@ -63,6 +63,7 @@ class Admin {
 		add_action( 'init', array( $this, 'load_classes' ), 11 );
 
 		add_filter( 'mu_menu_items', array( $this, 'mu_menu_items' ) );
+		add_filter( 'manage_sites_action_links', array( $this, 'add_sites_row_action' ), 10, 2 );
 		add_filter( 'plugin_action_links_' . plugin_basename( PLUGIN_FILE ), array( $this, 'plugin_action_links' ), 10, 2 );
 		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
 		add_filter( 'debug_information', array( $this, 'debug_information' ) );
@@ -90,6 +91,29 @@ class Admin {
 	}
 
 	/**
+	 * Add a "Snippets" row action to the Network Sites table.
+	 *
+	 * @param array<string, string> $actions Existing row actions.
+	 * @param int                   $site_id Current site ID.
+	 *
+	 * @return array<string, string>
+	 */
+	public function add_sites_row_action( array $actions, int $site_id ): array {
+		if ( ! is_multisite() || ! current_user_can( code_snippets()->get_network_cap_name() ) ) {
+			return $actions;
+		}
+
+		$menu_slug = code_snippets()->get_menu_slug();
+		$actions['code_snippets'] = sprintf(
+			'<a href="%s">%s</a>',
+			esc_url( get_admin_url( $site_id, 'admin.php?page=' . $menu_slug ) ),
+			esc_html__( 'Snippets', 'code-snippets' )
+		);
+
+		return $actions;
+	}
+
+	/**
 	 * Modify the action links for this plugin.
 	 *
 	 * @param array<string> $actions     Existing plugin action links.
@@ -110,13 +134,13 @@ class Admin {
 				sprintf(
 					$format,
 					esc_url( code_snippets()->get_menu_url( 'settings' ) ),
-					esc_html__( 'Change plugin settings', 'code-snippets' ),
+					esc_attr__( 'Change plugin settings', 'code-snippets' ),
 					esc_html__( 'Settings', 'code-snippets' )
 				),
 				sprintf(
 					$format,
 					esc_url( code_snippets()->get_menu_url() ),
-					esc_html__( 'Manage your existing snippets', 'code-snippets' ),
+					esc_attr__( 'Manage your existing snippets', 'code-snippets' ),
 					esc_html__( 'Snippets', 'code-snippets' )
 				),
 			],
@@ -128,7 +152,7 @@ class Admin {
 				'<a href="%1$s" title="%2$s" style="color: #d46f4d; font-weight: bold;" target="_blank">%3$s</a>',
 				'https://snipco.de/JE2i',
 				esc_attr__( 'Upgrade to Code Snippets Pro', 'code-snippets' ),
-				esc_html__( 'Go Pro', 'code-snippets' )
+				esc_attr__( 'Upgrade to Pro', 'code-snippets' )
 			);
 		}
 		return $actions;
@@ -155,7 +179,7 @@ class Admin {
 			array(
 				sprintf(
 					$format,
-					'https://help.codesnippets.pro/',
+					'https://codesnippets.pro/support/',
 					esc_attr__( 'Find out how to get support with Code Snippets', 'code-snippets' ),
 					esc_html__( 'Docs and Support', 'code-snippets' )
 				),
@@ -248,7 +272,7 @@ class Admin {
 		}
 
 		$meta_key = 'ignore_code_snippets_survey_message';
-		$dismissed = get_user_meta( $current_user->ID, $meta_key );
+		$dismissed = get_user_meta( $current_user->ID, $meta_key, false );
 
 		if ( isset( $_GET[ $meta_key ], $_REQUEST['_wpnonce'] ) && wp_verify_nonce( sanitize_key( $_REQUEST['_wpnonce'] ), $meta_key ) ) {
 			add_user_meta( $current_user->ID, $meta_key, sanitize_key( wp_unslash( $_GET[ $meta_key ] ) ) );
@@ -263,7 +287,7 @@ class Admin {
 			$now = $welcome['start_datetime'];
 		}
 
-		if ( isset( $welcome['key'] ) && ! in_array( $welcome['key'], $dismissed, true ) &&
+		if ( ! empty( $welcome['key'] ) && ! in_array( $welcome['key'], $dismissed, true ) &&
 		     ( empty( $welcome['start_datetime'] ) || $now >= $welcome['start_datetime'] ) &&
 		     ( empty( $welcome['end_datetime'] ) || $now <= $welcome['end_datetime'] ) ) {
 			$notice = $welcome['key'];
@@ -289,7 +313,7 @@ class Admin {
 		echo wp_kses_post( $text );
 
 		printf(
-			'<a href="%s" class="button button-secondary" target="_blank" style="margin: auto .5em;">%s</a>',
+			'<a href="%s" class="button button-secondary" target="_blank" style="margin-block: auto; margin-inline: .5em;">%s</a>',
 			esc_url( $action_url ),
 			esc_html( $action_label )
 		);
@@ -297,78 +321,103 @@ class Admin {
 		printf(
 			'<a href="%s" class="notice-dismiss"><span class="screen-reader-text">%s</span></a>',
 			esc_url( wp_nonce_url( add_query_arg( $meta_key, $notice ), $meta_key ) ),
-			esc_attr__( 'Dismiss', 'code-snippets' )
+			esc_html__( 'Dismiss', 'code-snippets' )
 		);
 
 		echo '</p></div>';
 	}
 
 	/**
+	 * Render a badge for a snippet type in the nav tabs.
+	 *
+	 * @param string $type_name Identifier of the snippet type.
+	 */
+	private static function render_snippet_tab_badge( string $type_name ) {
+		if ( 'all' !== $type_name ) {
+			printf( '<span class="badge %s-badge">', esc_attr( $type_name ) );
+
+			switch ( $type_name ) {
+				case 'cloud':
+					echo '<span class="dashicons dashicons-cloud"></span>';
+					break;
+				case 'cloud_search':
+					echo '<span class="dashicons dashicons-search"></span>';
+					break;
+				case 'bundles':
+					echo '<span class="dashicons dashicons-screenoptions"></span>';
+					break;
+				case 'ai':
+					echo '<span class="ai-icon">', esc_html__( 'AI', 'code-snippets' ), '</span>';
+					break;
+				case 'cond':
+					echo '<span class="dashicons dashicons-randomize"></span>';
+					break;
+				default:
+					echo esc_html( $type_name );
+					break;
+			}
+
+			echo '</span>';
+		}
+	}
+
+	/**
 	 * Render a nav tab for a snippet type.
 	 *
-	 * @param string $type_name    Type identifier.
-	 * @param string $label        Type label.
-	 * @param string $current_type Identifier of currently-selected type.
+	 * @param array{string, string} $type_labels  Associative array of snippet type identifiers and their labels.
+	 * @param string                $current_type Identifier of currently-selected type.
 	 *
 	 * @return void
 	 */
-	public static function render_snippet_type_tab( string $type_name, string $label, string $current_type = '' ) {
-		$cloud_tabs = [ 'cloud', 'cloud_search', 'bundles' ];
-		$nav_tab_inactive = false;
+	public static function render_snippet_type_tabs( array $type_labels, string $current_type = '' ) {
+		$is_licensed = code_snippets()->licensing->is_licensed();
+		$pro_types = [ 'css', 'js', 'cond', 'cloud', 'bundles' ];
+		$cloud_tabs = [ 'cloud', 'bundles' ];
 
-		if ( $type_name === $current_type ) {
-			printf( '<a class="nav-tab nav-tab-active" data-snippet-type="%s">', esc_attr( $type_name ) );
+		foreach ( $type_labels as $type_name => $label ) {
+			if ( ! $is_licensed && in_array( $type_name, $pro_types, true ) ) {
+				continue;
+			}
 
-		} elseif ( ! code_snippets()->licensing->is_licensed() && Plugin::is_pro_type( $type_name ) ) {
-			printf(
-				'<a class="nav-tab nav-tab-inactive" data-snippet-type="%s" title="%s" href="https://codesnippets.pro/pricing/" target="_blank">',
-				esc_attr( $type_name ),
-				esc_attr__( 'Available in Code Snippets Pro (external link)', 'code-snippets' )
-			);
+			if ( $type_name === $current_type ) {
+				printf( '<a class="nav-tab nav-tab-active %s-tab">', esc_attr( $type_name ) );
+			} else {
+				$current_url = remove_query_arg( [ 'cloud_select', 'cloud_search' ] );
+				$nav_tab_inactive = in_array( $type_name, $cloud_tabs, true ) && ! code_snippets()->cloud_api->is_cloud_key_verified();
 
-		} else {
-			$current_url = remove_query_arg( [ 'cloud_select', 'cloud_search' ] );
-
-			if ( in_array( $type_name, $cloud_tabs, true ) && ! code_snippets()->cloud_api->is_cloud_key_verified() ) {
-				$nav_tab_inactive = true;
+				printf(
+					'<a class="%s %s-tab" href="%s">',
+					$nav_tab_inactive ? 'nav-tab nav-tab-inactive' : 'nav-tab',
+					esc_attr( $type_name ),
+					esc_url( add_query_arg( 'type', $type_name, $current_url ) )
+				);
 			}
 
 			printf(
-				'<a class="nav-tab %s" href="%s" data-snippet-type="%s">',
-				$nav_tab_inactive ? 'nav-tab-inactive' : '',
-				esc_url( add_query_arg( 'type', $type_name, $current_url ) ),
-				esc_attr( $type_name )
+				'<span class="%s">%s</span>',
+				esc_attr( 'all' === $type_name ? 'all-snippets-label' : 'snippet-label' ),
+				esc_html( $label )
 			);
+
+			self::render_snippet_tab_badge( $type_name );
+			echo '</a>';
 		}
 
-		if ( 'all' === $type_name ) {
-			$label_class = 'all-snippets-label';
-		} else {
-			$label_class = 'snippet-label';
+		foreach ( $type_labels as $type_name => $label ) {
+			if ( $is_licensed || ! in_array( $type_name, $pro_types, true ) ) {
+				continue;
+			}
+
+			printf(
+				'<a class="nav-tab nav-tab-inactive %s-tab" href="%s" target="_blank" aria-label="%s">%s',
+				esc_attr( $type_name ),
+				esc_url( 'https://codesnippets.pro/pricing/' ),
+				esc_attr__( 'Find more about Pro (opens in external tab)', 'code-snippets' ),
+				esc_html( $label )
+			);
+
+			self::render_snippet_tab_badge( $type_name );
+			echo '</a>';
 		}
-
-		echo '<span class="' . $label_class . '">', esc_html( $label ), '</span>';
-
-		switch ( $type_name ) {
-			case 'all':
-				break;
-			case 'cloud':
-				echo '<span class="cloud-badge dashicons dashicons-cloud cloud-icon cloud-synced"></span>';
-				break;
-			case 'cloud_search':
-				echo '<span class="cloud-badge dashicons dashicons-search cloud-icon cloud-downloaded"></span>';
-				break;
-			case 'bundles':
-				echo '<span class="cloud-badge dashicons dashicons-screenoptions cloud-icon cloud-bundle"></span>';
-				break;
-			case 'ai':
-				echo '<span class="cloud-badge ai-icon">', esc_html__( 'AI', 'code-snippets' ), '</span>';
-				break;
-			default:
-				echo '<span class="badge">' . esc_html( $type_name ) . '</span>';
-				break;
-		}
-
-		echo '</a>';
 	}
 }

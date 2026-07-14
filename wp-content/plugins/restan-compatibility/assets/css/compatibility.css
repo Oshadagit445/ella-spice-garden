@@ -1,0 +1,49 @@
+/* Hide Elementor mobile logo while menu is open */
+
+.elementor-element-d30de5e.rc-hide-logo{
+
+    display:none !important;
+
+}
+
+/* Keep menu above everything */
+
+.navbar-toggle{
+
+    z-index:999999 !important;
+
+}
+
+.navbar-collapse{
+
+    z-index:999998 !important;
+
+}
+
+nav.navbar.validnavs .navbar-toggle i{
+
+font-family:"Font Awesome 5 Free" !important;
+
+font-weight:900 !important;
+
+font-style:normal !important;
+
+display:inline-block !important;
+
+visibility:visible !important;
+
+opacity:1 !important;
+
+line-height:1;
+
+-webkit-font-smoothing:antialiased;
+
+-moz-osx-font-smoothing:grayscale;
+
+}
+
+.overlay-screen{
+
+    z-index:999997 !important;
+
+}
