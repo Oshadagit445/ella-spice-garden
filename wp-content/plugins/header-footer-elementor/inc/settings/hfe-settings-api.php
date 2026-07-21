@@ -22,7 +22,7 @@ class HFE_Settings_Api {
 	 *
 	 * @access private
 	 * @var object Class object.
-	 * @since x.x.x
+	 * @since 2.2.1
 	 */
 	private static $instance;
 
@@ -41,7 +41,7 @@ class HFE_Settings_Api {
 	/**
 	 * Initialize hooks.
 	 *
-	 * @since x.x.x
+	 * @since 2.2.1
 	 * @return void
 	 */
 	private function __construct() {
@@ -53,7 +53,7 @@ class HFE_Settings_Api {
 	/**
 	 * Register REST API routes.
 	 *
-	 * @since x.x.x
+	 * @since 2.2.1
 	 * @return void
 	 */
 	public function register_routes() {
@@ -87,12 +87,59 @@ class HFE_Settings_Api {
 				'permission_callback' => [ $this, 'get_items_permissions_check' ],
 			]
 		);
+
+		register_rest_route(
+			'hfe/v1',
+			'/email-webhook',
+			[
+				'methods'             => 'POST',
+				'callback'            => [ $this, 'send_email_to_webhook_api' ],
+				'permission_callback' => [ $this, 'get_items_permissions_check' ],
+			]
+		);
+
+		register_rest_route(
+			'hfe/v1',
+			'/recommended-plugins',
+			[
+				'methods'             => 'GET',
+				'callback'            => [ $this, 'get_recommended_plugins_list' ],
+				'permission_callback' => [ $this, 'get_items_permissions_check' ],
+			]
+		);
+
+		register_rest_route(
+			'hfe/v1',
+			'/mcp-abilities',
+			[
+				'methods'             => 'GET',
+				'callback'            => [ $this, 'get_mcp_abilities' ],
+				'permission_callback' => [ $this, 'get_items_permissions_check' ],
+			]
+		);
+
+		register_rest_route(
+			'hfe/v1',
+			'/mcp-settings',
+			[
+				[
+					'methods'             => 'GET',
+					'callback'            => [ $this, 'get_mcp_settings' ],
+					'permission_callback' => [ $this, 'get_items_permissions_check' ],
+				],
+				[
+					'methods'             => 'POST',
+					'callback'            => [ $this, 'update_mcp_settings' ],
+					'permission_callback' => [ $this, 'get_items_permissions_check' ],
+				],
+			]
+		);
 	}
 
 	/**
 	 * Check whether a given request has permission to read notes.
 	 *
-	 * @since x.x.x
+	 * @since 2.2.1
 	 * @return WP_Error|boolean
 	 */
 	public function get_items_permissions_check() {
@@ -156,6 +203,33 @@ class HFE_Settings_Api {
 
 	/**
 	 * 
+	 * Callback function to return recommended plugins list.
+	 * 
+	 * @param WP_REST_Request $request Request object.
+	 *
+	 * @return WP_REST_Response
+	 */
+	public function get_recommended_plugins_list( $request ) {
+
+		$nonce = $request->get_header( 'X-WP-Nonce' );
+
+		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+			return new WP_Error( 'invalid_nonce', __( 'Invalid nonce', 'header-footer-elementor' ), [ 'status' => 403 ] );
+		}
+
+		// Fetch recommended plugins list.
+		$recommended_plugins_list = HFE_Helper::get_recommended_bsf_plugins_list();
+
+		if ( ! is_array( $recommended_plugins_list ) ) {
+			return new WP_REST_Response( [ 'message' => __( 'Recommended plugins list not found', 'header-footer-elementor' ) ], 404 );
+		}
+
+		return new WP_REST_Response( $recommended_plugins_list, 200 );
+		
+	}
+
+	/**
+	 * 
 	 * Callback function to return widgets list.
 	 * 
 	 * @param WP_REST_Request $request Request object.
@@ -180,8 +254,239 @@ class HFE_Settings_Api {
 		return new WP_REST_Response( $widgets_list, 200 );
 		
 	}
-	
 
+	/**
+	 * Get the API URL.
+	 *
+	 * @since 2.3.1
+	 * @return string
+	 */
+	public function get_api_domain() {
+		return apply_filters( 'hfe_api_domain', 'https://websitedemos.net/' );
+	}
+
+	/**
+	 * Send Email to Webhook.
+	 * @param WP_REST_Request $request Request object.
+	 * 
+	 */
+	public function send_email_to_webhook_api( WP_REST_Request $request ) {
+		$nonce = $request->get_header( 'X-WP-Nonce' );
+		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+			return new WP_Error( 'invalid_nonce', __( 'Invalid nonce', 'header-footer-elementor' ), [ 'status' => 403 ] );
+		}
+
+		$email = sanitize_email( $request->get_param( 'email' ) );
+		$date  = sanitize_text_field( $request->get_param( 'date' ) );
+		$fname  = sanitize_text_field( $request->get_param( 'fname' ) );
+		$lname  = sanitize_text_field( $request->get_param( 'lname' ) );
+		$isActive = sanitize_text_field( $request->get_param( 'isActive' ) );
+		$domain = sanitize_text_field( $request->get_param( 'domain' ) );
+
+		if ( ! empty( $domain ) && false === filter_var( $domain, FILTER_VALIDATE_URL ) ) {
+			return new WP_Error( 'invalid_domain', __( 'Invalid domain provided.', 'header-footer-elementor' ), [ 'status' => 400 ] );
+		}
+		
+		$api_domain = trailingslashit( $this->get_api_domain() );
+		$api_domain_url = $api_domain . 'wp-json/uaelite/v1/subscribe/';
+		$validation_url = esc_url_raw( get_site_url() . '/wp-json/hfe/v1/email-response/' );
+
+		// Append session_id to track requests.
+		$body = array(
+			'email'          => $email,
+			'date'           => $date,
+			'fname'          => $fname,
+			'lname'          => $lname,
+			'isActive'       => $isActive,
+			'domain'         => $domain
+		);
+
+		$args = array(
+			'body'    => $body,
+			'timeout' => 30,
+		);
+
+		$response = wp_remote_post( $api_domain_url, $args );
+
+		if ( is_wp_error( $response ) ) {
+			return new WP_Error( 'webhook_error', __( 'Error calling endpoint', 'header-footer-elementor' ), [ 'status' => 500 ] );
+		}
+
+		$response_code = wp_remote_retrieve_response_code( $response );
+		$response_body = json_decode( wp_remote_retrieve_body( $response ), true );
+
+		if ( ! in_array( $response_code, [ 200, 201, 204 ], true ) ) {
+			error_log( 'HFE webhook API error: ' . ( isset( $response_body['message'] ) ? sanitize_text_field( $response_body['message'] ) : 'Unknown error' ) ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
+			return new WP_Error( 'webhook_error', __( 'Failed to send email. Please try again later.', 'header-footer-elementor' ), [ 'status' => $response_code ] );
+		}
+
+		update_option( 'uaelite_subscription', 'done' );
+
+		return new WP_REST_Response(
+			[
+				'message'    => 'success'
+			],
+			200
+		);
+	}
+	
+	/**
+	 * Get all MCP abilities for the settings UI.
+	 *
+	 * Returns the ability list with metadata, grouped by namespace,
+	 * for the ability toggles section.
+	 *
+	 * @param WP_REST_Request $request Request object.
+	 * @return WP_REST_Response
+	 */
+	public function get_mcp_abilities( WP_REST_Request $request ) {
+		$nonce = $request->get_header( 'X-WP-Nonce' );
+
+		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+			return new WP_Error( 'invalid_nonce', __( 'Invalid nonce', 'header-footer-elementor' ), [ 'status' => 403 ] );
+		}
+
+		// Get abilities from registry if available.
+		$loader = class_exists( 'HFE_Abilities_Loader' ) ? HFE_Abilities_Loader::instance() : null;
+
+		if ( ! $loader || ! method_exists( $loader, 'get_registry' ) ) {
+			return new WP_REST_Response( [], 200 );
+		}
+
+		// Ensure handlers are populated — wp_abilities_api_init may not have fired yet.
+		$loader->ensure_handlers_loaded();
+
+		$registry  = $loader->get_registry();
+		$abilities = $registry->get_abilities_info();
+		$settings  = get_option( 'uae_mcp_settings', [] );
+		$disabled  = ! empty( $settings['disabled_abilities'] ) && is_array( $settings['disabled_abilities'] )
+			? $settings['disabled_abilities']
+			: [];
+
+		// Add is_enabled flag based on disabled_abilities setting.
+		foreach ( $abilities as &$ability ) {
+			$ability['is_enabled'] = ! in_array( $ability['name'], $disabled, true )
+				&& ! in_array( $ability['full_name'], $disabled, true );
+		}
+		unset( $ability );
+
+		return new WP_REST_Response( $abilities, 200 );
+	}
+
+	/**
+	 * Default MCP settings.
+	 *
+	 * @return array
+	 */
+	public static function get_mcp_settings_defaults() {
+		return [
+			'enable_abilities'    => false,
+			'allow_modifications' => true,
+			'dedicated_server'    => false,
+			'angie_enabled'       => false,
+			'disabled_abilities'  => [],
+		];
+	}
+
+	/**
+	 * Get MCP settings.
+	 *
+	 * @param WP_REST_Request $request Request object.
+	 * @return WP_REST_Response
+	 */
+	public function get_mcp_settings( WP_REST_Request $request ) {
+		$nonce = $request->get_header( 'X-WP-Nonce' );
+
+		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+			return new WP_Error( 'invalid_nonce', __( 'Invalid nonce', 'header-footer-elementor' ), [ 'status' => 403 ] );
+		}
+
+		$defaults = self::get_mcp_settings_defaults();
+		$settings = get_option( 'uae_mcp_settings', [] );
+		$settings = wp_parse_args( $settings, $defaults );
+
+		// Add computed fields for the UI.
+		$settings['is_abilities_api_active'] = function_exists( 'wp_register_ability' );
+		$settings['is_mcp_adapter_active']   = class_exists( '\WP\MCP\Core\McpAdapter' );
+		$settings['is_angie_active']         = defined( 'ANGIE_VERSION' ) || ( function_exists( 'is_plugin_active' ) && is_plugin_active( 'angie/angie.php' ) );
+		$settings['dedicated_server_url']  = rest_url( 'uae/mcp' );
+		$settings['total_abilities']       = $this->count_hfe_abilities();
+
+		return new WP_REST_Response( $settings, 200 );
+	}
+
+	/**
+	 * Update MCP settings.
+	 *
+	 * @param WP_REST_Request $request Request object.
+	 * @return WP_REST_Response|WP_Error
+	 */
+	public function update_mcp_settings( WP_REST_Request $request ) {
+		$nonce = $request->get_header( 'X-WP-Nonce' );
+
+		if ( ! wp_verify_nonce( $nonce, 'wp_rest' ) ) {
+			return new WP_Error( 'invalid_nonce', __( 'Invalid nonce', 'header-footer-elementor' ), [ 'status' => 403 ] );
+		}
+
+		$defaults      = self::get_mcp_settings_defaults();
+		$current       = get_option( 'uae_mcp_settings', [] );
+		$current       = wp_parse_args( $current, $defaults );
+		$allowed_keys  = array_keys( $defaults );
+		$params        = $request->get_json_params();
+
+		if ( ! is_array( $params ) ) {
+			return new WP_Error( 'invalid_params', __( 'Invalid parameters.', 'header-footer-elementor' ), [ 'status' => 400 ] );
+		}
+
+		foreach ( $allowed_keys as $key ) {
+			if ( ! isset( $params[ $key ] ) ) {
+				continue;
+			}
+
+			if ( 'disabled_abilities' === $key ) {
+				// Sanitize as array of strings.
+				$current[ $key ] = is_array( $params[ $key ] )
+					? array_values( array_map( 'sanitize_text_field', $params[ $key ] ) )
+					: [];
+			} else {
+				$current[ $key ] = (bool) $params[ $key ];
+			}
+		}
+
+		update_option( 'uae_mcp_settings', $current );
+
+		return new WP_REST_Response(
+			[
+				'success'  => true,
+				'settings' => $current,
+			],
+			200
+		);
+	}
+
+	/**
+	 * Count registered HFE abilities.
+	 *
+	 * @return int
+	 */
+	private function count_hfe_abilities() {
+		if ( ! function_exists( 'wp_get_abilities' ) ) {
+			return 0;
+		}
+
+		$all_abilities = wp_get_abilities();
+		$count         = 0;
+
+		$prefix = class_exists( 'HFE_Ability_Registry' ) ? HFE_Ability_Registry::PREFIX : 'uae/';
+
+		foreach ( $all_abilities as $ability_name => $ability ) {
+			if ( 0 === strpos( $ability_name, $prefix ) ) {
+				++$count;
+			}
+		}
+
+		return $count;
+	}
 }
 
 // Initialize the HFE_Settings_Api class.

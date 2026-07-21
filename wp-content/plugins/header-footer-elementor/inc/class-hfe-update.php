@@ -3,9 +3,8 @@
  * Theme Update
  *
  * @package     Header Footer Elementor
- * @author      Nikhil Chavan <email@nikhilchavan.com>
  * @copyright   Copyright (c) 2019, Header Footer Elementor
- * @link        https://github.com/Nikschavan/header-footer-elementor/
+ * @link        https://github.com/brainstormforce/header-footer-elementor
  * @since       HFE 1.1.4
  */
 
@@ -67,6 +66,12 @@ if ( ! class_exists( 'HFE_Update' ) ) {
 
 			// flush rewrite rules on plugin update.
 			flush_rewrite_rules();  // PHPCS:Ignore WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules
+
+			// Track plugin update event (re-trackable on each version change via $force = true).
+			// Skip on fresh install ($db_version is false) — only track actual updates.
+			if ( false !== $db_version && class_exists( 'HFE_Analytics_Events' ) ) {
+				HFE_Analytics_Events::track( 'plugin_updated', HFE_VER, [ 'from_version' => $db_version ], true );
+			}
 
 			$this->update_db_version();
 

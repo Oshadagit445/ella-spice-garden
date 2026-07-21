@@ -7,9 +7,9 @@ declare(strict_types = 1);
 
 namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 
-use Automattic\WooCommerce\Admin\Features\Features;
 use Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplate;
 use Automattic\WooCommerce\Admin\PageController;
+use Automattic\WooCommerce\Enums\ProductType;
 use Automattic\WooCommerce\LayoutTemplates\LayoutTemplateRegistry;
 
 use Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\SimpleProductTemplate;
@@ -19,8 +19,15 @@ use WP_Block_Editor_Context;
 
 /**
  * Loads assets related to the product block editor.
+ *
+ * @deprecated 10.9.0 Product editor extension APIs will be removed in WooCommerce 11.0.
  */
 class Init {
+	/**
+	 * Version that product editor APIs were deprecated in.
+	 */
+	const DEPRECATED_SINCE = '10.9.0';
+
 	/**
 	 * The context name used to identify the editor.
 	 */
@@ -31,7 +38,7 @@ class Init {
 	 *
 	 * @var array
 	 */
-	private $supported_product_types = array( 'simple' );
+	private $supported_product_types = array( ProductType::SIMPLE );
 
 	/**
 	 * Registered product templates.
@@ -55,9 +62,9 @@ class Init {
 			return;
 		}
 
-		array_push( $this->supported_product_types, 'variable' );
-		array_push( $this->supported_product_types, 'external' );
-		array_push( $this->supported_product_types, 'grouped' );
+		array_push( $this->supported_product_types, ProductType::VARIABLE );
+		array_push( $this->supported_product_types, ProductType::EXTERNAL );
+		array_push( $this->supported_product_types, ProductType::GROUPED );
 
 		$this->redirection_controller = new RedirectionController();
 
@@ -103,11 +110,21 @@ class Init {
 			return $response;
 		}
 		if ( ! $product->meta_exists( '_product_template_id' ) ) {
+			if ( has_filter( 'experimental_woocommerce_product_editor_product_template_id_for_product' ) ) {
+				wc_deprecated_hook(
+					'experimental_woocommerce_product_editor_product_template_id_for_product',
+					$this::DEPRECATED_SINCE,
+					null,
+					'This product editor extension filter will be removed in WooCommerce 11.0.'
+				);
+			}
+
 			/**
 			 * Experimental: Allows to determine a product template id based on the product data.
 			 *
 			 * @ignore
 			 * @since 9.1.0
+			 * @deprecated 10.9.0 Product editor extension APIs will be removed in WooCommerce 11.0.
 			 */
 			$product_template_id = apply_filters( 'experimental_woocommerce_product_editor_product_template_id_for_product', '', $product );
 			if ( $product_template_id ) {
@@ -137,12 +154,12 @@ class Init {
 		wp_enqueue_script( $script_handle );
 		wp_add_inline_script(
 			$script_handle,
-			'var productBlockEditorSettings = productBlockEditorSettings || ' . wp_json_encode( $editor_settings ) . ';',
+			'var productBlockEditorSettings = productBlockEditorSettings || ' . wp_json_encode( $editor_settings, JSON_HEX_TAG | JSON_UNESCAPED_SLASHES ) . ';',
 			'before'
 		);
 		wp_add_inline_script(
 			$script_handle,
-			sprintf( 'wp.blocks.setCategories( %s );', wp_json_encode( $editor_settings['blockCategories'] ) ),
+			sprintf( 'wp.blocks.setCategories( %s );', wp_json_encode( $editor_settings['blockCategories'], JSON_HEX_TAG | JSON_UNESCAPED_SLASHES ) ),
 			'before'
 		);
 		wp_tinymce_inline_scripts();
@@ -160,7 +177,7 @@ class Init {
 			return;
 		}
 		wp_enqueue_style( 'wc-product-editor' );
-		wp_enqueue_style( 'wp-edit-blocks' );
+		wp_enqueue_style( 'wp-editor' );
 		wp_enqueue_style( 'wp-format-library' );
 		wp_enqueue_editor();
 		/**
@@ -196,7 +213,7 @@ class Init {
 			return $link;
 		}
 
-		if ( $product->get_type() === 'simple' ) {
+		if ( $product->get_type() === ProductType::SIMPLE ) {
 			return admin_url( 'admin.php?page=wc-admin&path=/product/' . $product->get_id() );
 		}
 
@@ -249,7 +266,7 @@ class Init {
 
 			wp_add_inline_script(
 				'wp-blocks',
-				'wp.blocks && wp.blocks.unstable__bootstrapServerSideBlockDefinitions && wp.blocks.unstable__bootstrapServerSideBlockDefinitions(' . wp_json_encode( get_block_editor_server_block_settings() ) . ');'
+				'wp.blocks && wp.blocks.unstable__bootstrapServerSideBlockDefinitions && wp.blocks.unstable__bootstrapServerSideBlockDefinitions(' . wp_json_encode( get_block_editor_server_block_settings(), JSON_HEX_TAG | JSON_UNESCAPED_SLASHES ) . ');'
 			);
 		}
 	}
@@ -286,7 +303,7 @@ class Init {
 				'icon'               => 'shipping',
 				'layout_template_id' => 'simple-product',
 				'product_data'       => array(
-					'type' => 'simple',
+					'type' => ProductType::SIMPLE,
 				),
 			)
 		);
@@ -299,7 +316,7 @@ class Init {
 				'icon'               => 'group',
 				'layout_template_id' => 'simple-product',
 				'product_data'       => array(
-					'type' => 'grouped',
+					'type' => ProductType::GROUPED,
 				),
 			)
 		);
@@ -312,7 +329,7 @@ class Init {
 				'icon'               => 'link',
 				'layout_template_id' => 'simple-product',
 				'product_data'       => array(
-					'type' => 'external',
+					'type' => ProductType::EXTERNAL,
 				),
 			)
 		);
@@ -401,10 +418,20 @@ class Init {
 	 * Register product templates.
 	 */
 	public function register_product_templates() {
+		if ( has_filter( 'woocommerce_product_editor_product_templates' ) ) {
+			wc_deprecated_hook(
+				'woocommerce_product_editor_product_templates',
+				self::DEPRECATED_SINCE,
+				null,
+				'This product editor extension filter will be removed in WooCommerce 11.0.'
+			);
+		}
+
 		/**
 		 * Allows for new product template registration.
 		 *
 		 * @since 8.5.0
+		 * @deprecated 10.9.0 Product editor extension APIs will be removed in WooCommerce 11.0.
 		 */
 		$this->product_templates = apply_filters( 'woocommerce_product_editor_product_templates', $this->get_default_product_templates() );
 		$this->product_templates = $this->create_default_product_template_by_custom_product_type( $this->product_templates );
@@ -417,12 +444,6 @@ class Init {
 		);
 
 		$this->redirection_controller->set_product_templates( $this->product_templates );
-
-		// PFT: Initialize the product form controller.
-		if ( Features::is_enabled( 'product-editor-template-system' ) ) {
-			$product_form_controller = new ProductFormsController();
-			$product_form_controller->init();
-		}
 	}
 
 	/**

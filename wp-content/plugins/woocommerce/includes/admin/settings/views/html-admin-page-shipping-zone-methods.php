@@ -14,10 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<h2>
-	<a href="<?php echo esc_url( admin_url( 'admin.php?page=wc-settings&tab=shipping' ) ); ?>"><?php esc_html_e( 'Shipping zones', 'woocommerce' ); ?></a> &gt;
-	<span class="wc-shipping-zone-name"><?php echo esc_html( $zone->get_zone_name() ? $zone->get_zone_name() : __( 'Zone', 'woocommerce' ) ); ?></span>
-</h2>
+
+<?php wc_back_header( $zone->get_zone_name() ? $zone->get_zone_name() : __( 'Add zone', 'woocommerce' ), __( 'Return to shipping', 'woocommerce' ), admin_url( 'admin.php?page=wc-settings&tab=shipping' ) ); ?>
 
 <?php
 // phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment
@@ -159,7 +157,7 @@ do_action( 'woocommerce_shipping_zone_after_methods_table', $zone );
 				</article>
 				<footer>
 					<div class="inner">
-						<div>
+						<div class="wc-backbone-modal-buttons">
 							<button id="btn-back" class="button button-large wc-backbone-modal-back-{{ data.status === 'new' ? 'active' : 'inactive' }}"><?php esc_html_e( 'Back', 'woocommerce' ); ?></button>
 							<button id="btn-ok" data-status='{{ data.status }}' class="button button-primary button-large">
 								<div class="wc-backbone-modal-action-{{ data.status === 'new' ? 'active' : 'inactive' }}"><?php esc_html_e( 'Create and save', 'woocommerce' ); ?></div>
@@ -269,7 +267,9 @@ do_action( 'woocommerce_shipping_zone_after_methods_table', $zone );
 				</article>
 				<footer>
 					<div class="inner">
-						<button id="btn-next" disabled class="button button-primary button-large disabled"><?php esc_html_e( 'Continue', 'woocommerce' ); ?></button>
+						<div class="wc-backbone-modal-buttons">
+							<button id="btn-next" disabled class="button button-primary button-large disabled"><?php esc_html_e( 'Continue', 'woocommerce' ); ?></button>
+						</div>
 						<div class="wc-shipping-zone-method-modal-info"><?php esc_html_e( 'STEP 1 OF 2', 'woocommerce' ); ?></div>
 					</div>
 				</footer>

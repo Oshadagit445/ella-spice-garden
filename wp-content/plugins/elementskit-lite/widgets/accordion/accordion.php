@@ -11,6 +11,10 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
 
 	public $base;
 
+	public function get_script_depends() {
+		return ['ekit-accordion'];
+	}
+
 	public function get_name() {
         return Handler::get_name();
     }
@@ -278,6 +282,17 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
                     '{{WRAPPER}} .elementskit-accordion.curve-shape .elementskit-card-header>.elementskit-btn-link[aria-expanded=true]' => 'color: {{VALUE}};'
                 ],
             ]
+        );    
+
+        $this->add_control(
+            'ekit_accordion_title__hover_color', [
+                'label'		 =>esc_html__( 'Hover Color', 'elementskit-lite' ),
+                'type'		 => Controls_Manager::COLOR,
+                'selectors'	 => [
+                    '{{WRAPPER}} .elementskit-accordion .elementskit-card .elementskit-card-header > .elementskit-btn-link[aria-expanded="true"]:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .elementskit-accordion.curve-shape .elementskit-card-header > .elementskit-btn-link[aria-expanded=true]:hover' => 'color: {{VALUE}};'
+                ],
+            ]
         );
 
         $this->add_group_control(
@@ -367,6 +382,15 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
                 'type'		 => Controls_Manager::COLOR,
                 'selectors'	 => [
                     '{{WRAPPER}} .elementskit-accordion .elementskit-card-header>.elementskit-btn-link' => 'color: {{VALUE}};'
+                ],
+            ]
+        );
+        $this->add_control(
+            'ekit_accordion_title_hover_color_close', [
+                'label'		 =>esc_html__( 'Hover Color', 'elementskit-lite' ),
+                'type'		 => Controls_Manager::COLOR,
+                'selectors'	 => [
+                    '{{WRAPPER}} .elementskit-accordion .elementskit-card-header>.elementskit-btn-link:hover' => 'color: {{VALUE}};'
                 ],
             ]
         );
@@ -554,9 +578,17 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
             [
                 'label' => esc_html__( 'Width', 'elementskit-lite' ),
                 'type' => Controls_Manager::SLIDER,
-                'size_units' => [ '%' ],
+                'size_units' => [ 'px', '%', 'em' ],
                 'range' => [
                     '%' => [
+                        'min' => 0,
+                        'max' => 100,
+                    ],
+                    'px' => [
+                        'min' => 0,
+                        'max' => 1200,
+                    ],
+                    'em' => [
                         'min' => 0,
                         'max' => 100,
                     ],
@@ -734,6 +766,16 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
         );
 
         $this->add_control(
+            'ekit_accordion_icon_hover_color_close', [
+                'label'		 =>esc_html__( 'Hover Color', 'elementskit-lite' ),
+                'type'		 => Controls_Manager::COLOR,
+                'selectors'	 => [
+                    '{{WRAPPER}} .elementskit-accordion .elementskit-card-header .elementskit-btn-link:hover .ekit_accordion_normal_icon' => 'color: {{VALUE}}; fill: {{VALUE}};',
+                ],
+            ]
+        );
+
+        $this->add_control(
             'ekit_accordion_icon_box_open_bg_hr',
             [
                 'type' => Controls_Manager::DIVIDER,
@@ -807,6 +849,16 @@ class ElementsKit_Widget_Accordion extends Widget_Base {
                 'type'		 => Controls_Manager::COLOR,
                 'selectors'	 => [
                     '{{WRAPPER}} .elementskit-accordion .elementskit-card .elementskit-card-header .elementskit-btn-link .ekit_accordion_active_icon' => 'color: {{VALUE}}; fill: {{VALUE}};',
+                ],
+            ]
+        );
+
+        $this->add_control(
+            'ekit_accordion_icon_hover_color', [
+                'label'		 =>esc_html__( 'Hover Color', 'elementskit-lite' ),
+                'type'		 => Controls_Manager::COLOR,
+                'selectors'	 => [
+                    '{{WRAPPER}} .elementskit-accordion .elementskit-card .elementskit-card-header .elementskit-btn-link:hover .ekit_accordion_active_icon' => 'color: {{VALUE}}; fill: {{VALUE}};',
                 ],
             ]
         );

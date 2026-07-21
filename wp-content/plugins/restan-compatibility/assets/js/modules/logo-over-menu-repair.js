@@ -10,6 +10,8 @@
 
     const module = {
 
+        showLogoTimer: null,
+
         init() {
 
             RC.log("Logo Over Menu Repair Loaded");
@@ -79,19 +81,34 @@
 
             const open = this.isMenuOpen();
 
-            if(open){
+            if (open) {
 
+                // Cancel any pending show
+                clearTimeout(this.showLogoTimer);
+
+                // Hide immediately
                 this.logo.setAttribute(
                     "style",
                     "display:none !important;"
                 );
 
-            }
-            else{
+            } else {
 
-                this.logo.removeAttribute(
-                    "style"
-                );
+                // Wait for menu closing animation
+                clearTimeout(this.showLogoTimer);
+
+                this.showLogoTimer = setTimeout(() => {
+
+                    // Double-check menu didn't reopen
+                    if (!this.isMenuOpen()) {
+
+                        this.logo.removeAttribute(
+                            "style"
+                        );
+
+                    }
+
+                }, 400); // delay in milliseconds
 
             }
 

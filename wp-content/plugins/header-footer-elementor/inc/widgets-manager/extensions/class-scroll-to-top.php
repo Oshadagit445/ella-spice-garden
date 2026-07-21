@@ -16,14 +16,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * HFE Progress bar extension
  *
- * @since x.x.x
+ * @since 2.2.1
  */
 class Scroll_To_Top {
 
 	/**
 	 * Instance of Widgets_Loader.
 	 *
-	 * @since  x.x.x
+	 * @since  2.2.1
 	 * @var null
 	 */
 	private static $_instance = null;
@@ -31,7 +31,7 @@ class Scroll_To_Top {
 	/**
 	 * Get instance of Widgets_Loader
 	 *
-	 * @since  x.x.x
+	 * @since  2.2.1
 	 * @return Widgets_Loader
 	 */
 	public static function instance() {
@@ -45,7 +45,7 @@ class Scroll_To_Top {
 	/**
 	 * Setup actions and filters.
 	 *
-	 * @since  x.x.x
+	 * @since  2.2.1
 	 * @access private
 	 */
 	private function __construct() {
@@ -84,7 +84,7 @@ class Scroll_To_Top {
 	 * Register extension tab
 	 *
 	 * @param \Elementor\Core\Kits\Documents\Kit $kit The Elementor Kit document.
-	 * @since x.x.x
+	 * @since 2.2.1
 	 */
 	public function register_extension_tab( \Elementor\Core\Kits\Documents\Kit $kit ) {
 		$kit->register_tab( 'hfe-scroll-to-top-settings', Scroll_To_Top_Settings::class );
@@ -93,7 +93,7 @@ class Scroll_To_Top {
 	/**
 	 * Render scroll to top html
 	 *
-	 * @since x.x.x
+	 * @since 2.2.1
 	 */
 	public function render_scroll_to_top_html() {
 
@@ -128,8 +128,13 @@ class Scroll_To_Top {
 			$scrolltop_media_type = ! empty( $this->get_elementor_settings( 'hfe_scroll_to_top_media_type' ) ) ? $this->get_elementor_settings( 'hfe_scroll_to_top_media_type' ) : 'icon';
 			$scrolltop_icon_html  = '';
 			if ( 'icon' == $scrolltop_media_type ) {
-				$scrolltop_icon      = ! empty( $this->get_elementor_settings( 'hfe_scroll_to_top_button_icon' ) ) ? $this->get_elementor_settings( 'hfe_scroll_to_top_button_icon' )['value'] : 'fas fa-chevron-up';
-				$scrolltop_icon_html = "<i class='$scrolltop_icon'></i>";
+				$scrolltop_icon_setting = $this->get_elementor_settings( 'hfe_scroll_to_top_button_icon' );
+				// The icon control stores a font-icon class as a string, but an
+				// SVG icon as an array. Only use the value when it is a string,
+				// otherwise fall back to the default — prevents an "Array to
+				// string conversion" warning when an SVG icon is selected.
+				$scrolltop_icon      = ( ! empty( $scrolltop_icon_setting['value'] ) && is_string( $scrolltop_icon_setting['value'] ) ) ? $scrolltop_icon_setting['value'] : 'fas fa-chevron-up';
+				$scrolltop_icon_html = "<i class='" . esc_attr( $scrolltop_icon ) . "'></i>";
 			} elseif ( 'image' == $scrolltop_media_type ) {
 				$scrolltop_image     = ! empty( $this->get_elementor_settings( 'hfe_scroll_to_top_button_image' ) ) ? $this->get_elementor_settings( 'hfe_scroll_to_top_button_image' )['url'] : '';
 				$scrolltop_icon_html = "<img src='$scrolltop_image'>";
@@ -285,7 +290,7 @@ class Scroll_To_Top {
 			}
 		}
 
-		if ( isset( $extensions_settings) && isset( $extensions_settings['kit_settings'][ $setting_id ] ) ) {
+		if ( isset( $extensions_settings ) && isset( $extensions_settings['kit_settings'][ $setting_id ] ) ) {
 			$return = $extensions_settings['kit_settings'][ $setting_id ];
 		}
 
@@ -315,7 +320,7 @@ class Scroll_To_Top {
 		$element->add_control(
 			'hfe_scroll_to_top_single_disable',
 			[
-				'label'        => __( 'Disable Scroll to Top For This Page', 'header-footer-elementor' ),
+				'label'        => __( 'Disable Scroll to Top for This Page', 'header-footer-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'default'      => '',
 				'label_on'     => __( 'Yes', 'header-footer-elementor' ),

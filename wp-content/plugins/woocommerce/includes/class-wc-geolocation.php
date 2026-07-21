@@ -10,6 +10,8 @@
  * @version 3.9.0
  */
 
+use Automattic\WooCommerce\Enums\DefaultCustomerAddress;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -69,7 +71,7 @@ class WC_Geolocation {
 	 * @return bool
 	 */
 	private static function is_geolocation_enabled( $current_settings ) {
-		return in_array( $current_settings, array( 'geolocation', 'geolocation_ajax' ), true );
+		return in_array( $current_settings, array( DefaultCustomerAddress::GEOLOCATION, DefaultCustomerAddress::GEOLOCATION_AJAX ), true );
 	}
 
 	/**
@@ -89,7 +91,9 @@ class WC_Geolocation {
 			$value = preg_replace( '/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)\:.*|\[([^]]+)\].*/', '$1$2', $value );
 			return (string) rest_is_ip_address( $value );
 		} elseif ( isset( $_SERVER['REMOTE_ADDR'] ) ) {
-			return sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) );
+			// Make sure we always only send through the first IP in the list which should always be the client IP.
+			$value = trim( current( preg_split( '/,/', sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) ) ) );
+			return (string) rest_is_ip_address( $value );
 		}
 		return '';
 	}
@@ -182,7 +186,7 @@ class WC_Geolocation {
 		$geolocation = apply_filters(
 			'woocommerce_get_geolocation',
 			array(
-				'country'  => $country_code,
+				'country'  => $country_code ? $country_code : '',
 				'state'    => '',
 				'city'     => '',
 				'postcode' => '',
@@ -355,7 +359,7 @@ class WC_Geolocation {
 		wc_deprecated_function( 'WC_Geolocation::disable_geolocation_on_legacy_php', '3.9.0' );
 
 		if ( self::is_geolocation_enabled( $default_customer_address ) ) {
-			$default_customer_address = 'base';
+			$default_customer_address = DefaultCustomerAddress::BASE;
 		}
 
 		return $default_customer_address;

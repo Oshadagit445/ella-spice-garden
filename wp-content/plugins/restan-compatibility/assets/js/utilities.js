@@ -52,7 +52,7 @@
 
     RC.modules = RC.modules || {};
 
-    RC.version = "1.0.0";
+    RC.version = "1.0.1";
 
     RC.debug = true;
 

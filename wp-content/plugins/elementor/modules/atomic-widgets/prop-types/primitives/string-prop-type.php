@@ -10,7 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class String_Prop_Type extends Plain_Prop_Type {
-	use Supports_Shorthanded_Value;
+	// Backward compatibility, do not change to "const". Keep name in uppercase.
+	// phpcs:ignore
+	static $KIND = 'string';
 
 	public static function get_key(): string {
 		return 'string';
@@ -67,6 +69,10 @@ class String_Prop_Type extends Plain_Prop_Type {
 	}
 
 	protected function sanitize_value( $value ) {
-		return sanitize_text_field( $value );
+		return preg_replace_callback( '/^(\s*)(.*?)(\s*)$/', function ( $matches ) {
+			[, $leading, $value, $trailing ] = $matches;
+
+			return $leading . sanitize_text_field( $value ) . $trailing;
+		}, $value );
 	}
 }

@@ -11,6 +11,16 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
 
     public $base;
 
+	public function get_script_depends() {
+		$deps = [ 'ekit-blog-posts', 'imagesloaded' ];
+
+		if ( Plugin::$instance->editor->is_edit_mode() || Plugin::$instance->preview->is_preview_mode() ) {
+			$deps[] = 'masonry';
+		}
+
+		return $deps;
+	}
+
     public function get_name() {
         return Handler::get_name();
     }
@@ -35,11 +45,8 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
         return 'https://wpmet.com/doc/blog-posts-2/';
     }
 
-    public function format_colname($str) {
-        return str_replace('ekit', 'col', $str);
-    }
     protected function is_dynamic_content(): bool {
-        return false;
+        return true;
     }
 
 	public function has_widget_inner_wrapper(): bool {
@@ -47,7 +54,6 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
 	}
 
     protected function register_controls() {
-
         // Layout
         $this->start_controls_section(
            'ekit_blog_posts_general',
@@ -55,6 +61,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                'label' => esc_html__( 'Layout', 'elementskit-lite' ),
            ]
        );
+
        $this->add_control(
            'ekit_blog_posts_layout_style',
            [
@@ -82,7 +89,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                ],
            ]
        );
-       
+
         $this->add_control(
             'ekit_blog_posts_layout_style_thumb',
             [
@@ -153,16 +160,16 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                'label'     => esc_html__( 'Show Posts Per Row', 'elementskit-lite' ),
                'type'      => Controls_Manager::SELECT,
                'options'   => [
-                   'ekit-lg-12 ekit-md-12'   => esc_html__( '1', 'elementskit-lite' ),
-                   'ekit-lg-6 ekit-md-6'     => esc_html__( '2', 'elementskit-lite' ),
-                   'ekit-lg-4 ekit-md-6'     => esc_html__( '3', 'elementskit-lite' ),
-                   'ekit-lg-3 ekit-md-6'     => esc_html__( '4', 'elementskit-lite' ),
-                   'ekit-lg-2 ekit-md-6'     => esc_html__( '6', 'elementskit-lite' ),
+                   'ekit-col-12'   => esc_html__( '1', 'elementskit-lite' ),
+                   'ekit-col-6'     => esc_html__( '2', 'elementskit-lite' ),
+                   'ekit-col-4'     => esc_html__( '3', 'elementskit-lite' ),
+                   'ekit-col-3'     => esc_html__( '4', 'elementskit-lite' ),
+                   'ekit-col-2'     => esc_html__( '6', 'elementskit-lite' ),
                ],
                'condition' => [
                    'ekit_blog_posts_layout_style' => ['elementskit-post-image-card', 'elementskit-post-card'],
                ],
-               'default'   => 'ekit-lg-4 ekit-md-6',
+               'default'   => 'ekit-col-4',
            ]
        );
 
@@ -220,15 +227,33 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                'condition' => ['ekit_blog_posts_layout_style!' => 'elementskit-blog-block-post'],
            ]
 	   );
-	   
+
 			$this->add_control(
 				'grid_masonry',
 				[
 					'label'	=> esc_html__( 'Enable Masonry', 'elementskit-lite' ),
 					'type'	=> Controls_Manager::SWITCHER,
+					'return_value' => 'yes',
 					'condition'	=> [
 						'ekit_blog_posts_layout_style!'	=> 'elementskit-blog-block-post',
-					]
+					],
+					'assets' => [
+						'scripts' => [
+							[
+								'name' => 'masonry',
+								'conditions' => [
+									'terms' => [
+										[
+											'name' => 'grid_masonry',
+											'operator' => '===',
+											'value' => 'yes',
+										],
+									],
+								],
+							],
+						],
+
+					],
 				]
 			);
 
@@ -241,16 +266,16 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
            ]
        );
 
-       $this->add_control(
-           'ekit_blog_posts_num',
-           [
-               'label'     => esc_html__( 'Posts Count', 'elementskit-lite' ),
-               'type'      => Controls_Manager::NUMBER,
-               'min'       => 1,
-               'max'       => 100,
-               'default'   => 3,
-           ]
-       );
+        $this->add_control(
+            'ekit_blog_posts_num',
+            [
+                'label'   => esc_html__( 'Posts Count', 'elementskit-lite' ),
+                'type'    => Controls_Manager::NUMBER,
+                'min'     => 1,
+                'default' => 3,
+            ]
+        );
+
 
        $this->add_control(
         'ekit_blog_posts_is_manual_selection',
@@ -520,7 +545,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                 ],
             ]
         );
-        
+
 
 		$this->end_controls_section();
 
@@ -636,7 +661,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                'placeholder' => esc_html__( 'ID', 'elementskit-lite' ),
            ]
        );
-       
+
        $this->end_controls_section();
 
 
@@ -708,6 +733,45 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
       );
        $this->end_controls_tab();
        $this->end_controls_tabs();
+
+       $this->add_control(
+           'ekit_blog_posts_equal_height',
+           [
+               'label'        => esc_html__( 'Equalize Card Height', 'elementskit-lite' ),
+               'type'         => Controls_Manager::SWITCHER,
+               'label_on'     => esc_html__( 'Yes', 'elementskit-lite' ),
+               'label_off'    => esc_html__( 'No', 'elementskit-lite' ),
+               'return_value' => 'yes',
+               'default'      => '',
+               'separator'    => 'before',
+               'description'  => esc_html__( 'Make all cards equal height and push the Read More button to the bottom.', 'elementskit-lite' ),
+               'selectors'    => [
+                   '{{WRAPPER}} .post-items' => 'display: flex; flex-wrap: wrap;',
+                   '{{WRAPPER}} .post-items > [class*="col-"]' => 'display: flex;',
+                   '{{WRAPPER}} .elementskit-post-image-card, {{WRAPPER}} .elementskit-post-card' => 'display: flex; flex-direction: column; width: 100%;',
+                   '{{WRAPPER}} .elementskit-post-body' => 'display: flex; flex-direction: column; flex: 1 1 auto;',
+                   '{{WRAPPER}} .btn-wraper' => 'margin-top: auto;',
+               ],
+               'conditions'   => [
+                'relation' => 'and',
+                    'terms'    => [
+                        [
+                            'name'     => 'ekit_blog_posts_layout_style',
+                            'operator' => 'in',
+                            'value'    => [
+                                'elementskit-post-image-card',
+                                'elementskit-post-card',
+                            ],
+                        ],
+                        [
+                            'name'     => 'grid_masonry',
+                            'operator' => '!==',
+                            'value'    => 'yes',
+                        ],
+                    ],
+                ],
+           ]
+       );
 
 		$this->add_control(
 			'ekit_blog_posts_hr',
@@ -852,7 +916,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                 ],
             ]
         );
-        
+
         $this->add_group_control(
             Group_Control_Box_Shadow::get_type(),
             [
@@ -960,19 +1024,32 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
            ]
        );
 
-       $this->add_responsive_control(
+        $this->add_responsive_control(
            'ekit_blog_posts_feature_img_size',
            [
                'label' => esc_html__( 'Image Width', 'elementskit-lite' ),
                'type' => Controls_Manager::SLIDER,
+               'size_units' => [ 'px', '%', 'em', 'rem'],
                'range' => [
-                   'px' => [
-                       'min' => 1,
-                       'max' => 500,
-                   ],
+                    'px' => [
+                        'min' => 1,
+                        'max' => 500,
+                    ],
+                    '%' => [
+                          'min' => 1,
+                          'max' => 100,
+                     ],
+                    'em' => [
+                        'min' => 1,
+                        'max' => 50,
+                    ],
+                    'rem' => [
+                        'min' => 1,
+                        'max' => 50,
+                    ],
                ],
                'selectors' => [
-                   '{{WRAPPER}} .elementskit-entry-thumb' => 'width: {{SIZE}}{{UNIT}}; min-width: {{SIZE}}{{UNIT}}',
+                   '{{WRAPPER}} .elementskit-entry-thumb img' => 'width: {{SIZE}}{{UNIT}};',
                ],
                'condition' => [
                     'ekit_blog_posts_layout_style' => 'elementskit-post-image-card',
@@ -1833,7 +1910,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
             ]
         );
 
-        
+
         $this->add_responsive_control(
             'ekit_blog_posts_floating_category_padding',
             [
@@ -1865,7 +1942,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                 ],
             ]
         );
-        
+
         $this->add_responsive_control(
             'ekit_blog_posts_floating_category_margin_right', [
                 'label'			 =>esc_html__( 'Space Between Categories', 'elementskit-lite' ),
@@ -1891,7 +1968,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
                 ],
             ]
         );
-        
+
         $this->end_controls_section();
 
        // Title Styles
@@ -2779,7 +2856,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
            ]
        );
 
-       
+
        $this->end_controls_section();
 
        $this->insert_pro_message();
@@ -2822,7 +2899,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
             'post_items',
             [
                 'id'    => 'post-items--' . $this->get_id(),
-                'class' => 'row post-items',
+                'class' => 'ekit-row post-items',
             ]
         );
 
@@ -2836,9 +2913,9 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
        ?>
         <div <?php echo $this->get_render_attribute_string('post_items'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Already escaped by elementor ?>>
         <?php if ( 'elementskit-blog-block-post' == $ekit_blog_posts_layout_style ) {
-			$ekit_blog_posts_column = 'ekit-md-12';
+			$ekit_blog_posts_column = 'ekit-col-12';
         }
-        $column_size   = 'ekit-md-12';
+        $column_size   = 'ekit-col-12';
         $img_order     = 'order-1';
         $content_order = 'order-2';
 
@@ -2853,7 +2930,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
             || 'yes' == $ekit_blog_posts_content
             || 'yes' == $ekit_blog_posts_meta
             || 'yes' == $ekit_blog_posts_author ) ) {
-                $column_size = 'ekit-md-6';
+                $column_size = 'ekit-col-6';
             }
 
 			ob_start(); ?>
@@ -2912,14 +2989,12 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
 				$meta_data_html .= ob_get_clean();
 			endif;
 
-            $column_size = self::format_colname($column_size);
-            $ekit_blog_posts_column = self::format_colname($ekit_blog_posts_column);
             ?>
             <div class="<?php echo esc_attr( $ekit_blog_posts_column ); ?>">
 
                 <?php if ( 'elementskit-blog-block-post' == $ekit_blog_posts_layout_style ): ?>
                     <div class="<?php echo esc_attr( $ekit_blog_posts_layout_style ); ?>">
-                        <div class="row no-gutters">
+                        <div class="ekit-row no-gutters">
                             <?php if ( 'yes' == $ekit_blog_posts_feature_img && has_post_thumbnail() ): ?>
                                 <div class="<?php echo esc_attr( $column_size.' '.$img_order ); ?>">
                                     <a href="<?php the_permalink(); ?>" class="elementskit-entry-thumb">
@@ -3108,7 +3183,6 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base {
 
                $(function () {
                    var $postItems = $('#post-items--<?php echo esc_attr( $this->get_id() ); ?>[data-masonry-config]');
-
                    $postItems.imagesLoaded(function () {
                        $postItems.masonry();
                    });

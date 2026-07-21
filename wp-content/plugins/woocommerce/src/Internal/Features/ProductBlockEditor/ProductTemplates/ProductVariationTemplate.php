@@ -7,6 +7,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 
 use Automattic\WooCommerce\Admin\Features\Features;
 use Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\ProductFormTemplateInterface;
+use Automattic\WooCommerce\Enums\ProductStockStatus;
 
 /**
  * Product Variation Template.
@@ -219,6 +220,9 @@ class ProductVariationTemplate extends AbstractProductFormTemplate implements Pr
 					'property' => 'description',
 					'label'    => __( 'Note', 'woocommerce' ),
 					'help'     => 'Enter an optional note displayed on the product page when customers select this variation.',
+					'lock'     => array(
+						'move' => true,
+					),
 				),
 			)
 		);
@@ -343,8 +347,8 @@ class ProductVariationTemplate extends AbstractProductFormTemplate implements Pr
 					'label'    => sprintf( __( '%1$s, %2$s, %3$s, or %4$s', 'woocommerce' ), '<abbr title="' . esc_attr__( 'Global Trade Item Number', 'woocommerce' ) . '">' . esc_html__( 'GTIN', 'woocommerce' ) . '</abbr>', '<abbr title="' . esc_attr__( 'Universal Product Code', 'woocommerce' ) . '">' . esc_html__( 'UPC', 'woocommerce' ) . '</abbr>', '<abbr title="' . esc_attr__( 'European Article Number', 'woocommerce' ) . '">' . esc_html__( 'EAN', 'woocommerce' ) . '</abbr>', '<abbr title="' . esc_attr__( 'International Standard Book Number', 'woocommerce' ) . '">' . esc_html__( 'ISBN', 'woocommerce' ) . '</abbr>' ),
 					'tooltip'  => __( 'Enter a barcode or any other identifier unique to this product. It can help you list this product on other channels or marketplaces.', 'woocommerce' ),
 					'pattern'  => array(
-						'value'   => '[0-9\-]*',
-						'message' => __( 'Please enter only numbers and hyphens (-).', 'woocommerce' ),
+						'value'   => '[0-9\-]*[0-9Xx]?',
+						'message' => __( 'Enter only numbers and hyphens (-). The letter X is allowed only as the final ISBN-10 check digit.', 'woocommerce' ),
 					),
 				),
 			)
@@ -390,15 +394,15 @@ class ProductVariationTemplate extends AbstractProductFormTemplate implements Pr
 					'options'  => array(
 						array(
 							'label' => __( 'In stock', 'woocommerce' ),
-							'value' => 'instock',
+							'value' => ProductStockStatus::IN_STOCK,
 						),
 						array(
 							'label' => __( 'Out of stock', 'woocommerce' ),
-							'value' => 'outofstock',
+							'value' => ProductStockStatus::OUT_OF_STOCK,
 						),
 						array(
 							'label' => __( 'On backorder', 'woocommerce' ),
-							'value' => 'onbackorder',
+							'value' => ProductStockStatus::ON_BACKORDER,
 						),
 					),
 				),

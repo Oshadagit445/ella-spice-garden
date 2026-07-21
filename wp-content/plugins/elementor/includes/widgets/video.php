@@ -116,6 +116,28 @@ class Widget_Video extends Widget_Base {
 	 *
 	 * Adds different input fields to allow the user to change and customize the widget settings.
 	 *
+	 * @since 3.19.0
+	 * @access protected
+	 *
+	 * @return array Widget promotion data.
+	 */
+	protected function get_upsale_data() {
+		return [
+			'condition' => ! Utils::has_pro(),
+			'image' => esc_url( ELEMENTOR_ASSETS_URL . 'images/go-pro.svg' ),
+			'image_alt' => esc_attr__( 'Upgrade', 'elementor' ),
+			'title' => esc_html__( "Grab your visitors' attention", 'elementor' ),
+			'description' => esc_html__( 'Get the Video Playlist widget and grow your toolbox with Elementor Pro.', 'elementor' ),
+			'upgrade_url' => esc_url( 'https://go.elementor.com/go-pro-video-widget/' ),
+			'upgrade_text' => esc_html__( 'Upgrade Now', 'elementor' ),
+		];
+	}
+
+	/**
+	 * Register video widget controls.
+	 *
+	 * Adds different input fields to allow the user to change and customize the widget settings.
+	 *
 	 * @since 3.1.0
 	 * @access protected
 	 */
@@ -411,19 +433,6 @@ class Widget_Video extends Widget_Base {
 		);
 
 		$this->add_control(
-			'modestbranding',
-			[
-				'label' => esc_html__( 'Modest Branding', 'elementor' ),
-				'type' => Controls_Manager::SWITCHER,
-				'condition' => [
-					'video_type' => [ 'youtube' ],
-					'controls' => 'yes',
-				],
-				'frontend_available' => true,
-			]
-		);
-
-		$this->add_control(
 			'cc_load_policy',
 			[
 				'label' => esc_html__( 'Captions', 'elementor' ),
@@ -617,16 +626,6 @@ class Widget_Video extends Widget_Base {
 				],
 			]
 		);
-
-		if ( ! Utils::has_pro() ) {
-			$this->add_control(
-				Utils::VIDEO_PLAYLIST . '_promotion',
-				[
-					'label' => esc_html__( 'Video Playlist widget', 'elementor' ),
-					'type' => Promotion_Control::TYPE,
-				]
-			);
-		}
 
 		$this->end_controls_section();
 
@@ -959,7 +958,7 @@ class Widget_Video extends Widget_Base {
 					'unit' => '%',
 				],
 				// 'selectors' => [
-				// 	'(desktop+)#elementor-lightbox-{{ID}} .elementor-video-container' => 'width: {{SIZE}}{{UNIT}};',
+				// '(desktop+)#elementor-lightbox-{{ID}} .elementor-video-container' => 'width: {{SIZE}}{{UNIT}};',
 				// ],
 				'condition' => [
 					'lightbox_video_width!' => '',
@@ -980,7 +979,7 @@ class Widget_Video extends Widget_Base {
 					'top' => esc_html__( 'Top', 'elementor' ),
 				],
 				// 'selectors' => [
-				// 	'#elementor-lightbox-{{ID}} .elementor-video-container' => '{{VALUE}}; transform: translateX(-50%);',
+				// '#elementor-lightbox-{{ID}} .elementor-video-container' => '{{VALUE}}; transform: translateX(-50%);',
 				// ],
 				'selectors_dictionary' => [
 					'top' => 'top: 60px',
@@ -1050,7 +1049,7 @@ class Widget_Video extends Widget_Base {
 			if ( $is_static_render_mode ) {
 				$video_html = Embed::get_embed_thumbnail_html( $video_url, $post_id );
 				// YouTube API requires a different markup which was set above.
-			} else if ( 'youtube' !== $settings['video_type'] ) {
+			} elseif ( 'youtube' !== $settings['video_type'] ) {
 				$video_html = Embed::get_embed_html( $video_url, $embed_params, $embed_options );
 			}
 		}
@@ -1195,7 +1194,6 @@ class Widget_Video extends Widget_Base {
 				'controls',
 				'mute',
 				'rel',
-				'modestbranding',
 				'cc_load_policy',
 			];
 
@@ -1335,7 +1333,6 @@ class Widget_Video extends Widget_Base {
 	}
 
 	/**
-	 * @param bool $from_media
 	 *
 	 * @return string
 	 * @since 2.1.0
@@ -1415,5 +1412,27 @@ class Widget_Video extends Widget_Base {
 		?>
 		<video class="elementor-video" src="<?php echo esc_attr( $video_url ); ?>" <?php Utils::print_html_attributes( $video_params ); ?>></video>
 		<?php
+	}
+
+	public function render_markdown(): string {
+		$settings = $this->get_settings_for_display();
+		$video_type = $settings['video_type'] ?? 'youtube';
+		$url = '';
+
+		if ( 'hosted' === $video_type ) {
+			if ( ! empty( $settings['insert_url'] ) ) {
+				$url = $settings['external_url']['url'] ?? '';
+			} else {
+				$url = $settings['hosted_url']['url'] ?? '';
+			}
+		} else {
+			$url = $settings[ $video_type . '_url' ] ?? '';
+		}
+
+		if ( empty( $url ) ) {
+			return '';
+		}
+
+		return '[Video](' . esc_url( $url ) . ')';
 	}
 }

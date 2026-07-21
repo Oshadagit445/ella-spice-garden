@@ -10,7 +10,7 @@ use Elementor\TemplateLibrary\Source_Local;
 use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit; // Exit if accessed directly.
 }
 
 /**
@@ -137,16 +137,16 @@ class Documents_Manager {
 	 * @since 2.0.0
 	 * @access public
 	 *
-	 * @param string $type  Document type name.
-	 * @param string $class The name of the class that registers the document type.
-	 *                      Full name with the namespace.
+	 * @param string $type       Document type name.
+	 * @param string $class_name The name of the class that registers the document type.
+	 *                           Full name with the namespace.
 	 *
 	 * @return Documents_Manager The updated document manager instance.
 	 */
-	public function register_document_type( $type, $class ) {
-		$this->types[ $type ] = $class;
+	public function register_document_type( $type, $class_name ) {
+		$this->types[ $type ] = $class_name;
 
-		$cpt = $class::get_property( 'cpt' );
+		$cpt = $class_name::get_property( 'cpt' );
 
 		if ( $cpt ) {
 			foreach ( $cpt as $post_type ) {
@@ -154,7 +154,7 @@ class Documents_Manager {
 			}
 		}
 
-		if ( $class::get_property( 'register_type' ) ) {
+		if ( $class_name::get_property( 'register_type' ) ) {
 			Source_Local::add_template_type( $type );
 		}
 
@@ -209,12 +209,10 @@ class Documents_Manager {
 	/**
 	 * Retrieve a document after checking it exist and allowed to edit.
 	 *
-	 * @since 3.13.0
-	 *
-	 * @param int $post_id The post ID of the document.
-	 *
+	 * @param string $id
 	 * @return Document
-	 * @throws \Exception
+	 * @throws \Exception If the document is not found or the current user is not allowed to edit it.
+	 * @since 3.13.0
 	 */
 	public function get_with_permissions( $id ): Document {
 		$document = $this->get( $id );
@@ -233,9 +231,9 @@ class Documents_Manager {
 	/**
 	 * A `void` version for `get_with_permissions`.
 	 *
-	 * @param $id
+	 * @param string $id
 	 * @return void
-	 * @throws \Exception
+	 * @throws \Exception If the document is not found or the current user is not allowed to edit it.
 	 */
 	public function check_permissions( $id ) {
 		$this->get_with_permissions( $id );
@@ -277,7 +275,7 @@ class Documents_Manager {
 	 */
 	public function get_doc_for_frontend( $post_id ) {
 		$preview_id = (int) Utils::get_super_global_value( $_GET, 'preview_id' );
-		$is_preview = is_preview() && $post_id === $preview_id;
+		$is_preview = is_preview();
 		$is_nonce_verify = wp_verify_nonce( Utils::get_super_global_value( $_GET, 'preview_nonce' ), 'post_preview_' . $preview_id );
 
 		if ( ( $is_preview && $is_nonce_verify ) || Plugin::$instance->preview->is_preview_mode() ) {
@@ -325,8 +323,8 @@ class Documents_Manager {
 	 * @since  2.0.0
 	 * @access public
 	 *
-	 * @param array $args      Optional. An array of key => value arguments to match against
-	 *                               the properties. Default is empty array.
+	 * @param array  $args      Optional. An array of key => value arguments to match against
+	 *                                the properties. Default is empty array.
 	 * @param string $operator Optional. The logical operation to perform. 'or' means only one
 	 *                               element from the array needs to match; 'and' means all elements
 	 *                               must match; 'not' means no elements may match. Default 'and'.
@@ -481,7 +479,7 @@ class Documents_Manager {
 	 *
 	 * Let the Document to filter the array of row action links on the Posts list table.
 	 *
-	 * @param array $actions
+	 * @param array    $actions
 	 * @param \WP_Post $post
 	 *
 	 * @return array
@@ -504,7 +502,7 @@ class Documents_Manager {
 	 * @since 2.0.0
 	 * @access public
 	 *
-	 * @param $request Post ID.
+	 * @param array $request Post ID.
 	 *
 	 * @throws \Exception If current user don't have permissions to edit the post or the post is not using Elementor.
 	 *
@@ -596,14 +594,13 @@ class Documents_Manager {
 	 *
 	 * Load the document data from an autosave, deleting unsaved changes.
 	 *
-	 * @param $request
+	 * @param array $request
 	 *
 	 * @return bool True if changes discarded, False otherwise.
-	 * @throws \Exception
+	 * @throws \Exception If current user don't have permissions to edit the post or the post is not using Elementor.
 	 *
 	 * @since 2.0.0
 	 * @access public
-	 *
 	 */
 	public function ajax_discard_changes( $request ) {
 		$document = $this->get_with_permissions( $request['editor_post_id'] );
@@ -735,7 +732,7 @@ class Documents_Manager {
 	 *
 	 * Retrieve a custom URL for creating a new post/page using Elementor.
 	 *
-	 * @param string $post_type Optional. Post type slug. Default is 'page'.
+	 * @param string      $post_type Optional. Post type slug. Default is 'page'.
 	 * @param string|null $template_type Optional. Query arg 'template_type'. Default is null.
 	 *
 	 * @return string A URL for creating new post using Elementor.

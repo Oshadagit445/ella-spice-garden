@@ -11,10 +11,13 @@ class ElementsKit_Widget_Team extends Widget_Base {
     use \ElementsKit_Lite\Widgets\Widget_Notice;
 
     public $base;
-    
+
     public function __construct( $data = [], $args = null ) {
 		parent::__construct( $data, $args );
-		$this->add_script_depends('magnific-popup');
+	}
+
+	public function get_script_depends() {
+		return ['ekit-team', 'magnific-popup'];
 	}
 
     public function get_name() {
@@ -155,7 +158,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 ],
             ]
         );
-        
+
         // Show Description
         $this->add_control(
 			'ekit_team_show_short_description',
@@ -271,10 +274,8 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'type' => Controls_Manager::COLOR,
                 'default' => '#FFFFFF',
                 'selectors' => [
-                    '{{WRAPPER}} {{CURRENT_ITEM}} > a' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} {{CURRENT_ITEM}} > a svg path' => 'stroke: {{VALUE}}; fill: {{VALUE}};',
-                    $popup_selector . ' {{CURRENT_ITEM}} > a' => 'color: {{VALUE}};',
-                    $popup_selector . ' {{CURRENT_ITEM}} > a svg path' => 'stroke: {{VALUE}}; fill: {{VALUE}};'
+                    '{{WRAPPER}} {{CURRENT_ITEM}} > a' => 'color: {{VALUE}}; fill: {{VALUE}};',
+					 $popup_selector . ' {{CURRENT_ITEM}} > a' => 'color: {{VALUE}}; fill: {{VALUE}};',
                 ],
             ]
         );
@@ -336,10 +337,8 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'label' =>esc_html__( 'Color', 'elementskit-lite' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} {{CURRENT_ITEM}} > a:hover' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} {{CURRENT_ITEM}} > a:hover svg path'   => 'stroke: {{VALUE}}; fill: {{VALUE}};',
-                    $popup_selector . ' {{CURRENT_ITEM}} > a:hover' => 'color: {{VALUE}};',
-                    $popup_selector . ' {{CURRENT_ITEM}} > a:hover svg path'   => 'stroke: {{VALUE}}; fill: {{VALUE}};',
+                    '{{WRAPPER}} {{CURRENT_ITEM}} > a:hover' => 'color: {{VALUE}}; fill: {{VALUE}};',
+					$popup_selector . ' {{CURRENT_ITEM}} > a:hover' => 'color: {{VALUE}}; fill: {{VALUE}};',
                 ],
             ]
         );
@@ -605,7 +604,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'selector'  => '{{WRAPPER}} .profile-card:hover, {{WRAPPER}} .profile-image-card:hover',
             ]
         );
-        
+
             $this->add_control(
                 'team_hover_animation',
                 [
@@ -613,7 +612,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'type'          => Controls_Manager::HOVER_ANIMATION,
                 ]
             );
-        
+
             $this->add_responsive_control(
                 'overlay_height',
                 [
@@ -645,7 +644,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 
 		$this->end_controls_tab();
         $this->end_controls_tabs();
-        
+
         $this->add_control(
             'content_tabs_after',
             [
@@ -824,6 +823,10 @@ class ElementsKit_Widget_Team extends Widget_Base {
                         'min'   => 10,
                         'max'   => 300,
                     ],
+                    '%' => [
+                        'min'   => 10,
+                        'max'   => 100,
+                    ],
                 ],
 				'selectors' => [
 					'{{WRAPPER}} .ekit-wid-con .profile-square-v.square-v4 .profile-card .profile-header' => 'padding-top: {{SIZE}}{{UNIT}};',
@@ -832,6 +835,33 @@ class ElementsKit_Widget_Team extends Widget_Base {
 				'default' => [
 					'unit' => '%'
 				]
+            ]
+        );
+
+		$this->add_responsive_control(
+            'ekit_team_image_border_radius',
+            [
+                'label' => esc_html__( 'Border Radius', 'elementskit-lite' ),
+                'type' => Controls_Manager::SLIDER,
+                'size_units' => [ 'px', '%', 'em' ],
+                'range'  => [
+                    'px' => [
+                        'min'   => 0,
+                        'max'   => 100,
+                    ],
+                    '%' => [
+                        'min'   => 0,
+                        'max'   => 100,
+                    ],
+                ],
+				'selectors' => [
+                    '{{WRAPPER}} .profile-header > img, {{WRAPPER}} .profile-image-card img, {{WRAPPER}} .ekit-team-style-overlay_circle, {{WRAPPER}} .ekit-team-style-overlay_circle_hover' => 'border-radius: {{SIZE}}{{UNIT}};'
+				],
+                'condition' => [
+                    'ekit_team_style' => [
+                        'overlay', 'overlay_details', 'long_height_hover', 'overlay_circle', 'overlay_circle_hover'
+                    ]
+                ]
             ]
         );
 
@@ -865,6 +895,11 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'selectors' => [
                     '{{WRAPPER}} .profile-card .profile-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
+                'condition' => [
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ],
+                ],
             ]
         );
 
@@ -895,6 +930,11 @@ class ElementsKit_Widget_Team extends Widget_Base {
             Group_Control_Box_Shadow::get_type(), [
                 'name'      => 'ekit_team_image_shadow',
                 'selector'  => '{{WRAPPER}} .profile-card .profile-header',
+                'condition' => [
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ]
+                ]
             ]
         );
 
@@ -905,6 +945,9 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'selector'  => '{{WRAPPER}} .ekit-team-modal-img > img',
                 'condition' => [
                     'ekit_team_chose_popup' => 'yes',
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ]
                 ],
             ]
         );
@@ -915,6 +958,11 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'name' => 'ekit_team_image_border',
                 'label' => esc_html__( 'Border', 'elementskit-lite' ),
                 'selector' => '{{WRAPPER}} .profile-card .profile-header',
+                'condition' => [
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ]
+                ],
             ]
         );
 
@@ -933,22 +981,12 @@ class ElementsKit_Widget_Team extends Widget_Base {
 					'left' => '50',
 					'bottom' => '50',
 					'unit' => '%',
-				]
-            ]
-        );
-
-        $this->add_responsive_control(
-            'ekit_team_image_margin',
-            [
-                'label' => esc_html__( 'Margin', 'elementskit-lite' ),
-                'type' => Controls_Manager::DIMENSIONS,
-                'size_units' => [ 'px', '%', 'em' ],
+                ],
                 'condition' => [
-                    'team_style!' => 'overlay',
-                ],
-                'selectors' => [
-                    '{{WRAPPER}} .profile-card .profile-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                ],
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ]
+                ]
             ]
         );
 
@@ -959,6 +997,11 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'label' => esc_html__( 'Background', 'elementskit-lite' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .profile-card .profile-header',
+                'condition' => [
+                    'ekit_team_style' => [
+                        'default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover'
+                    ]
+                ],
             ]
         );
 
@@ -1036,7 +1079,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 				],
 			]
         );
-        
+
         $this->add_responsive_control(
 			'ekit_team_top_icon_padding',
 			[
@@ -1056,7 +1099,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .profile-icon > i, {{WRAPPER}} .profile-icon > svg' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .profile-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
                 'default'   => [
                     'top'   => '50',
@@ -1075,7 +1118,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 'selector' => '{{WRAPPER}} .profile-icon > i, {{WRAPPER}} .profile-icon > svg',
             ]
         );
-        
+
 		$this->add_responsive_control(
             'ekit_team_top_icon_fsize',
             [
@@ -1092,8 +1135,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'unit' => 'px',
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .profile-icon > i' => 'font-size: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .profile-icon > svg'   => 'max-width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .profile-icon' => 'font-size: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -1110,7 +1152,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 				'default' => 'yes',
 			]
 		);
-        
+
 		$this->add_responsive_control(
             'ekit_team_top_icon_width',
             [
@@ -1128,14 +1170,14 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'unit' => 'px',
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .profile-icon > i' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .profile-icon' => 'width: {{SIZE}}{{UNIT}};',
                 ],
                 'condition' => [
                     'ekit_team_top_icon_hw' => 'yes'
                 ],
             ]
         );
-        
+
 		$this->add_responsive_control(
             'ekit_team_top_icon_height',
             [
@@ -1153,32 +1195,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'unit' => 'px',
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .profile-icon > i' => 'height: {{SIZE}}{{UNIT}};',
-                ],
-                'condition' => [
-                    'ekit_team_top_icon_hw' => 'yes'
-                ],
-            ]
-        );
-        
-		$this->add_responsive_control(
-            'ekit_team_top_icon_lheight',
-            [
-                'label' => esc_html__( 'Line Height', 'elementskit-lite' ),
-                'type' => Controls_Manager::SLIDER,
-				'size_units' => [ 'px', '%' ],
-                'range' => [
-                    'px' => [
-                        'min' => 0,
-                        'max' => 200,
-                    ],
-                ],
-                'default' => [
-                    'size' => 60,
-                    'unit' => 'px',
-                ],
-                'selectors' => [
-                    '{{WRAPPER}} .profile-icon > i' => 'line-height: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .profile-icon' => 'height: {{SIZE}}{{UNIT}};',
                 ],
                 'condition' => [
                     'ekit_team_top_icon_hw' => 'yes'
@@ -1201,7 +1218,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'default' => '#fff',
                     'selectors' => [
                         '{{WRAPPER}} .profile-icon > i' => 'color: {{VALUE}};',
-                        '{{WRAPPER}} .profile-icon > svg path'  => 'stroke: {{VALUE}}; fill: {{VALUE}};',
+                        '{{WRAPPER}} .profile-icon > svg'  => 'fill: {{VALUE}};',
                     ],
                 ]
             );
@@ -1212,7 +1229,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'type' => Controls_Manager::COLOR,
                     'default' => '#fc0467',
                     'selectors' => [
-                        '{{WRAPPER}} .profile-icon > i, {{WRAPPER}} .profile-icon > svg' => 'background-color: {{VALUE}};',
+                        '{{WRAPPER}} .profile-icon' => 'background-color: {{VALUE}};',
                     ],
                 ]
             );
@@ -1221,11 +1238,11 @@ class ElementsKit_Widget_Team extends Widget_Base {
                 [
                     'name' => 'ekit_team_top_icon_n_border',
                     'label' => esc_html__( 'Border', 'elementskit-lite' ),
-                    'selector' => '{{WRAPPER}} .profile-icon > i, {{WRAPPER}} .profile-icon > svg',
+                    'selector' => '{{WRAPPER}} .profile-icon',
                 ]
             );
             $this->end_controls_tab();
-            
+
             $this->start_controls_tab(
                 'ekit_team_top_icon_colors_hover',
                 [
@@ -1580,28 +1597,6 @@ class ElementsKit_Widget_Team extends Widget_Base {
             ]
         );
 
-		// text decoration
-		 $this->add_responsive_control(
-            'ekit_socialmedai_list_decoration_box',
-            [
-                'label' => esc_html__( 'Decoration', 'elementskit-lite' ),
-                'type' => Controls_Manager::SELECT,
-				'default' => 'none',
-                'options' => [
-                    'none' => esc_html__( 'None', 'elementskit-lite' ),
-                    'underline' => esc_html__( 'Underline', 'elementskit-lite' ),
-                    'overline' => esc_html__( 'Overline', 'elementskit-lite' ),
-                    'line-through' => esc_html__( 'Line Through', 'elementskit-lite' ),
-
-                ],
-                'selectors' => [
-					'{{WRAPPER}} .ekit-team-social-list > li > a' => 'text-decoration: {{VALUE}};',
-					$popup_selector . ' .ekit-team-social-list > li > a' => 'text-decoration: {{VALUE}};'
-				],
-            ]
-        );
-
-
 		// border radius
 		 $this->add_responsive_control(
             'ekit_socialmedai_list_border_radius',
@@ -1625,7 +1620,20 @@ class ElementsKit_Widget_Team extends Widget_Base {
 
 		// Padding style
 
-		 $this->add_responsive_control(
+		$this->add_responsive_control(
+            'ekit_socialmedai_list_container_padding',
+            [
+                'label'         => esc_html__('Container Padding', 'elementskit-lite'),
+                'type'          => Controls_Manager::DIMENSIONS,
+                'size_units'    => ['px', 'em'],
+                'selectors' => [
+					'{{WRAPPER}} .ekit-team-social-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					$popup_selector . ' .ekit-team-social-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+		$this->add_responsive_control(
             'ekit_socialmedai_list_padding',
             [
                 'label'         => esc_html__('Padding', 'elementskit-lite'),
@@ -1671,10 +1679,9 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     ],
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .ekit-team-social-list > li > a i' => 'font-size: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .ekit-team-social-list > li > a svg' => 'max-width: {{SIZE}}{{UNIT}};',
-                    $popup_selector .' .ekit-team-social-list > li > a i' => 'font-size: {{SIZE}}{{UNIT}};',
-                    $popup_selector .' .ekit-team-social-list > li > a svg' => 'max-width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .ekit-team-social-list > li > a :is(i, svg)' => 'font-size: {{SIZE}}{{UNIT}};',
+                    $popup_selector .' .ekit-team-social-list > li > a :is(i, svg)' => 'font-size: {{SIZE}}{{UNIT}};',
+                    $popup_selector .' .ekit-team-social-list > li > a svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );
@@ -1985,7 +1992,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
                     'selector'   => '{{WRAPPER}} .ekit-team-modal-content,'.  $popup_selector . ' .ekit-team-modal-content',
                 ]
             );
-    
+
             // Modal Description - Margin Bottom
             $this->add_responsive_control(
                 'modal_desc_margin_bottom',
@@ -2369,13 +2376,13 @@ class ElementsKit_Widget_Team extends Widget_Base {
             foreach ($ekit_team_social_icons as $icon) {
                 // List Item
                 $this->add_render_attribute( 'social_item_' . $icon['_id'], 'class', 'elementor-repeater-item-' . $icon[ '_id' ] );
-    
+
                 // Link
                 $this->add_link_attributes( 'social_link_' . $icon['_id'], $icon['ekit_team_link'] );
 				$this->add_render_attribute( 'social_link_' . $icon['_id'], 'aria-label',  $icon['ekit_team_label'] );
             }
         }
-		
+
 		if ( in_array($ekit_team_style, array('default', 'centered_style', 'centered_style_details', 'long_height_details', 'long_height_details_hover')) ):
 		?>
 		<?php if($ekit_team_style == 'centered_style'): ?> <div class="profile-square-v"> <?php endif; ?>
@@ -2387,14 +2394,14 @@ class ElementsKit_Widget_Team extends Widget_Base {
 			<?php if ($settings['ekit_team_chose_popup'] == 'yes') : ?>
 				<a aria-label="profile" href="javascript:void(0)" data-mfp-src="#ekit_team_modal_<?php echo esc_attr($this->get_id() . '_' . get_the_ID()); ?>" class="ekit-team-popup">
 			<?php endif; ?>
-			
+
 				<div class="profile-header ekit-team-img <?php echo esc_attr($ekit_team_style == 'default' ? 'ekit-img-overlay ekit-team-img-block' : ''); ?>" <?php if ( (isset($settings['ekit_team_chose_popup']) ? $ekit_team_chose_popup : 'no')  == 'yes') :?> data-toggle="modal" data-target="ekit_team_modal_#<?php echo esc_attr($this->get_id() . '_' . get_the_ID()); ?>" <?php endif; ?>>
 					<?php echo wp_kses($image_html, \ElementsKit_Lite\Utils::get_kses_array()); ?>
 				</div><!-- .profile-header END -->
 			<?php if ($settings['ekit_team_chose_popup'] == 'yes') : ?>
 				</a>
 			<?php endif; ?>
-			
+
 
 				<div class="profile-body">
 					<?php if ( 'default' == $ekit_team_style && 'yes' == $ekit_team_toggle_icon && !empty( $ekit_team_top_icons ) ): ?>
@@ -2490,7 +2497,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 				endif;
 				if ( 'hover_info' == $ekit_team_style ):
 				?>
-				
+
 				<div class="profile-square-v square-v4 elementor-animation-<?php echo esc_attr($team_hover_animation) ?> ekit-team-style-<?php echo esc_attr($ekit_team_style); ?>">
 					<div class="profile-card <?php if(isset($ekit_team_content_text_align)) { echo esc_attr($ekit_team_content_text_align);} ?>">
 						<div class="profile-header ekit-team-img" <?php if ($settings['ekit_team_chose_popup'] == 'yes') :?> data-toggle="modal" data-target="#ekit_team_modal_<?php echo esc_attr($this->get_id() . '_' . get_the_ID()); ?>" <?php endif; ?>>
@@ -2521,7 +2528,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 			<?php endif; ?>
 
 		<?php if ( $ekit_team_chose_popup == 'yes' ): ?>
-			<div class="zoom-anim-dialog mfp-hide elementskit-team-popup team-popup-id-<?php echo esc_attr($this->get_id()) ;?>" id="ekit_team_modal_<?php echo esc_attr($this->get_id() . '_' . get_the_ID()); ?>" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="zoom-anim-dialog mfp-hide elementskit-team-popup team-popup-id-<?php echo esc_attr($this->get_id()) ;?>" id="ekit_team_modal_<?php echo esc_attr($this->get_id() . '_' . get_the_ID()); ?>" tabindex="-1" role="dialog" aria-modal="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<button type="button" class="ekit-team-modal-close">
@@ -2538,7 +2545,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 							<div class="ekit-team-modal-info<?php echo !empty($image_html) ? ' has-img' : ''; ?>">
 								<h2 class="ekit-team-modal-title"><?php echo esc_html( $ekit_team_name ); ?></h2>
 								<p class="ekit-team-modal-position"><?php echo esc_html( $ekit_team_position ); ?></p>
-								
+
 								<div class="ekit-team-modal-content">
 									<?php echo wp_kses($ekit_team_description, \ElementsKit_Lite\Utils::get_kses_array()); ?>
 								</div>
@@ -2554,7 +2561,7 @@ class ElementsKit_Widget_Team extends Widget_Base {
 										<?php endif; ?>
 									</ul>
 								<?php } ?>
-								
+
 								<?php
 									if ( isset($ekit_team_socail_enable) && $ekit_team_socail_enable == 'yes' ) {
 										require Handler::get_dir() . 'parts/social-list.php';

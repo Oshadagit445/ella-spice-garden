@@ -4,7 +4,7 @@
  *
  * Main bootstrap for all compatibility modules.
  *
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 document.addEventListener("DOMContentLoaded",function(){

@@ -1,6 +1,5 @@
-site2_db (3).sql
-
 Latest phpMyAdmin export.
+Latest: site2_db_v6.zip
 
 Extract and import into phpMyAdmin before running the site.
 

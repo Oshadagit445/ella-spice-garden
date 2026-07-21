@@ -76,6 +76,18 @@ class Site_Logo extends Common_Widget {
 	}
 
 	/**
+	 * Retrieve Widget Keywords.
+	 *
+	 * @since 2.6.0
+	 * @access public
+	 *
+	 * @return string Widget keywords.
+	 */
+	public function get_keywords() {
+		return parent::get_widget_keywords( 'Site_Logo' );
+	}
+
+	/**
 	 * Retrieve the list of categories the widget belongs to.
 	 *
 	 * Used to determine where to display the widget in the editor.
@@ -117,6 +129,7 @@ class Site_Logo extends Common_Widget {
 		$this->register_content_site_logo_controls();
 		$this->register_site_logo_styling_controls();
 		$this->register_site_logo_caption_styling_controls();
+		$this->register_pro_promotion_controls();
 	}
 
 	/**
@@ -669,6 +682,37 @@ class Site_Logo extends Common_Widget {
 	}
 
 	/**
+	 * Site Logo Promotion Controls.
+	 *
+	 * @since 2.4.0
+	 * @access protected
+	 */
+	protected function register_pro_promotion_controls() {
+
+		if(! defined( 'UAEL_VER' )){
+			$this->start_controls_section(
+				'section_pro_features_field',
+				array(
+					'label' => __( 'Go Pro for More Features', 'header-footer-elementor' ),
+				)
+			);
+
+			$this->add_control(
+				'uae_pro_promotion_notice',
+				[
+					'type' => Controls_Manager::NOTICE,
+					'notice_type' => 'info',
+					'dismissible' => false,
+					'content' => __( '<b>Build smarter and faster</b> with premium widgets, 200+ section blocks, and advanced customisation controls — all available in the <a href="https://ultimateelementor.com/pricing/?utm_source=uae-dashboard&utm_medium=editor&utm_campaign=uae-pro-promotion" target="_blank">UAE Pro</a>.', 'header-footer-elementor' ),
+				]
+			);
+
+
+			$this->end_controls_section();
+		}
+	}
+
+	/**
 	 * Check if the current widget has caption
 	 *
 	 * @access private
@@ -750,7 +794,7 @@ class Site_Logo extends Common_Widget {
 				$link = $site_image;
 				$this->add_render_attribute( 'link', 'href', $link );
 		} elseif ( 'default' === $settings['link_to'] ) {
-			$link = site_url();
+			$link = home_url( '/' );
 			$this->add_render_attribute( 'link', 'href', $link );
 		} else {
 			$link = $this->get_link_url( $settings );
@@ -900,7 +944,7 @@ class Site_Logo extends Common_Widget {
 			if ( empty( $settings['link']['url'] ) ) {
 				return false;
 			}
-			return site_url();
+			return home_url( '/' );
 		}
 	}
 }

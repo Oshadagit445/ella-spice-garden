@@ -3,7 +3,7 @@
  * Plugin Name: Restan Compatibility Layer
  * Plugin URI: https://localhost
  * Description: Compatibility layer for the Restan theme.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Max Sole
  * License: GPL2
  */
@@ -75,7 +75,7 @@ add_action('wp_enqueue_scripts', function () {
         'restan-utilities',
         plugin_dir_url(__FILE__) . 'assets/js/utilities.js',
         array(),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -83,7 +83,7 @@ add_action('wp_enqueue_scripts', function () {
         'restan-compatibility',
         plugin_dir_url(__FILE__) . 'assets/js/compatibility.js',
         array(),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -91,7 +91,7 @@ add_action('wp_enqueue_scripts', function () {
         'restan-image-repair',
         plugin_dir_url(__FILE__) . 'assets/js/modules/image-repair.js',
         array('restan-compatibility'),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -102,7 +102,7 @@ add_action('wp_enqueue_scripts', function () {
             'restan-compatibility',
             'restan-image-repair'
         ),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -114,7 +114,7 @@ add_action('wp_enqueue_scripts', function () {
             'restan-compatibility',
             'restan-image-repair'
         ),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -122,7 +122,7 @@ add_action('wp_enqueue_scripts', function () {
         'restan-mobile-menu-repair',
         plugin_dir_url(__FILE__) . 'assets/js/modules/mobile-menu-repair.js',
         array('jquery'),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
@@ -131,7 +131,7 @@ add_action('wp_enqueue_scripts', function () {
         plugin_dir_url(__FILE__) .
         'assets/js/modules/logo-over-menu-repair.js',
         array(),
-        '1.0.0',
+        '1.0.1',
         true
     );
 
